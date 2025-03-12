@@ -4,10 +4,10 @@
 # *.hwemu/
 *.ip_user_files/
 *.sim/
-*.runs/
+*.runs/ 
 # *.gen/
 # *.tmp/
-*.xsim/
+# *.xsim/
 # *.xpr/
 # *.xpr.lock/
 # *.jou
@@ -19,7 +19,7 @@
 # *.strc
 # *.ncf
 
-# # Ignore compiled binaries and object files
+# Ignore compiled binaries and object files
 # *.o
 # *.d
 # *.bit
@@ -34,7 +34,7 @@
 # *.xdc
 # *.xise
 
-# # Ignore Vivado-specific files
+# Ignore Vivado-specific files
 # *.vsm
 # *.veo
 # *.vho
@@ -43,17 +43,17 @@
 # *.wave
 # *.wcfg
 
-# # Ignore backup files
+# Ignore backup files
 # *~
 # *.bak
 # *.tmp
 # .DS_Store
 
-# # Ignore simulation-generated files
+# Ignore simulation-generated files
 sim/
 # waveform.wcfg
 # waveform_backup.wcfg
 
-# # Ignore IP output files
+# Ignore IP output files
 # ip/
 # component.xml

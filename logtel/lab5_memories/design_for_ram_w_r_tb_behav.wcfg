@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_for_ram_w_r_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="design_for_ram_w_r_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="4,810.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="5,480.001 ns"></ZoomEndTime>
+      <Cursor1Time time="5,215.100 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="269"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wave_markers>
+      <marker time="5215100" label="" />
+   </wave_markers>
+   <wvobject fp_name="/design_for_ram_w_r_tb/uut_design_for_ram/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_for_ram_w_r_tb/uut_design_for_ram/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_for_ram_w_r_tb/uut_design_for_ram/DATA" type="array">
+      <obj_property name="ElementShortName">DATA[9:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_for_ram_w_r_tb/uut_design_for_ram/dina" type="array">
+      <obj_property name="ElementShortName">dina[9:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_for_ram_w_r_tb/uut_design_for_ram/counter" type="array">
+      <obj_property name="ElementShortName">counter[8:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_for_ram_w_r_tb/uut_design_for_ram/counter_reg" type="array">
+      <obj_property name="ElementShortName">counter_reg[8:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_reg[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider366">
+      <obj_property name="label">RAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_for_ram_w_r_tb/uut_design_for_ram/uut_ram_5/clka" type="logic">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_for_ram_w_r_tb/uut_design_for_ram/uut_ram_5/wea" type="array">
+      <obj_property name="ElementShortName">wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_for_ram_w_r_tb/uut_design_for_ram/uut_ram_5/addra" type="array">
+      <obj_property name="ElementShortName">addra[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_for_ram_w_r_tb/uut_design_for_ram/uut_ram_5/dina" type="array">
+      <obj_property name="ElementShortName">dina[9:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_for_ram_w_r_tb/uut_design_for_ram/uut_ram_5/clkb" type="logic">
+      <obj_property name="ElementShortName">clkb</obj_property>
+      <obj_property name="ObjectShortName">clkb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_for_ram_w_r_tb/uut_design_for_ram/uut_ram_5/addrb" type="array">
+      <obj_property name="ElementShortName">addrb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_for_ram_w_r_tb/uut_design_for_ram/uut_ram_5/doutb" type="array">
+      <obj_property name="ElementShortName">doutb[9:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
