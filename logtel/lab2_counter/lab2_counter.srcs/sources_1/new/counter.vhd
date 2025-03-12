@@ -32,22 +32,22 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity counter is
+entity demo_counter is
     Port ( CLOCK   : in  STD_LOGIC;
            RESET   : in  STD_LOGIC;
            CE      : in  STD_LOGIC;
            COUNTER : out STD_LOGIC_VECTOR (9 downto 0));
-end counter;
+    end demo_counter;
 
-architecture Behavioral of counter is
+architecture Behavioral of demo_counter is
 
-  signal count : STD_LOGIC_VECTOR (9 downto 0);
+  signal count : STD_LOGIC_VECTOR (9 downto 0) := (others => '0');
   
 begin
 
     process (CLOCK)
     begin
-        if CLOCK = '1' and CLOCK'event then
+        if rising_edge(CLOCK) then
             if RESET = '1' then
                 count <= (others => '0');
             elsif CE = '1' then
