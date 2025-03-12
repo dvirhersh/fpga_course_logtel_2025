@@ -2,12 +2,12 @@
 *.cache/
 # *.hw/
 # *.hwemu/
-# *.ip_user_files/
-# *.sim/
+*.ip_user_files/
+*.sim/
 *.runs/
 # *.gen/
 # *.tmp/
-# *.xsim/
+*.xsim/
 # *.xpr/
 # *.xpr.lock/
 # *.jou
@@ -50,7 +50,7 @@
 # .DS_Store
 
 # # Ignore simulation-generated files
-# sim/
+sim/
 # waveform.wcfg
 # waveform_backup.wcfg
 
