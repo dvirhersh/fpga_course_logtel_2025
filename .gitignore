@@ -1,6 +1,6 @@
 # Ignore Vivado-generated directories
 *.cache/
-# *.hw/
+*.hw/
 # *.hwemu/
 *.ip_user_files/
 *.sim/
