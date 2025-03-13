@@ -48,14 +48,14 @@ signal RST  : STD_LOGIC := '1';
 signal DATA : STD_LOGIC_VECTOR (7 downto 0);
 
   constant ClockFrequencyHz : integer := 100e6; -- 100 MHz
-  constant ClockPeriod   : time    := 1000 ms / ClockFrequencyHz;
+  constant ClockPeriod      : time    := 1000 ms / ClockFrequencyHz;
 
 begin
 
     -- Clock generation
     CLK <= not CLK after ClockPeriod / 2;
     -- Reset generation
-    RST <= '0' after 10*ClockPeriod;
+    RST <= '0' after 10 * ClockPeriod;
 
   uut_design_for_rom : design_for_rom_reading
     port map (
