@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="pipelining_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="pipelining_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="28.571 ns"></ZoomStartTime>
+      <ZoomEndTime time="194.684 ns"></ZoomEndTime>
+      <Cursor1Time time="92.500 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="232"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/pipelining_tb/CLOCK" type="logic">
+      <obj_property name="ElementShortName">CLOCK</obj_property>
+      <obj_property name="ObjectShortName">CLOCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelining_tb/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelining_tb/A" type="array">
+      <obj_property name="ElementShortName">A[5:0]</obj_property>
+      <obj_property name="ObjectShortName">A[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelining_tb/B" type="array">
+      <obj_property name="ElementShortName">B[5:0]</obj_property>
+      <obj_property name="ObjectShortName">B[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelining_tb/COMP_OUT" type="logic">
+      <obj_property name="ElementShortName">COMP_OUT</obj_property>
+      <obj_property name="ObjectShortName">COMP_OUT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelining_tb/ClockFrequency" type="other">
+      <obj_property name="ElementShortName">ClockFrequency</obj_property>
+      <obj_property name="ObjectShortName">ClockFrequency</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelining_tb/ClockPeriod" type="other">
+      <obj_property name="ElementShortName">ClockPeriod</obj_property>
+      <obj_property name="ObjectShortName">ClockPeriod</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider174">
+      <obj_property name="label">uut</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelining_tb/uut/CLOCK" type="logic">
+      <obj_property name="ElementShortName">CLOCK</obj_property>
+      <obj_property name="ObjectShortName">CLOCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelining_tb/uut/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelining_tb/uut/A" type="array">
+      <obj_property name="ElementShortName">A[5:0]</obj_property>
+      <obj_property name="ObjectShortName">A[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelining_tb/uut/B" type="array">
+      <obj_property name="ElementShortName">B[5:0]</obj_property>
+      <obj_property name="ObjectShortName">B[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelining_tb/uut/COMP_OUT" type="logic">
+      <obj_property name="ElementShortName">COMP_OUT</obj_property>
+      <obj_property name="ObjectShortName">COMP_OUT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelining_tb/uut/A_sig" type="array">
+      <obj_property name="ElementShortName">A_sig[5:0]</obj_property>
+      <obj_property name="ObjectShortName">A_sig[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pipelining_tb/uut/B_sig" type="array">
+      <obj_property name="ElementShortName">B_sig[5:0]</obj_property>
+      <obj_property name="ObjectShortName">B_sig[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
