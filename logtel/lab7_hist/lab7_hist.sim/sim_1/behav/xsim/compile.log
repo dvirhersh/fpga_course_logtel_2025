@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab7_hist/lab7_hist.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab7_hist/lab7_hist.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab7_hist/lab7_hist.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA/logtel/lab7_hist/lab7_hist.srcs/sources_1/new/HIST.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'HIST_UNIT'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA/logtel/lab7_hist/lab7_hist.srcs/sim_1/new/HIST_UNIT_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'HIST_UNIT_TB'

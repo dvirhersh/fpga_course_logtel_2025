@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab9_PWM.srcs/sources_1/imports/new/duty_cycle.vhd" \
+"../../../../lab9_PWM.srcs/sim_1/imports/new/duty_cycle_tb.vhd" \
+
+# Do not sort compile order
+nosort

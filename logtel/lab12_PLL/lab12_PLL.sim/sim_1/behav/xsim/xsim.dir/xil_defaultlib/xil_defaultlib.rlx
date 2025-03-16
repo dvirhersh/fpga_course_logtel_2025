@@ -1,0 +1,8 @@
+0.7
+2020.2
+Dec 15 2024
+09:05:09
+C:/FPGA/logtel/lab12_PLL/lab12_PLL.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1741897542,verilog,,,,clk_wiz_0,,,../../../../lab12_PLL.ip_user_files/ipstatic,,,,,
+C:/FPGA/logtel/lab12_PLL/lab12_PLL.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1741897541,verilog,,C:/FPGA/logtel/lab12_PLL/lab12_PLL.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../lab12_PLL.ip_user_files/ipstatic,,,,,
+C:/FPGA/logtel/lab12_PLL/lab12_PLL.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+C:/FPGA/logtel/lab12_PLL/lab12_PLL.srcs/sim_1/imports/new/PLL_TB.vhd,1741085111,vhdl,,,,pll_tb,,,,,,,,

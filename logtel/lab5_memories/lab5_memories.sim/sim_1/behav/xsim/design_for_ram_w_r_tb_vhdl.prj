@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab5_memories.srcs/sources_1/new/design_for_ram_w_r.vhd" \
+"../../../../lab5_memories.srcs/sim_1/new/design_for_ram_w_r_tb.vhd" \
+
+# Do not sort compile order
+nosort
