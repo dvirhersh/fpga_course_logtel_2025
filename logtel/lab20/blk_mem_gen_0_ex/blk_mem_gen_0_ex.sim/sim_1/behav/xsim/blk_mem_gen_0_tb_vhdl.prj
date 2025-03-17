@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../imports/bmg_tb_pkg.vhd" \
+"../../../../imports/axi_checker.vhd" \
+"../../../../imports/blk_mem_gen_0_exdes.vhd" \
+"../../../../imports/blk_mem_gen_0_wrapper.vhd" \
+"../../../../imports/bmg_axi_protocol_chkr.vhd" \
+"../../../../imports/bmg_stim_gen.vhd" \
+"../../../../imports/data_gen.vhd" \
+"../../../../imports/random.vhd" \
+"../../../../imports/blk_mem_gen_0_tb.vhd" \
+
+# Do not sort compile order
+nosort

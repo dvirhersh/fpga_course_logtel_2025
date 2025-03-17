@@ -1,0 +1,15 @@
+0.7
+2020.2
+Dec 15 2024
+09:05:09
+C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/blk_mem_gen_0_ex.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1742216111,verilog,,,,blk_mem_gen_0,,,,,,,,
+C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/blk_mem_gen_0_ex.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/imports/axi_checker.vhd,1742216278,vhdl,,,,axi_checker,,,,,,,,
+C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/imports/blk_mem_gen_0_exdes.vhd,1742216278,vhdl,,,,blk_mem_gen_0_exdes,,,,,,,,
+C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/imports/blk_mem_gen_0_tb.vhd,1742216278,vhdl,,,,blk_mem_gen_0_tb,,,,,,,,
+C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/imports/blk_mem_gen_0_wrapper.vhd,1742216278,vhdl,,,,blk_mem_gen_0_wrapper,,,,,,,,
+C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/imports/bmg_axi_protocol_chkr.vhd,1742216278,vhdl,,,,bmg_axi_full_protocol_chkr,,,,,,,,
+C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/imports/bmg_stim_gen.vhd,1742216278,vhdl,,,,bmg_stim_gen,,,,,,,,
+C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/imports/bmg_tb_pkg.vhd,1742216278,vhdl,C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/imports/axi_checker.vhd;C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/imports/blk_mem_gen_0_exdes.vhd;C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/imports/bmg_axi_protocol_chkr.vhd;C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/imports/bmg_stim_gen.vhd;C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/imports/data_gen.vhd,,,bmg_tb_pkg,,,,,,,,
+C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/imports/data_gen.vhd,1742216278,vhdl,,,,data_gen,,,,,,,,
+C:/FPGA/logtel/lab20/blk_mem_gen_0_ex/imports/random.vhd,1742216278,vhdl,,,,random,,,,,,,,
