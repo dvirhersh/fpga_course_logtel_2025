@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_uart_rx_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="string_utilities_sim_pkg" />
+            <top_module name="string_utilities_synth_pkg" />
+            <top_module name="tb_fifo_pkg" />
+            <top_module name="test_uart_rx" />
+            <top_module name="time_utilities_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="2,064.000001 us"></ZoomEndTime>
+      <Cursor1Time time="4,912.544750 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="133"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject type="array" fp_name="/test_uart_rx/data_to_send">
+      <obj_property name="ElementShortName">data_to_send[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_to_send[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_uart_rx/uart_rx_i0/clk_rx">
+      <obj_property name="ElementShortName">clk_rx</obj_property>
+      <obj_property name="ObjectShortName">clk_rx</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_uart_rx/uart_rx_i0/rxd_i">
+      <obj_property name="ElementShortName">rxd_i</obj_property>
+      <obj_property name="ObjectShortName">rxd_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_uart_rx/uart_rx_i0/rx_data">
+      <obj_property name="ElementShortName">rx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_uart_rx/uart_rx_i0/rx_data_rdy">
+      <obj_property name="ElementShortName">rx_data_rdy</obj_property>
+      <obj_property name="ObjectShortName">rx_data_rdy</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_uart_rx/uart_rx_i0/frm_err">
+      <obj_property name="ElementShortName">frm_err</obj_property>
+      <obj_property name="ObjectShortName">frm_err</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_uart_rx/tb_resp_checker_i0/char_received">
+      <obj_property name="ElementShortName">char_received[7:0]</obj_property>
+      <obj_property name="ObjectShortName">char_received[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+</wave_config>

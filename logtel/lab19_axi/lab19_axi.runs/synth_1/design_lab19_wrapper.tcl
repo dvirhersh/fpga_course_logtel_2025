@@ -56,6 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param bd.open.in_stealth_mode 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -73,7 +74,7 @@ set_property ip_output_repo c:/FPGA/logtel/lab19_axi/lab19_axi.cache/ip [current
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib c:/FPGA/logtel/lab19_axi/lab19_axi.gen/sources_1/bd/design_lab19/hdl/design_lab19_wrapper.vhd
+read_vhdl -library xil_defaultlib C:/FPGA/logtel/lab19_axi/lab19_axi.gen/sources_1/bd/design_lab19/hdl/design_lab19_wrapper.vhd
 add_files C:/FPGA/logtel/lab19_axi/lab19_axi.srcs/sources_1/bd/design_lab19/design_lab19.bd
 set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab19_axi/lab19_axi.gen/sources_1/bd/design_lab19/ip/design_lab19_jtag_axi_0_0/constraints/jtag_axi.xdc]
 set_property used_in_synthesis false [get_files -all c:/FPGA/logtel/lab19_axi/lab19_axi.gen/sources_1/bd/design_lab19/ip/design_lab19_jtag_axi_0_0/constraints/design_lab19_jtag_axi_0_0_impl.xdc]
@@ -121,6 +122,8 @@ set_property used_in_implementation false [get_files C:/FPGA/logtel/lab19_axi/la
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/FPGA/logtel/lab19_axi/lab19_axi.srcs/utils_1/imports/synth_1/design_lab19_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
