@@ -1,0 +1,17 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/FPGA/logtel/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.vhd,1742242773,vhdl,,,,gig_ethernet_pcs_pma_0,,,,,,,,
+C:/FPGA/logtel/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0_block.vhd,1742242773,vhdl,,,,gig_ethernet_pcs_pma_0_block,,,,,,,,
+C:/FPGA/logtel/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0_reset_sync.vhd,1742242768,vhdl,,,,gig_ethernet_pcs_pma_0_reset_sync,,,,,,,,
+C:/FPGA/logtel/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0_sync_block.vhd,1742242768,vhdl,,,,gig_ethernet_pcs_pma_0_sync_block,,,,,,,,
+C:/FPGA/logtel/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/sgmii_adapt/gig_ethernet_pcs_pma_0_clk_gen.vhd,1742242765,vhdl,,,,gig_ethernet_pcs_pma_0_clk_gen,,,,,,,,
+C:/FPGA/logtel/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/sgmii_adapt/gig_ethernet_pcs_pma_0_johnson_cntr.vhd,1742242768,vhdl,,,,gig_ethernet_pcs_pma_0_johnson_cntr,,,,,,,,
+C:/FPGA/logtel/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/sgmii_adapt/gig_ethernet_pcs_pma_0_rx_rate_adapt.vhd,1742242768,vhdl,,,,gig_ethernet_pcs_pma_0_rx_rate_adapt,,,,,,,,
+C:/FPGA/logtel/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/sgmii_adapt/gig_ethernet_pcs_pma_0_sgmii_adapt.vhd,1742242768,vhdl,,,,gig_ethernet_pcs_pma_0_sgmii_adapt,,,,,,,,
+C:/FPGA/logtel/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/sgmii_adapt/gig_ethernet_pcs_pma_0_tx_rate_adapt.vhd,1742242769,vhdl,,,,gig_ethernet_pcs_pma_0_tx_rate_adapt,,,,,,,,
+C:/FPGA/logtel/gig_ethernet_pcs_pma_0_ex/gig_ethernet_pcs_pma_0_ex.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+C:/FPGA/logtel/gig_ethernet_pcs_pma_0_ex/imports/demo_tb.vhd,1742244850,vhdl,,,,demo_tb,,,,,,,,
+C:/FPGA/logtel/gig_ethernet_pcs_pma_0_ex/imports/gig_ethernet_pcs_pma_0_example_design.vhd,1742244849,vhdl,,,,gig_ethernet_pcs_pma_0_example_design,,,,,,,,
+C:/FPGA/logtel/gig_ethernet_pcs_pma_0_ex/imports/stimulus_tb.vhd,1742244850,vhdl,,,,stimulus_tb,,,,,,,,
