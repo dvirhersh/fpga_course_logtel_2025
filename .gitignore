@@ -1,59 +1,59 @@
-# # Ignore Vivado-generated directories
-# *.cache/
-# *.hw/
-# # *.hwemu/
-# *.ip_user_files/
-# *.sim/
-# *.runs/ 
-# # *.gen/
-# # *.tmp/
-# # *.xsim/
-# # *.xpr/
-# # *.xpr.lock/
-# # *.jou
-# # *.log
-# # *.wdb
-# # *.ltx
-# # *.pb
-# # *.str
-# # *.strc
-# # *.ncf
+# Ignore Vivado-generated directories
+*.cache/
+*.hw/
+# *.hwemu/
+*.ip_user_files/
+*.sim/
+*.runs/ 
+# *.gen/
+# *.tmp/
+# *.xsim/
+# *.xpr/
+# *.xpr.lock/
+# *.jou
+# *.log
+# *.wdb
+# *.ltx
+# *.pb
+# *.str
+# *.strc
+# *.ncf
 
-# # Ignore compiled binaries and object files
-# # *.o
-# # *.d
-# # *.bit
-# # *.bin
-# # *.elf
-# # *.dat
-# # *.hex
-# # *.mcs
-# # *.mmi
-# # *.prm
-# # *.xci
-# # *.xdc
-# # *.xise
+# Ignore compiled binaries and object files
+# *.o
+# *.d
+# *.bit
+# *.bin
+# *.elf
+# *.dat
+# *.hex
+# *.mcs
+# *.mmi
+# *.prm
+# *.xci
+# *.xdc
+# *.xise
 
-# # Ignore Vivado-specific files
-# # *.vsm
-# # *.veo
-# # *.vho
-# # *.bxml
-# # *.vcd
-# # *.wave
-# # *.wcfg
+# Ignore Vivado-specific files
+# *.vsm
+# *.veo
+# *.vho
+# *.bxml
+# *.vcd
+# *.wave
+# *.wcfg
 
-# # Ignore backup files
-# # *~
-# # *.bak
-# # *.tmp
-# # .DS_Store
+# Ignore backup files
+# *~
+# *.bak
+# *.tmp
+# .DS_Store
 
-# # Ignore simulation-generated files
-# sim/
-# # waveform.wcfg
-# # waveform_backup.wcfg
+# Ignore simulation-generated files
+sim/
+# waveform.wcfg
+# waveform_backup.wcfg
 
-# # Ignore IP output files
-# # ip/
-# # component.xml
+# Ignore IP output files
+# ip/
+# component.xml
