@@ -51,8 +51,8 @@ COMPONENT fifo_generator_0
   );
 END COMPONENT;
 
-    signal wr_clk : STD_LOGIC := '0';
-    signal rd_clk : STD_LOGIC := '0';
+    signal wr_clk : STD_LOGIC := '1';
+    signal rd_clk : STD_LOGIC := '1';
     signal din    : STD_LOGIC_VECTOR(15 DOWNTO 0)  := (others => '0');
     signal wr_en  : STD_LOGIC := '0';
     signal rd_en  : STD_LOGIC := '0';
@@ -71,7 +71,7 @@ begin
 
     wr_clk <= not wr_clk after clock_period_wr / 2;           
     rd_clk <= not rd_clk after clock_period_rd / 2;
-    rst    <= '0' after 10 * clock_period_rd;
+    rst    <= '0' after 5 * clock_period_rd;
     
     write : process (wr_clk) begin
         if rising_edge (wr_clk) then
@@ -80,7 +80,6 @@ begin
                 wr_en <= '0';
             elsif rst = '0' then
                 if full = '1' then
-                    din   <= (others => '0');
                     wr_en <= '0';
                 elsif full = '0' then
                     din   <= din + 1;
