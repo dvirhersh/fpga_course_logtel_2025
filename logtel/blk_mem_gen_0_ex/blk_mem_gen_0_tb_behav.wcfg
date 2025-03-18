@@ -12,29 +12,18 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="4,124.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="5,476.001 ns"></ZoomEndTime>
-      <Cursor1Time time="4,700.000 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="131.200001 us"></ZoomEndTime>
+      <Cursor1Time time="5.668658 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="158"></NameColumnWidth>
-      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+      <NameColumnWidth column_width="187"></NameColumnWidth>
+      <ValueColumnWidth column_width="69"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="30" />
-   <wave_markers>
-      <marker time="6350000" label="" />
-   </wave_markers>
-   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_AWADDR" type="array">
-      <obj_property name="ElementShortName">S_AXI_AWADDR[31:0]</obj_property>
-      <obj_property name="ObjectShortName">S_AXI_AWADDR[31:0]</obj_property>
-      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_AWVALID" type="logic">
-      <obj_property name="ElementShortName">S_AXI_AWVALID</obj_property>
-      <obj_property name="ObjectShortName">S_AXI_AWVALID</obj_property>
-      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
+   <wvobject fp_name="/blk_mem_gen_0_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
    </wvobject>
    <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_AWREADY" type="logic">
       <obj_property name="ElementShortName">S_AXI_AWREADY</obj_property>
@@ -45,6 +34,18 @@
    <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_AWID" type="array">
       <obj_property name="ElementShortName">S_AXI_AWID[3:0]</obj_property>
       <obj_property name="ObjectShortName">S_AXI_AWID[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_AWVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWVALID</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_AWADDR" type="array">
+      <obj_property name="ElementShortName">S_AXI_AWADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWADDR[31:0]</obj_property>
       <obj_property name="CustomSignalColor">#00FFFF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
@@ -66,9 +67,9 @@
       <obj_property name="CustomSignalColor">#00FFFF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_WDATA" type="array">
-      <obj_property name="ElementShortName">S_AXI_WDATA[31:0]</obj_property>
-      <obj_property name="ObjectShortName">S_AXI_WDATA[31:0]</obj_property>
+   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_WREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WREADY</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
@@ -78,9 +79,9 @@
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_WREADY" type="logic">
-      <obj_property name="ElementShortName">S_AXI_WREADY</obj_property>
-      <obj_property name="ObjectShortName">S_AXI_WREADY</obj_property>
+   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_WDATA" type="array">
+      <obj_property name="ElementShortName">S_AXI_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WDATA[31:0]</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
@@ -96,100 +97,94 @@
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
+   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_BID" type="array">
+      <obj_property name="ElementShortName">S_AXI_BID[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BID[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
    <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_BVALID" type="logic">
       <obj_property name="ElementShortName">S_AXI_BVALID</obj_property>
       <obj_property name="ObjectShortName">S_AXI_BVALID</obj_property>
-      <obj_property name="CustomSignalColor">#FFD700</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_BREADY" type="logic">
-      <obj_property name="ElementShortName">S_AXI_BREADY</obj_property>
-      <obj_property name="ObjectShortName">S_AXI_BREADY</obj_property>
-      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_BRESP" type="array">
       <obj_property name="ElementShortName">S_AXI_BRESP[1:0]</obj_property>
       <obj_property name="ObjectShortName">S_AXI_BRESP[1:0]</obj_property>
-      <obj_property name="CustomSignalColor">#FFD700</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_BID" type="array">
-      <obj_property name="ElementShortName">S_AXI_BID[3:0]</obj_property>
-      <obj_property name="ObjectShortName">S_AXI_BID[3:0]</obj_property>
-      <obj_property name="CustomSignalColor">#FFD700</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_ARID" type="array">
-      <obj_property name="ElementShortName">S_AXI_ARID[3:0]</obj_property>
-      <obj_property name="ObjectShortName">S_AXI_ARID[3:0]</obj_property>
       <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_ARADDR" type="array">
-      <obj_property name="ElementShortName">S_AXI_ARADDR[31:0]</obj_property>
-      <obj_property name="ObjectShortName">S_AXI_ARADDR[31:0]</obj_property>
-      <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_ARVALID" type="logic">
-      <obj_property name="ElementShortName">S_AXI_ARVALID</obj_property>
-      <obj_property name="ObjectShortName">S_AXI_ARVALID</obj_property>
+   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_BREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_BREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BREADY</obj_property>
       <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_ARREADY" type="logic">
       <obj_property name="ElementShortName">S_AXI_ARREADY</obj_property>
       <obj_property name="ObjectShortName">S_AXI_ARREADY</obj_property>
-      <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_RID" type="array">
-      <obj_property name="ElementShortName">S_AXI_RID[3:0]</obj_property>
-      <obj_property name="ObjectShortName">S_AXI_RID[3:0]</obj_property>
-      <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_ARADDR" type="array">
+      <obj_property name="ElementShortName">S_AXI_ARADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARADDR[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_ARVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARVALID</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_ARID" type="array">
+      <obj_property name="ElementShortName">S_AXI_ARID[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARID[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_ARLEN" type="array">
       <obj_property name="ElementShortName">S_AXI_ARLEN[7:0]</obj_property>
       <obj_property name="ObjectShortName">S_AXI_ARLEN[7:0]</obj_property>
-      <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_ARSIZE" type="array">
       <obj_property name="ElementShortName">S_AXI_ARSIZE[2:0]</obj_property>
       <obj_property name="ObjectShortName">S_AXI_ARSIZE[2:0]</obj_property>
-      <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_ARBURST" type="array">
       <obj_property name="ElementShortName">S_AXI_ARBURST[1:0]</obj_property>
       <obj_property name="ObjectShortName">S_AXI_ARBURST[1:0]</obj_property>
-      <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_RLAST" type="logic">
-      <obj_property name="ElementShortName">S_AXI_RLAST</obj_property>
-      <obj_property name="ObjectShortName">S_AXI_RLAST</obj_property>
-   </wvobject>
-   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_RDATA" type="array">
-      <obj_property name="ElementShortName">S_AXI_RDATA[31:0]</obj_property>
-      <obj_property name="ObjectShortName">S_AXI_RDATA[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_RRESP" type="array">
-      <obj_property name="ElementShortName">S_AXI_RRESP[1:0]</obj_property>
-      <obj_property name="ObjectShortName">S_AXI_RRESP[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_RVALID" type="logic">
-      <obj_property name="ElementShortName">S_AXI_RVALID</obj_property>
-      <obj_property name="ObjectShortName">S_AXI_RVALID</obj_property>
    </wvobject>
    <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_RREADY" type="logic">
       <obj_property name="ElementShortName">S_AXI_RREADY</obj_property>
       <obj_property name="ObjectShortName">S_AXI_RREADY</obj_property>
    </wvobject>
-   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/CLK_IN" type="logic">
-      <obj_property name="ElementShortName">CLK_IN</obj_property>
-      <obj_property name="ObjectShortName">CLK_IN</obj_property>
+   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_RDATA" type="array">
+      <obj_property name="ElementShortName">S_AXI_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_RID" type="array">
+      <obj_property name="ElementShortName">S_AXI_RID[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RID[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_RVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_RVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_RLAST" type="logic">
+      <obj_property name="ElementShortName">S_AXI_RLAST</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RLAST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blk_mem_gen_0_tb/blk_mem_gen_0_exdes_inst/S_AXI_RRESP" type="array">
+      <obj_property name="ElementShortName">S_AXI_RRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RRESP[1:0]</obj_property>
    </wvobject>
 </wave_config>
