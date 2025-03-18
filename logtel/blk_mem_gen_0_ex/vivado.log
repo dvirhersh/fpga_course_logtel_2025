@@ -1397,3 +1397,869 @@ ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl c
 ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
 launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 3677.301 ; gain = 0.000
 ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'lab20_axi_3_bd_wrapper'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Downloads/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Downloads/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab20_axi_3_bd_wrapper' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.sim/sim_1/behav/xsim/sc_xtlm_lab20_axi_3_bd_axi_smc_0.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L axi_vip_v1_1_19 -L smartconnect_v1_0 -L xilinx_vip -prj lab20_axi_3_bd_wrapper_vlog.prj"
+!! WARNING !!
+"PYTHONPATH" variable is set greater than default max string limit of "519" characters.
+Please ignore this, if you have already made changes to your system registry to accept more than
+default limit of 519 characters.
+!! WARNING !!
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_addr_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_addr_decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_read.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_read
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg_bank.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_reg_bank
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_write.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_ctrl_write
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_ar_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_ar_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_aw_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_aw_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_b_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_b_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_cmd_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_translator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_cmd_translator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_incr_cmd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_incr_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_r_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_r_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_simple_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_simple_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wrap_cmd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_wrap_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wr_cmd_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_wr_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_w_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_axi_mc_w_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axic_register_slice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_axic_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_register_slice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_axi_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_axi_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_a_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_a_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_latch_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_or.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_latch_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_or.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_carry_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_command_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_command_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_comparator_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel_static.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_comparator_sel_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_r_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_r_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_w_upsizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_w_upsizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_clk_ibuf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_infrastructure
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_iodelay_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_tempmon
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_arb_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_arb_row_col
+WARNING: [VRFC 10-8332] begin/end is required for generate-for in this mode of Verilog [C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:252]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_arb_select
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_cntrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_queue
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_state
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_col_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_mc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_mc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_rank_cntrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_rank_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_rank_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_round_robin_arb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_buf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_buf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_dec_fix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_dec_fix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_merge_enc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_merge_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_fi_xor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_fi_xor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_memc_ui_top_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_mem_intfc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_byte_group_io
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_byte_lane
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_calib_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_if_post_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_mc_phy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_mc_phy_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_of_pre_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_4lanes
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_dqs_found_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_dqs_found_cal_hr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_cntlr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_cntlr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_edge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_edge
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_lim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_lim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_po_cntlr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_po_cntlr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_samp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_samp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_oclkdelay_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_oclkdelay_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_prbs_rdlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_prbs_rdlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_rdlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_tempmon
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_wrcal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_wrlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_wrlvl_off_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_prbs_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_cc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_cc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_edge_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_edge_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_meta.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_meta
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_pd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_pd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_tap_base.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_tap_base
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_rd_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_wr_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/lab20_axi_3_bd_mig_7series_0_0_mig_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab20_axi_3_bd_mig_7series_0_0_mig
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/lab20_axi_3_bd_mig_7series_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab20_axi_3_bd_mig_7series_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_jtag_axi_0_0/sim/lab20_axi_3_bd_jtag_axi_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab20_axi_3_bd_jtag_axi_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/sim/bd_cc91.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_cc91
+INFO: [VRFC 10-311] analyzing module clk_map_imp_6MXR3I
+INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_1UDZCFP
+INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_U31Y9I
+INFO: [VRFC 10-311] analyzing module s00_nodes_imp_XSWXWS
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_0/sim/bd_cc91_one_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_cc91_one_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_2/sim/bd_cc91_s00mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_cc91_s00mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_3/sim/bd_cc91_s00tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_cc91_s00tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_4/sim/bd_cc91_s00sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_cc91_s00sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_5/sim/bd_cc91_s00a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_cc91_s00a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_6/sim/bd_cc91_sarn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_cc91_sarn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_7/sim/bd_cc91_srn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_cc91_srn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_8/sim/bd_cc91_sawn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_cc91_sawn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_9/sim/bd_cc91_swn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_cc91_swn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_10/sim/bd_cc91_sbn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_cc91_sbn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_11/sim/bd_cc91_m00s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_cc91_m00s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_12/sim/bd_cc91_m00e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_cc91_m00e_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/sim/lab20_axi_3_bd_axi_smc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab20_axi_3_bd_axi_smc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj lab20_axi_3_bd_wrapper_vhdl.prj"
+!! WARNING !!
+"PYTHONPATH" variable is set greater than default max string limit of "519" characters.
+Please ignore this, if you have already made changes to your system registry to accept more than
+default limit of 519 characters.
+!! WARNING !!
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 3677.301 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '20' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L jtag_axi -L xlconstant_v1_1_9 -L lib_cdc_v1_0_3 -L proc_sys_reset_v5_0_16 -L smartconnect_v1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_33 -L axi_vip_v1_1_19 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot lab20_axi_3_bd_wrapper_behav xil_defaultlib.lab20_axi_3_bd_wrapper xil_defaultlib.glbl -log elaborate.log"
+!! WARNING !!
+"PYTHONPATH" variable is set greater than default max string limit of "519" characters.
+Please ignore this, if you have already made changes to your system registry to accept more than
+default limit of 519 characters.
+!! WARNING !!
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Downloads/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L jtag_axi -L xlconstant_v1_1_9 -L lib_cdc_v1_0_3 -L proc_sys_reset_v5_0_16 -L smartconnect_v1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_33 -L axi_vip_v1_1_19 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot lab20_axi_3_bd_wrapper_behav xil_defaultlib.lab20_axi_3_bd_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-9180] module 'xpm_cdc_async_rst' is instantiated multiple times from VHDL or from both Verilog and VHDL; elaboration result may be incorrect [/wrk/ci/prod/2024.2/sw/continuous/3059/packages/customer/vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 1024 for port 'dbg_poc' [C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/lab20_axi_3_bd_mig_7series_0_0_mig_sim.v:1320]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_dqs_found_lanes' [C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1671]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_phase_locked_lanes' [C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1679]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_dqs_found_lanes' [C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v:1339]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'fine_adjust_lane_cnt' [C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1962]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/sim/bd_cc91.v:744]
+WARNING: [VRFC 10-5021] port 'sl_iport0' is not connected on this instance [C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_jtag_axi_0_0/sim/lab20_axi_3_bd_jtag_axi_0_0.v:184]
+WARNING: [VRFC 10-5021] port 'complex_oclk_prech_req' is not connected on this instance [C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1317]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1fs
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_arith
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xlconstant_v1_1_9.xlconstant_v1_1_9_xlconstant(CON...
+Compiling module xil_defaultlib.bd_cc91_one_0
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_3.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.proc_sys_reset [\proc_sys_reset(c_family="artix7...]
+Compiling architecture bd_cc91_psr_aclk_0_arch of entity xil_defaultlib.bd_cc91_psr_aclk_0 [bd_cc91_psr_aclk_0_default]
+Compiling module xil_defaultlib.clk_map_imp_6MXR3I
+Compiling module xpm.xpm_cdc_async_rst(DEST_SYNC_FF=3...
+Compiling module xil_defaultlib.bd_cc91_m00e_0
+Compiling module xil_defaultlib.m00_exit_pipeline_imp_1UDZCFP
+Compiling module xil_defaultlib.bd_cc91_m00s2a_0
+Compiling module xil_defaultlib.bd_cc91_s00a2s_0
+Compiling module xil_defaultlib.bd_cc91_s00mmu_0
+Compiling module xil_defaultlib.bd_cc91_s00sic_0
+Compiling module xil_defaultlib.bd_cc91_s00tr_0
+Compiling module xil_defaultlib.s00_entry_pipeline_imp_U31Y9I
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=49...
+Compiling module xil_defaultlib.bd_cc91_sarn_0
+Compiling module xil_defaultlib.bd_cc91_sawn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=73...
+Compiling module xil_defaultlib.bd_cc91_sbn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=53...
+Compiling module xil_defaultlib.bd_cc91_srn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=56...
+Compiling module xil_defaultlib.bd_cc91_swn_0
+Compiling module xil_defaultlib.s00_nodes_imp_XSWXWS
+Compiling module xil_defaultlib.bd_cc91
+Compiling module xil_defaultlib.lab20_axi_3_bd_axi_smc_0
+Compiling module xil_defaultlib.lab20_axi_3_bd_jtag_axi_0_0
+Compiling module unisims_ver.IDELAYCTRL_default
+Compiling module xil_defaultlib.mig_7series_v4_2_iodelay_ctrl(IO...
+Compiling module unisims_ver.IBUF(IBUF_LOW_PWR="FALSE")
+Compiling module unisims_ver.IBUFG(IBUF_LOW_PWR="FALSE")
+Compiling module xil_defaultlib.mig_7series_v4_2_clk_ibuf(SYSCLK...
+Compiling module unisims_ver.XADC(INIT_40=16'b01000000000000,...
+Compiling module xil_defaultlib.mig_7series_v4_2_tempmon_default
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=13,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.BUFH
+Compiling module unisims_ver.MMCME2_ADV(BANDWIDTH="HIGH",CLKF...
+Compiling module xil_defaultlib.mig_7series_v4_2_infrastructure(...
+Compiling module unisims_ver.SRLC32E_default
+Compiling module xil_defaultlib.mig_7series_v4_2_rank_cntrl(DQRD...
+Compiling module xil_defaultlib.mig_7series_v4_2_round_robin_arb...
+Compiling module xil_defaultlib.mig_7series_v4_2_round_robin_arb...
+Compiling module xil_defaultlib.mig_7series_v4_2_rank_common(DRA...
+Compiling module xil_defaultlib.mig_7series_v4_2_rank_mach(CS_WI...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_compare(CO...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(CWL=...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue(ORDE...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(CWL=...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue(ORDE...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(CWL=...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue(ORDE...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(CWL=...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue(ORDE...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_common(LOW...
+Compiling module xil_defaultlib.mig_7series_v4_2_round_robin_arb...
+Compiling module xil_defaultlib.mig_7series_v4_2_arb_row_col(CWL...
+Compiling module xil_defaultlib.mig_7series_v4_2_arb_select(CS_W...
+Compiling module xil_defaultlib.mig_7series_v4_2_arb_mux(CS_WIDT...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_mach(COL_W...
+Compiling module unisims_ver.RAM32M
+Compiling module xil_defaultlib.mig_7series_v4_2_col_mach(COL_WI...
+Compiling module xil_defaultlib.mig_7series_v4_2_mc(COL_WIDTH=10...
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.OBUFT
+Compiling module unisims_ver.IOBUF_INTERMDISABLE(IBUF_LOW_PWR...
+Compiling module unisims_ver.IOBUFDS_INTERMDISABLE(DQS_BIAS="...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_of_pre_fifo...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_of_pre_fifo...
+Compiling module unisims_ver.BUFIO
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_if_post_fif...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_of_pre_fifo...
+Compiling module unisims_ver.PHASER_IN_PHY(BURST_MODE="TRUE",...
+Compiling module unisims_ver.PHASER_OUT_PHY(CLKOUT_DIV=2,DATA...
+Compiling module unisims_ver.IN_FIFO
+Compiling module unisims_ver.OUT_FIFO
+Compiling module unisims_ver.ISERDESE2(INTERFACE_TYPE="MEMORY...
+Compiling module unisims_ver.IDELAYE2(HIGH_PERFORMANCE_MODE="...
+Compiling module unisims_ver.OSERDESE2(INIT_OQ=1'b1,INIT_TQ=1...
+Compiling module unisims_ver.OSERDESE2(INIT_OQ=1'b1,INIT_TQ=1...
+Compiling module unisims_ver.ODDR(DDR_CLK_EDGE="SAME_EDGE")
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_group_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(P...
+Compiling module unisims_ver.PHASER_OUT_PHY(FINE_DELAY=60,MEM...
+Compiling module unisims_ver.OUT_FIFO(ARRAY_MODE="ARRAY_MODE_...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_OQ="SDR",DAT...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_group_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(A...
+Compiling module unisims_ver.PHASER_IN_PHY(BURST_MODE="TRUE",...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_group_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(A...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_group_...
+Compiling module unisims_ver.OBUFDS
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(A...
+Compiling module unisims_ver.PHY_CONTROL(AO_TOGGLE=1,BURST_MO...
+Compiling module unisims_ver.PHASER_REF
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_4lanes(...
+WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_A' [C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:709]
+WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_B' [C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:708]
+WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_C' [C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:707]
+WARNING: [VRFC 10-8809] cannot index into scalar type parameter/localparam 'PRESENT_DATA_D' [C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:706]
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_mc_phy(DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_mc_phy_wrap...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_prbs_gen(DQ...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_init(tC...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_wrcal(n...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_wrlvl_o...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_dqs_fou...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_rdlvl(n...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_tempmon...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_calib_top(n...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_top(DDR...
+Compiling module xil_defaultlib.mig_7series_v4_2_mem_intfc(PAYLO...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_cmd(ADDR_WID...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_wr_data(APP_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_rd_data(APP_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_top(APP_DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axic_regist...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_axi_registe...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_incr_cmd...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_wrap_cmd...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_cmd_tran...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_wr_cmd_f...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_aw_chann...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_w_channe...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_fifo(C_W...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_b_channe...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_incr_cmd...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_wrap_cmd...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_cmd_tran...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_cmd_fsm(...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_ar_chann...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_fifo(C_W...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_fifo(C_W...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_r_channe...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc_cmd_arbi...
+Compiling module xil_defaultlib.mig_7series_v4_2_axi_mc(C_FAMILY...
+Compiling module xil_defaultlib.mig_7series_v4_2_memc_ui_top_axi...
+Compiling module xil_defaultlib.lab20_axi_3_bd_mig_7series_0_0_m...
+Compiling module xil_defaultlib.lab20_axi_3_bd_mig_7series_0_0
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.proc_sys_reset [\proc_sys_reset(c_family="artix7...]
+Compiling architecture lab20_axi_3_bd_rst_mig_7series_0_81m_0_arch of entity xil_defaultlib.lab20_axi_3_bd_rst_mig_7series_0_81M_0 [lab20_axi_3_bd_rst_mig_7series_0...]
+Compiling package smartconnect_v1_0.sc_util_v1_0_4_pkg
+Compiling architecture structure of entity xil_defaultlib.lab20_axi_3_bd [lab20_axi_3_bd_default]
+Compiling architecture structure of entity xil_defaultlib.lab20_axi_3_bd_wrapper
+Built simulation snapshot lab20_axi_3_bd_wrapper_behav
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:01:17 . Memory (MB): peak = 3677.301 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '77' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab20_axi_3_bd_wrapper_behav -key {Behavioral:sim_1:Functional:lab20_axi_3_bd_wrapper} -tclbatch {lab20_axi_3_bd_wrapper.tcl} -protoinst "protoinst_files/bd_cc91.protoinst" -protoinst "protoinst_files/lab20_axi_3_bd.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_cc91.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i/axi_smc/inst//m00_exit_pipeline/m00_exit/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i/axi_smc/inst//m00_exit_pipeline/m00_exit/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i/axi_smc/inst//m00_exit_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i/axi_smc/inst//m00_exit_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i/axi_smc/inst//m00_sc2axi/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i/axi_smc/inst//s00_axi2sc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i/axi_smc/inst//s00_entry_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i/axi_smc/inst//s00_entry_pipeline/s00_mmu/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i/axi_smc/inst//s00_entry_pipeline/s00_mmu/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i/axi_smc/inst//s00_entry_pipeline/s00_si_converter/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i/axi_smc/inst//s00_entry_pipeline/s00_si_converter/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i/axi_smc/inst//s00_entry_pipeline/s00_transaction_regulator/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i/axi_smc/inst//s00_entry_pipeline/s00_transaction_regulator/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i/axi_smc/inst//s00_entry_pipeline/s_axi
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/lab20_axi_3_bd.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i//axi_smc/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i//axi_smc/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i//jtag_axi_0/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /lab20_axi_3_bd_wrapper/lab20_axi_3_bd_i//mig_7series_0/S_AXI
+Time resolution is 1 fs
+source lab20_axi_3_bd_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: file design.txt could not be opened
+ *** Warning: The analog data file design.txt for XADC instance lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.temp_mon_enabled.u_tempmon.xadc_supplied_temperature.XADC_inst was not found. Use the SIM_MONITOR_FILE parameter to specify the analog data file name or use the default name: design.txt.
+
+############# Write Clocks PLLE2_ADV Parameters #############
+
+nCK_PER_CLK      =       4
+CLK_PERIOD       =   10000
+CLKIN1_PERIOD    =  10.000
+DIVCLK_DIVIDE    =       1
+CLKFBOUT_MULT    =      13
+VCO_PERIOD       =   769.0
+CLKOUT0_DIVIDE_F =       2
+CLKOUT1_DIVIDE   =       4
+CLKOUT2_DIVIDE   =      64
+CLKOUT3_DIVIDE   =      16
+CLKOUT0_PERIOD   =    1538
+CLKOUT1_PERIOD   =    3076
+CLKOUT2_PERIOD   =   49216
+CLKOUT3_PERIOD   =   12304
+CLKOUT4_PERIOD   =    6152
+############################################################
+
+############# MMCME2_ADV Parameters #############
+
+MMCM_MULT_F           =          14
+MMCM_VCO_FREQ (MHz)   = 1200.000
+MMCM_VCO_PERIOD       = 833.333
+#################################################
+
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : BYTE_LANES_B0 = f BYTE_LANES_B1 = 0 DATA_CTL_B0 = 5 DATA_CTL_B1 = 0
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_LANE =           4 HIGHEST_LANE_B0 =           4 HIGHEST_LANE_B1 =           0
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_BANK =           1
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : FREQ_REF_PERIOD         = 1538.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DDR_TCK                 = 3077 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_S2_TAPS_SIZE         = 12.02 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_EARLY       = 1 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_OFFSET      = 1610.30 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_META_ZONE   = 200.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_FINE_INTR_DLY   = 890.73 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_COARSE_INTR_DLY = 575.97 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_INTRINSIC_DELAY = 1466.70 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_DELAY       = 60 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_INTRINSIC_DELAY      = 1466.70 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_DELAY                = 2187.64 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_OCLK_DELAY           = 0 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : L_PHY_0_PO_FINE_DELAY   = 60 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG1_INTRINSIC_DELAY = 0.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_INTRINSIC_DELAY = 865.48 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_INTRINSIC_DELAY      = 865.48 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_MAX_STG2_DELAY       = 756.98 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_OFFSET               = 123.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_DELAY           = 123.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy :PI_STG2_DELAY_CAND       = 123.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DEFAULT_RCLK_DELAY      = 10 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : RCLK_SELECT_EDGE        = 111 
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab20_axi_3_bd_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:01:47 . Memory (MB): peak = 3677.301 ; gain = 0.000
+launch_runs synth_1 -jobs 6
+error renaming "c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/_tmp/lab20_axi_3_bd_mig_7series_0_0" to "c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0": permission denied
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'c:/Xilinx/Downloads/Vivado/2024.2/data/ip/xilinx/mig_7series_v4_2/xit/implementation.xit': error renaming "c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/_tmp/lab20_axi_3_bd_mig_7series_0_0" to "c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0": permission denied
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'mig_7series_0'. Failed to generate 'Implementation' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'mig_7series_0'. Failed to generate 'Implementation' outputs: 
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block mig_7series_0 
+Exporting to file c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/hw_handoff/lab20_axi_3_bd_axi_smc_0.hwh
+Generated Hardware Definition File c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/synth/lab20_axi_3_bd_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP lab20_axi_3_bd_axi_smc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP lab20_axi_3_bd_jtag_axi_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP lab20_axi_3_bd_rst_mig_7series_0_81M_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: lab20_axi_3_bd_axi_smc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: lab20_axi_3_bd_jtag_axi_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: lab20_axi_3_bd_rst_mig_7series_0_81M_0
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 1 ms
+WARNING: file design.txt could not be opened
+ *** Warning: The analog data file design.txt for XADC instance lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.temp_mon_enabled.u_tempmon.xadc_supplied_temperature.XADC_inst was not found. Use the SIM_MONITOR_FILE parameter to specify the analog data file name or use the default name: design.txt.
+
+############# Write Clocks PLLE2_ADV Parameters #############
+
+nCK_PER_CLK      =       4
+CLK_PERIOD       =   10000
+CLKIN1_PERIOD    =  10.000
+DIVCLK_DIVIDE    =       1
+CLKFBOUT_MULT    =      13
+VCO_PERIOD       =   769.0
+CLKOUT0_DIVIDE_F =       2
+CLKOUT1_DIVIDE   =       4
+CLKOUT2_DIVIDE   =      64
+CLKOUT3_DIVIDE   =      16
+CLKOUT0_PERIOD   =    1538
+CLKOUT1_PERIOD   =    3076
+CLKOUT2_PERIOD   =   49216
+CLKOUT3_PERIOD   =   12304
+CLKOUT4_PERIOD   =    6152
+############################################################
+
+############# MMCME2_ADV Parameters #############
+
+MMCM_MULT_F           =          14
+MMCM_VCO_FREQ (MHz)   = 1200.000
+MMCM_VCO_PERIOD       = 833.333
+#################################################
+
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : BYTE_LANES_B0 = f BYTE_LANES_B1 = 0 DATA_CTL_B0 = 5 DATA_CTL_B1 = 0
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_LANE =           4 HIGHEST_LANE_B0 =           4 HIGHEST_LANE_B1 =           0
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_BANK =           1
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : FREQ_REF_PERIOD         = 1538.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DDR_TCK                 = 3077 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_S2_TAPS_SIZE         = 12.02 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_EARLY       = 1 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_OFFSET      = 1610.30 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_META_ZONE   = 200.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_FINE_INTR_DLY   = 890.73 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_COARSE_INTR_DLY = 575.97 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_INTRINSIC_DELAY = 1466.70 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_DELAY       = 60 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_INTRINSIC_DELAY      = 1466.70 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_DELAY                = 2187.64 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_OCLK_DELAY           = 0 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : L_PHY_0_PO_FINE_DELAY   = 60 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG1_INTRINSIC_DELAY = 0.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_INTRINSIC_DELAY = 865.48 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_INTRINSIC_DELAY      = 865.48 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_MAX_STG2_DELAY       = 756.98 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_OFFSET               = 123.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_DELAY           = 123.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy :PI_STG2_DELAY_CAND       = 123.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DEFAULT_RCLK_DELAY      = 10 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : RCLK_SELECT_EDGE        = 111 
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3677.301 ; gain = 0.000
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 1 us
+WARNING: file design.txt could not be opened
+ *** Warning: The analog data file design.txt for XADC instance lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.temp_mon_enabled.u_tempmon.xadc_supplied_temperature.XADC_inst was not found. Use the SIM_MONITOR_FILE parameter to specify the analog data file name or use the default name: design.txt.
+
+############# Write Clocks PLLE2_ADV Parameters #############
+
+nCK_PER_CLK      =       4
+CLK_PERIOD       =   10000
+CLKIN1_PERIOD    =  10.000
+DIVCLK_DIVIDE    =       1
+CLKFBOUT_MULT    =      13
+VCO_PERIOD       =   769.0
+CLKOUT0_DIVIDE_F =       2
+CLKOUT1_DIVIDE   =       4
+CLKOUT2_DIVIDE   =      64
+CLKOUT3_DIVIDE   =      16
+CLKOUT0_PERIOD   =    1538
+CLKOUT1_PERIOD   =    3076
+CLKOUT2_PERIOD   =   49216
+CLKOUT3_PERIOD   =   12304
+CLKOUT4_PERIOD   =    6152
+############################################################
+
+############# MMCME2_ADV Parameters #############
+
+MMCM_MULT_F           =          14
+MMCM_VCO_FREQ (MHz)   = 1200.000
+MMCM_VCO_PERIOD       = 833.333
+#################################################
+
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : BYTE_LANES_B0 = f BYTE_LANES_B1 = 0 DATA_CTL_B0 = 5 DATA_CTL_B1 = 0
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_LANE =           4 HIGHEST_LANE_B0 =           4 HIGHEST_LANE_B1 =           0
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_BANK =           1
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : FREQ_REF_PERIOD         = 1538.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DDR_TCK                 = 3077 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_S2_TAPS_SIZE         = 12.02 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_EARLY       = 1 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_OFFSET      = 1610.30 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_META_ZONE   = 200.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_FINE_INTR_DLY   = 890.73 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_COARSE_INTR_DLY = 575.97 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_INTRINSIC_DELAY = 1466.70 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_DELAY       = 60 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_INTRINSIC_DELAY      = 1466.70 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_DELAY                = 2187.64 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_OCLK_DELAY           = 0 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : L_PHY_0_PO_FINE_DELAY   = 60 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG1_INTRINSIC_DELAY = 0.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_INTRINSIC_DELAY = 865.48 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_INTRINSIC_DELAY      = 865.48 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_MAX_STG2_DELAY       = 756.98 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_OFFSET               = 123.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_DELAY           = 123.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy :PI_STG2_DELAY_CAND       = 123.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DEFAULT_RCLK_DELAY      = 10 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : RCLK_SELECT_EDGE        = 111 
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+step
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+step: Time (s): cpu = 00:00:07 ; elapsed = 00:00:26 . Memory (MB): peak = 3677.301 ; gain = 0.000
+INFO: [Common 17-344] 'step' was cancelled
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 1 us
+WARNING: file design.txt could not be opened
+ *** Warning: The analog data file design.txt for XADC instance lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.temp_mon_enabled.u_tempmon.xadc_supplied_temperature.XADC_inst was not found. Use the SIM_MONITOR_FILE parameter to specify the analog data file name or use the default name: design.txt.
+
+############# Write Clocks PLLE2_ADV Parameters #############
+
+nCK_PER_CLK      =       4
+CLK_PERIOD       =   10000
+CLKIN1_PERIOD    =  10.000
+DIVCLK_DIVIDE    =       1
+CLKFBOUT_MULT    =      13
+VCO_PERIOD       =   769.0
+CLKOUT0_DIVIDE_F =       2
+CLKOUT1_DIVIDE   =       4
+CLKOUT2_DIVIDE   =      64
+CLKOUT3_DIVIDE   =      16
+CLKOUT0_PERIOD   =    1538
+CLKOUT1_PERIOD   =    3076
+CLKOUT2_PERIOD   =   49216
+CLKOUT3_PERIOD   =   12304
+CLKOUT4_PERIOD   =    6152
+############################################################
+
+############# MMCME2_ADV Parameters #############
+
+MMCM_MULT_F           =          14
+MMCM_VCO_FREQ (MHz)   = 1200.000
+MMCM_VCO_PERIOD       = 833.333
+#################################################
+
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : BYTE_LANES_B0 = f BYTE_LANES_B1 = 0 DATA_CTL_B0 = 5 DATA_CTL_B1 = 0
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_LANE =           4 HIGHEST_LANE_B0 =           4 HIGHEST_LANE_B1 =           0
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_BANK =           1
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : FREQ_REF_PERIOD         = 1538.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DDR_TCK                 = 3077 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_S2_TAPS_SIZE         = 12.02 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_EARLY       = 1 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_OFFSET      = 1610.30 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_META_ZONE   = 200.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_FINE_INTR_DLY   = 890.73 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_COARSE_INTR_DLY = 575.97 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_INTRINSIC_DELAY = 1466.70 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_DELAY       = 60 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_INTRINSIC_DELAY      = 1466.70 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_DELAY                = 2187.64 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_OCLK_DELAY           = 0 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : L_PHY_0_PO_FINE_DELAY   = 60 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG1_INTRINSIC_DELAY = 0.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_INTRINSIC_DELAY = 865.48 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_INTRINSIC_DELAY      = 865.48 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_MAX_STG2_DELAY       = 756.98 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_OFFSET               = 123.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_DELAY           = 123.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy :PI_STG2_DELAY_CAND       = 123.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DEFAULT_RCLK_DELAY      = 10 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : RCLK_SELECT_EDGE        = 111 
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+step
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+step: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 3677.301 ; gain = 0.000
+INFO: [Common 17-344] 'step' was cancelled
+launch_runs synth_1 -jobs 6
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP lab20_axi_3_bd_axi_smc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP lab20_axi_3_bd_jtag_axi_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP lab20_axi_3_bd_rst_mig_7series_0_81M_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: lab20_axi_3_bd_axi_smc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: lab20_axi_3_bd_jtag_axi_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: lab20_axi_3_bd_rst_mig_7series_0_81M_0
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Tue Mar 18 14:44:51 2025] Launched lab20_axi_3_bd_rst_mig_7series_0_81M_0_synth_1, lab20_axi_3_bd_mig_7series_0_0_synth_1, lab20_axi_3_bd_jtag_axi_0_0_synth_1, lab20_axi_3_bd_axi_smc_0_synth_1...
+Run output will be captured here:
+lab20_axi_3_bd_rst_mig_7series_0_81M_0_synth_1: C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/lab20_axi_3_bd_rst_mig_7series_0_81M_0_synth_1/runme.log
+lab20_axi_3_bd_mig_7series_0_0_synth_1: C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/lab20_axi_3_bd_mig_7series_0_0_synth_1/runme.log
+lab20_axi_3_bd_jtag_axi_0_0_synth_1: C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/lab20_axi_3_bd_jtag_axi_0_0_synth_1/runme.log
+lab20_axi_3_bd_axi_smc_0_synth_1: C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/lab20_axi_3_bd_axi_smc_0_synth_1/runme.log
+[Tue Mar 18 14:44:51 2025] Launched synth_1...
+Run output will be captured here: C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/synth_1/runme.log
+reset_run lab20_axi_3_bd_mig_7series_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP lab20_axi_3_bd_axi_smc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP lab20_axi_3_bd_jtag_axi_0_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: lab20_axi_3_bd_axi_smc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: lab20_axi_3_bd_jtag_axi_0_0
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Tue Mar 18 14:47:20 2025] Launched lab20_axi_3_bd_mig_7series_0_0_synth_1, lab20_axi_3_bd_jtag_axi_0_0_synth_1, lab20_axi_3_bd_axi_smc_0_synth_1...
+Run output will be captured here:
+lab20_axi_3_bd_mig_7series_0_0_synth_1: C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/lab20_axi_3_bd_mig_7series_0_0_synth_1/runme.log
+lab20_axi_3_bd_jtag_axi_0_0_synth_1: C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/lab20_axi_3_bd_jtag_axi_0_0_synth_1/runme.log
+lab20_axi_3_bd_axi_smc_0_synth_1: C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/lab20_axi_3_bd_axi_smc_0_synth_1/runme.log
+[Tue Mar 18 14:47:20 2025] Launched synth_1...
+Run output will be captured here: C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/lab20_axi_3_bd_axi_smc_0.dcp' for cell 'lab20_axi_3_bd_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_jtag_axi_0_0/lab20_axi_3_bd_jtag_axi_0_0.dcp' for cell 'lab20_axi_3_bd_i/jtag_axi_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0.dcp' for cell 'lab20_axi_3_bd_i/mig_7series_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_rst_mig_7series_0_81M_0/lab20_axi_3_bd_rst_mig_7series_0_81M_0.dcp' for cell 'lab20_axi_3_bd_i/rst_mig_7series_0_81M'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.490 . Memory (MB): peak = 4495.746 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 412 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: lab20_axi_3_bd_i/jtag_axi_0 UUID: 2f1e4789-e9a4-51ee-b6d9-2a4e7bd97a34 
+Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/constraints/lab20_axi_3_bd_mig_7series_0_0.xdc] for cell 'lab20_axi_3_bd_i/mig_7series_0'
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: lab20_axi_3_bd_i/mig_7series_0/sys_clk_i). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/constraints/lab20_axi_3_bd_mig_7series_0_0.xdc:41]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk_i' already exists, overwriting the previous clock with the same name. [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/constraints/lab20_axi_3_bd_mig_7series_0_0.xdc:396]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: lab20_axi_3_bd_i/mig_7series_0/sys_clk_i). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/constraints/lab20_axi_3_bd_mig_7series_0_0.xdc:407]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk_i' already exists, overwriting the previous clock with the same name. [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/constraints/lab20_axi_3_bd_mig_7series_0_0.xdc:762]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: lab20_axi_3_bd_i/mig_7series_0/sys_clk_i). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/constraints/lab20_axi_3_bd_mig_7series_0_0.xdc:773]
+Finished Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/constraints/lab20_axi_3_bd_mig_7series_0_0.xdc] for cell 'lab20_axi_3_bd_i/mig_7series_0'
+Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_jtag_axi_0_0/constraints/jtag_axi.xdc] for cell 'lab20_axi_3_bd_i/jtag_axi_0/U0'
+Finished Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_jtag_axi_0_0/constraints/jtag_axi.xdc] for cell 'lab20_axi_3_bd_i/jtag_axi_0/U0'
+Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_1/bd_cc91_psr_aclk_0_board.xdc] for cell 'lab20_axi_3_bd_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_1/bd_cc91_psr_aclk_0_board.xdc] for cell 'lab20_axi_3_bd_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_1/bd_cc91_psr_aclk_0.xdc] for cell 'lab20_axi_3_bd_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_1/bd_cc91_psr_aclk_0.xdc] for cell 'lab20_axi_3_bd_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/smartconnect.xdc] for cell 'lab20_axi_3_bd_i/axi_smc/inst'
+Finished Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/smartconnect.xdc] for cell 'lab20_axi_3_bd_i/axi_smc/inst'
+Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_rst_mig_7series_0_81M_0/lab20_axi_3_bd_rst_mig_7series_0_81M_0_board.xdc] for cell 'lab20_axi_3_bd_i/rst_mig_7series_0_81M/U0'
+Finished Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_rst_mig_7series_0_81M_0/lab20_axi_3_bd_rst_mig_7series_0_81M_0_board.xdc] for cell 'lab20_axi_3_bd_i/rst_mig_7series_0_81M/U0'
+Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_rst_mig_7series_0_81M_0/lab20_axi_3_bd_rst_mig_7series_0_81M_0.xdc] for cell 'lab20_axi_3_bd_i/rst_mig_7series_0_81M/U0'
+Finished Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_rst_mig_7series_0_81M_0/lab20_axi_3_bd_rst_mig_7series_0_81M_0.xdc] for cell 'lab20_axi_3_bd_i/rst_mig_7series_0_81M/U0'
+Parsing XDC File [C:/FPGA/logtel/lab20_axi_3/bh_ddr_demo_wrapper.xdc]
+Finished Parsing XDC File [C:/FPGA/logtel/lab20_axi_3/bh_ddr_demo_wrapper.xdc]
+INFO: [Project 1-1714] 27 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 4495.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 228 instances were transformed.
+  IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 163 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 44 instances
+
