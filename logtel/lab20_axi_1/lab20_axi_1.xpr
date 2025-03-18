@@ -4,10 +4,17 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
+<<<<<<<< HEAD:logtel/lab20_axi_1/lab20_axi_1.xpr
 <Project Product="Vivado" Version="7" Minor="68" Path="C:/FPGA/logtel/lab20_axi_1/lab20_axi_1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="cd4c5ddcf8a740b4acf5849ff8da80e0"/>
+========
+<Project Product="Vivado" Version="7" Minor="68" Path="C:/FPGA/logtel/lab20/lab20.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="666627dc28d445869ff5d823ce99691b"/>
+>>>>>>>> main:logtel/lab20/lab20.xpr
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -44,8 +51,13 @@
     <Option Name="SimulatorGccVersionRiviera" Val="9.3.0"/>
     <Option Name="SimulatorGccVersionActiveHdl" Val="9.3.0"/>
     <Option Name="TargetLanguage" Val="VHDL"/>
+<<<<<<<< HEAD:logtel/lab20_axi_1/lab20_axi_1.xpr
     <Option Name="BoardPart" Val="digilentinc.com:nexys-a7-100t:part0:1.2"/>
     <Option Name="BoardPartRepoPaths" Val="$PPRDIR/../../../Users/dvirh/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store"/>
+========
+    <Option Name="BoardPart" Val="digilentinc.com:nexys-a7-100t:part0:1.3"/>
+    <Option Name="BoardPartRepoPaths" Val="$PPRDIR/../../../Users/dvirh/AppData/Roaming/Xilinx/Vivado/2024.2.1/xhub/board_store/xilinx_board_store"/>
+>>>>>>>> main:logtel/lab20/lab20.xpr
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
