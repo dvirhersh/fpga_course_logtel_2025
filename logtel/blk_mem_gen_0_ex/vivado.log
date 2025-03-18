@@ -1343,3 +1343,57 @@ INFO: [BD 41-1662] The design 'lab20_axi_3_bd.bd' is already validated. Therefor
 VHDL Output written to : C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/synth/lab20_axi_3_bd.vhd
 VHDL Output written to : C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/sim/lab20_axi_3_bd.vhd
 VHDL Output written to : C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/hdl/lab20_axi_3_bd_wrapper.vhd
+generate_target Simulation [get_files C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.srcs/sources_1/bd/lab20_axi_3_bd/lab20_axi_3_bd.bd]
+INFO: [BD 41-1662] The design 'lab20_axi_3_bd.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/synth/lab20_axi_3_bd.vhd
+VHDL Output written to : C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/sim/lab20_axi_3_bd.vhd
+VHDL Output written to : C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/hdl/lab20_axi_3_bd_wrapper.vhd
+Exporting to file c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/hw_handoff/lab20_axi_3_bd_axi_smc_0.hwh
+Generated Hardware Definition File c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/synth/lab20_axi_3_bd_axi_smc_0.hwdef
+Exporting to file C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/hw_handoff/lab20_axi_3_bd.hwh
+Generated Hardware Definition File C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/synth/lab20_axi_3_bd.hwdef
+export_ip_user_files -of_objects [get_files C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.srcs/sources_1/bd/lab20_axi_3_bd/lab20_axi_3_bd.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.srcs/sources_1/bd/lab20_axi_3_bd/lab20_axi_3_bd.bd] -directory C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files -ipstatic_source_dir C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.cache/compile_simlib/modelsim} {questa=C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.cache/compile_simlib/questa} {riviera=C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.cache/compile_simlib/riviera} {activehdl=C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'lab20_axi_3_bd_wrapper'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Downloads/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Downloads/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab20_axi_3_bd_wrapper' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.sim/sim_1/behav/xsim/sc_xtlm_lab20_axi_3_bd_axi_smc_0.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L axi_vip_v1_1_19 -L smartconnect_v1_0 -L xilinx_vip -prj lab20_axi_3_bd_wrapper_vlog.prj"
+!! WARNING !!
+"PYTHONPATH" variable is set greater than default max string limit of "519" characters.
+Please ignore this, if you have already made changes to your system registry to accept more than
+default limit of 519 characters.
+!! WARNING !!
+ERROR: [XSIM 43-4316] Can not find file: c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_addr_decode.v
+"xvhdl --incr --relax -prj lab20_axi_3_bd_wrapper_vhdl.prj"
+!! WARNING !!
+"PYTHONPATH" variable is set greater than default max string limit of "519" characters.
+Please ignore this, if you have already made changes to your system registry to accept more than
+default limit of 519 characters.
+!! WARNING !!
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_1/sim/bd_cc91_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_cc91_psr_aclk_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/bd/lab20_axi_3_bd/sim/lab20_axi_3_bd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab20_axi_3_bd'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/hdl/lab20_axi_3_bd_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lab20_axi_3_bd_wrapper'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 3677.301 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.

@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
---Date        : Tue Mar 18 14:28:16 2025
+--Date        : Tue Mar 18 14:29:52 2025
 --Host        : dvirhersh_comp running 64-bit major release  (build 9200)
 --Command     : generate_target lab20_axi_3_bd_wrapper.bd
 --Design      : lab20_axi_3_bd_wrapper
