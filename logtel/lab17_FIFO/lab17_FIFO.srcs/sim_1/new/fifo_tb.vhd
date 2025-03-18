@@ -62,8 +62,8 @@ END COMPONENT;
 
     signal rst   : STD_LOGIC := '1';
     
-    constant ClockFrequencyHzRd : integer := 100e6; -- 100 MHz
-    constant ClockFrequencyHzWr : integer := 200e6; -- 200 MHz
+    constant ClockFrequencyHzWr : integer := 100e6; -- 100 MHz
+    constant ClockFrequencyHzRd : integer := 200e6; -- 200 MHz
     constant clock_period_rd    : time    := 1000 ms / ClockFrequencyHzRd;
     constant clock_period_wr    : time    := 1000 ms / ClockFrequencyHzWr;
     

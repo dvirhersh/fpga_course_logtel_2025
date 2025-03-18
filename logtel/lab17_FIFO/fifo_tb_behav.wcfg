@@ -11,9 +11,9 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="10,678.690 ns"></ZoomStartTime>
-      <ZoomEndTime time="11,001.891 ns"></ZoomEndTime>
-      <Cursor1Time time="10,190.100 ns"></Cursor1Time>
+      <ZoomStartTime time="655,310.892 ns"></ZoomStartTime>
+      <ZoomEndTime time="655,472.493 ns"></ZoomEndTime>
+      <Cursor1Time time="655,380.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="121"></NameColumnWidth>
@@ -22,6 +22,7 @@
    <WVObjectSize size="9" />
    <wave_markers>
       <marker time="10185100" label="" />
+      <marker time="655380000" label="" />
    </wave_markers>
    <wvobject fp_name="/fifo_tb/wr_clk" type="logic">
       <obj_property name="ElementShortName">wr_clk</obj_property>
