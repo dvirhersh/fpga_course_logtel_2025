@@ -271,3 +271,59 @@ open_bd_design {C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2
 regenerate_bd_layout
 regenerate_bd_layout
 regenerate_bd_layout
+export_ip_user_files -of_objects  [get_files C:/FPGA/logtel/for_axi_labs/bh_llb.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/FPGA/logtel/for_axi_labs/bh_llb.xdc
+add_files -fileset constrs_1 -norecurse C:/FPGA/logtel/lab20_axi_2/bh_llb.xdc
+close_bd_design [get_bd_designs lab20_2_bd]
+close_hw_manager
+close_design
+close_project
+create_project lab20_axi_3 C:/FPGA/logtel/lab20_axi_3 -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:nexys-a7-100t:part0:1.2 [current_project]
+set_property target_language VHDL [current_project]
+create_bd_design "lab20_axi_3_bd"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:mig_7series:4.2 mig_7series_0
+apply_board_connection -board_interface "ddr2_sdram" -ip_intf "mig_7series_0/mig_ddr_interface" -diagram "lab20_axi_3_bd" 
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( Reset ) } Manual_Source {New External Port (ACTIVE_LOW)}}  [get_bd_pins mig_7series_0/sys_rst]
+validate_bd_design
+validate_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:jtag_axi:1.2 jtag_axi_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/mig_7series_0/ui_clk (81 MHz)} Clk_xbar {Auto} Master {/jtag_axi_0/M_AXI} Slave {/mig_7series_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins mig_7series_0/S_AXI]
+regenerate_bd_layout
+save_bd_design
+delete_bd_objs [get_bd_nets clk_ref_i_1] [get_bd_ports clk_ref_i]
+connect_bd_net [get_bd_pins mig_7series_0/ui_addn_clk_0] [get_bd_pins mig_7series_0/clk_ref_i]
+save_bd_design
+validate_bd_design
+save_bd_design
+make_wrapper -files [get_files C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.srcs/sources_1/bd/lab20_axi_3_bd/lab20_axi_3_bd.bd] -top
+add_files -norecurse c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/hdl/lab20_axi_3_bd_wrapper.vhd
+update_compile_order -fileset sources_1
+regenerate_bd_layout
+add_files -fileset constrs_1 -norecurse C:/FPGA/logtel/lab20_axi_3/bh_ddr_demo_wrapper.xdc
+regenerate_bd_layout
+regenerate_bd_layout
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs synth_1 -jobs 6
+launch_simulation
+validate_bd_design -force
+save_bd_design
+generate_target Simulation [get_files C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.srcs/sources_1/bd/lab20_axi_3_bd/lab20_axi_3_bd.bd]
+export_ip_user_files -of_objects [get_files C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.srcs/sources_1/bd/lab20_axi_3_bd/lab20_axi_3_bd.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.srcs/sources_1/bd/lab20_axi_3_bd/lab20_axi_3_bd.bd] -directory C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files -ipstatic_source_dir C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.cache/compile_simlib/modelsim} {questa=C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.cache/compile_simlib/questa} {riviera=C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.cache/compile_simlib/riviera} {activehdl=C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_bd_design {C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.srcs/sources_1/bd/lab20_axi_3_bd/lab20_axi_3_bd.bd}
+regenerate_bd_layout
+regenerate_bd_layout
+launch_runs synth_1 -jobs 6
+make_wrapper -files [get_files C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.srcs/sources_1/bd/lab20_axi_3_bd/lab20_axi_3_bd.bd] -top
+regenerate_bd_layout
+validate_bd_design -force
+save_bd_design
+make_wrapper -files [get_files C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.srcs/sources_1/bd/lab20_axi_3_bd/lab20_axi_3_bd.bd] -top
