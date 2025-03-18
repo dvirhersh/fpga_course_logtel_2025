@@ -212,4 +212,11 @@ lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7seri
 lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : L_PHY_0_PO_FINE_DELAY   = 60 
 lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG1_INTRINSIC_DELAY = 0.00 
 lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_INTRINSIC_DELAY = 865.48 
-lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrap
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_INTRINSIC_DELAY      = 865.48 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_MAX_STG2_DELAY       = 756.98 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_OFFSET               = 123.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_DELAY           = 123.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy :PI_STG2_DELAY_CAND       = 123.00 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DEFAULT_RCLK_DELAY      = 10 
+lab20_axi_3_bd_wrapper.lab20_axi_3_bd_i.mig_7series_0.u_lab20_axi_3_bd_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : RCLK_SELECT_EDGE        = 111 
+INFO: xsimkernel Simulation Memory Usage: 95552 KB (Peak: 95552 KB), Simulation CPU Usage: 43343 ms

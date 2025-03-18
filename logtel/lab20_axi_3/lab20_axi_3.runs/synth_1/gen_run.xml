@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1742302040">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1742304275">
   <File Type="PA-TCL" Name="lab20_axi_3_bd_wrapper.tcl"/>
   <File Type="REPORTS-TCL" Name="lab20_axi_3_bd_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="lab20_axi_3_bd_wrapper.vds"/>
@@ -45,6 +45,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/bh_ddr_demo_wrapper.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

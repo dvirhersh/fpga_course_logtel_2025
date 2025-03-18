@@ -2263,3 +2263,220 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
   RAM64M => RAM64M (RAMD64E(x4)): 44 instances
 
+open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 4495.746 ; gain = 0.000
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset]]
+open_bd_design {C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.srcs/sources_1/bd/lab20_axi_3_bd/lab20_axi_3_bd.bd}
+open_bd_design {C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.srcs/sources_1/bd/lab20_axi_3_bd/lab20_axi_3_bd.bd}
+regenerate_bd_layout
+launch_runs impl_1 -jobs 6
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 4495.746 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4495.746 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 4495.746 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.121 . Memory (MB): peak = 4495.746 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4495.746 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 4495.746 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.180 . Memory (MB): peak = 4495.746 ; gain = 0.000
+WARNING: [Common 17-210] 'write_hwdef' is deprecated.
+[Tue Mar 18 15:09:01 2025] Launched impl_1...
+Run output will be captured here: C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/impl_1/runme.log
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 95552 KB (Peak: 95552 KB), Simulation CPU Usage: 43343 ms
+INFO: [Simtcl 6-16] Simulation closed
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.509 . Memory (MB): peak = 4495.746 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 426 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 4495.746 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 4495.746 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 4495.746 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.585 . Memory (MB): peak = 4495.746 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4495.746 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.416 . Memory (MB): peak = 4495.746 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4495.746 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4495.746 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 4495.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 231 instances were transformed.
+  IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 165 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 44 instances
+  SRLC32E => SRL16E: 1 instance 
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 4495.746 ; gain = 0.000
+open_report: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 4495.746 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Mar 18 15:20:48 2025] Launched impl_1...
+Run output will be captured here: C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/impl_1/runme.log
+place_ports reset J15
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk_i]]
+set_property IOSTANDARD LVCMOS33* [get_ports [list {ddr2_sdram_addr[12]} {ddr2_sdram_addr[11]} {ddr2_sdram_addr[10]} {ddr2_sdram_addr[9]} {ddr2_sdram_addr[8]} {ddr2_sdram_addr[7]} {ddr2_sdram_addr[6]} {ddr2_sdram_addr[5]} {ddr2_sdram_addr[4]} {ddr2_sdram_addr[3]} {ddr2_sdram_addr[2]} {ddr2_sdram_addr[1]} {ddr2_sdram_addr[0]} {ddr2_sdram_ba[2]} {ddr2_sdram_ba[1]} {ddr2_sdram_ba[0]} {ddr2_sdram_ck_p[0]} {ddr2_sdram_cke[0]} {ddr2_sdram_cs_n[0]} {ddr2_sdram_dm[1]} {ddr2_sdram_dm[0]} {ddr2_sdram_dq[15]} {ddr2_sdram_dq[14]} {ddr2_sdram_dq[13]} {ddr2_sdram_dq[12]} {ddr2_sdram_dq[11]} {ddr2_sdram_dq[10]} {ddr2_sdram_dq[9]} {ddr2_sdram_dq[8]} {ddr2_sdram_dq[7]} {ddr2_sdram_dq[6]} {ddr2_sdram_dq[5]} {ddr2_sdram_dq[4]} {ddr2_sdram_dq[3]} {ddr2_sdram_dq[2]} {ddr2_sdram_dq[1]} {ddr2_sdram_dq[0]} {ddr2_sdram_dqs_p[1]} {ddr2_sdram_dqs_p[0]} {ddr2_sdram_odt[0]} ddr2_sdram_cas_n ddr2_sdram_ras_n ddr2_sdram_we_n]]
+ERROR: [Common 17-69] Command failed: Invalid I/O Standard 'LVCMOS33*'
+set_property target_constrs_file C:/FPGA/logtel/lab20_axi_3/bh_ddr_demo_wrapper.xdc [current_fileset -constrset]
+save_constraints -force
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\FPGA\logtel\lab20_axi_3\lab20_axi_3.gen\sources_1\bd\lab20_axi_3_bd\hdl\lab20_axi_3_bd_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\logtel\lab20_axi_3\lab20_axi_3.gen\sources_1\bd\lab20_axi_3_bd\synth\lab20_axi_3_bd.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\FPGA\logtel\lab20_axi_3\lab20_axi_3.gen\sources_1\bd\lab20_axi_3_bd\hdl\lab20_axi_3_bd_wrapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\FPGA\logtel\lab20_axi_3\lab20_axi_3.gen\sources_1\bd\lab20_axi_3_bd\hdl\lab20_axi_3_bd_wrapper.vhd:]
+current_design synth_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.srcs/sources_1/bd/lab20_axi_3_bd/lab20_axi_3_bd.bd]
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/constraints/lab20_axi_3_bd_mig_7series_0_0.xdc] for cell 'lab20_axi_3_bd_i/mig_7series_0'
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: lab20_axi_3_bd_i/mig_7series_0/sys_clk_i). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/constraints/lab20_axi_3_bd_mig_7series_0_0.xdc:41]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk_i' already exists, overwriting the previous clock with the same name. [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/constraints/lab20_axi_3_bd_mig_7series_0_0.xdc:396]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: lab20_axi_3_bd_i/mig_7series_0/sys_clk_i). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/constraints/lab20_axi_3_bd_mig_7series_0_0.xdc:407]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk_i' already exists, overwriting the previous clock with the same name. [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/constraints/lab20_axi_3_bd_mig_7series_0_0.xdc:762]
+INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: lab20_axi_3_bd_i/mig_7series_0/sys_clk_i). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/constraints/lab20_axi_3_bd_mig_7series_0_0.xdc:773]
+Finished Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_mig_7series_0_0/lab20_axi_3_bd_mig_7series_0_0/user_design/constraints/lab20_axi_3_bd_mig_7series_0_0.xdc] for cell 'lab20_axi_3_bd_i/mig_7series_0'
+Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_jtag_axi_0_0/constraints/jtag_axi.xdc] for cell 'lab20_axi_3_bd_i/jtag_axi_0/U0'
+Finished Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_jtag_axi_0_0/constraints/jtag_axi.xdc] for cell 'lab20_axi_3_bd_i/jtag_axi_0/U0'
+Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_1/bd_cc91_psr_aclk_0_board.xdc] for cell 'lab20_axi_3_bd_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_1/bd_cc91_psr_aclk_0_board.xdc] for cell 'lab20_axi_3_bd_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_1/bd_cc91_psr_aclk_0.xdc] for cell 'lab20_axi_3_bd_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/bd_0/ip/ip_1/bd_cc91_psr_aclk_0.xdc] for cell 'lab20_axi_3_bd_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/smartconnect.xdc] for cell 'lab20_axi_3_bd_i/axi_smc/inst'
+Finished Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_axi_smc_0/smartconnect.xdc] for cell 'lab20_axi_3_bd_i/axi_smc/inst'
+Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_rst_mig_7series_0_81M_0/lab20_axi_3_bd_rst_mig_7series_0_81M_0_board.xdc] for cell 'lab20_axi_3_bd_i/rst_mig_7series_0_81M/U0'
+Finished Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_rst_mig_7series_0_81M_0/lab20_axi_3_bd_rst_mig_7series_0_81M_0_board.xdc] for cell 'lab20_axi_3_bd_i/rst_mig_7series_0_81M/U0'
+Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_rst_mig_7series_0_81M_0/lab20_axi_3_bd_rst_mig_7series_0_81M_0.xdc] for cell 'lab20_axi_3_bd_i/rst_mig_7series_0_81M/U0'
+Finished Parsing XDC File [c:/FPGA/logtel/lab20_axi_3/lab20_axi_3.gen/sources_1/bd/lab20_axi_3_bd/ip/lab20_axi_3_bd_rst_mig_7series_0_81M_0/lab20_axi_3_bd_rst_mig_7series_0_81M_0.xdc] for cell 'lab20_axi_3_bd_i/rst_mig_7series_0_81M/U0'
+Parsing XDC File [C:/FPGA/logtel/lab20_axi_3/bh_ddr_demo_wrapper.xdc]
+Finished Parsing XDC File [C:/FPGA/logtel/lab20_axi_3/bh_ddr_demo_wrapper.xdc]
+INFO: [Project 1-1714] 27 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 5034.836 ; gain = 0.000
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 5034.836 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5034.836 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 5034.836 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 5034.836 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 5034.836 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 5034.836 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 5034.836 ; gain = 0.000
+WARNING: [Common 17-210] 'write_hwdef' is deprecated.
+[Tue Mar 18 15:25:54 2025] Launched impl_1...
+Run output will be captured here: C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+!! WARNING !!
+"PYTHONPATH" variable is set greater than default max string limit of "519" characters.
+Please ignore this, if you have already made changes to your system registry to accept more than
+default limit of 519 characters.
+!! WARNING !!
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+!! WARNING !!
+"PYTHONPATH" variable is set greater than default max string limit of "519" characters.
+Please ignore this, if you have already made changes to your system registry to accept more than
+default limit of 519 characters.
+!! WARNING !!
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-20:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 5034.836 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292BD03ABA
+set_property PROGRAM.FILE {C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/impl_1/lab20_axi_3_bd_wrapper.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/impl_1/lab20_axi_3_bd_wrapper.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/impl_1/lab20_axi_3_bd_wrapper.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/impl_1/lab20_axi_3_bd_wrapper.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/impl_1/lab20_axi_3_bd_wrapper.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/impl_1/lab20_axi_3_bd_wrapper.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+source C:/FPGA/logtel/lab20_axi_3/bh_demo_ddr2.tcl
+# reset_hw_axi [get_hw_axis hw_axi_1]
+# create_hw_axi_txn write_txn [get_hw_axis hw_axi_1] -address 80000000 -data {44444444_33333333_22222222_11111111} -len 4 -type write
+# run_hw_axi [get_hw_axi_txns write_txn]
+INFO: [Labtoolstcl 44-481] WRITE DATA is: 44444444_33333333_22222222_11111111
+# create_hw_axi_txn read_txn [get_hw_axis hw_axi_1] -address 80000004 -len 4 -type read
+# run_hw_axi [get_hw_axi_txns read_txn]
+INFO: [Labtoolstcl 44-481] READ DATA is: 1111bbbb444444443333333322222222
+# reset_hw_axi [get_hw_axis hw_axi_1]
+# create_hw_axi_txn write_txn1 [get_hw_axis hw_axi_1] -address 800000A0 -data {12345678_12345678_87654321_87654321_12345678_12345678_87654321_87654321} -len 8 -type write
+# run_hw_axi [get_hw_axi_txns write_txn1]
+INFO: [Labtoolstcl 44-481] WRITE DATA is: 12345678_12345678_87654321_87654321_12345678_12345678_87654321_87654321
+# create_hw_axi_txn read_txn1 [get_hw_axis hw_axi_1] -address 800000A0 -len 8 -type read
+# run_hw_axi [get_hw_axi_txns read_txn1]
+INFO: [Labtoolstcl 44-481] READ DATA is: 1234567812345678876543218765432112345678123456788765432187654321
+source C:/FPGA/logtel/lab20_axi_3/bh_demo_ddr2.tcl
+# reset_hw_axi [get_hw_axis hw_axi_1]
+# create_hw_axi_txn write_txn [get_hw_axis hw_axi_1] -address 80000000 -data {44444444_33333333_22222222_11111111} -len 4 -type write
+ERROR: [Labtools 27-1991] Can not create a second hw_axi_txn object with the same name [write_txn].  Use the -force option to override this error check.
+source C:/FPGA/logtel/lab20_axi_3/bh_demo_ddr2.tcl -force
+ERROR: [Common 17-170] Unknown option '-force', please type 'source -help' for usage info.
+set_property PROBES.FILE {C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/impl_1/lab20_axi_3_bd_wrapper.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/impl_1/lab20_axi_3_bd_wrapper.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/FPGA/logtel/lab20_axi_3/lab20_axi_3.runs/impl_1/lab20_axi_3_bd_wrapper.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+source C:/FPGA/logtel/lab20_axi_3/bh_demo_ddr2.tcl
+# reset_hw_axi [get_hw_axis hw_axi_1]
+# create_hw_axi_txn write_txn [get_hw_axis hw_axi_1] -address 80000000 -data {44444444_33333333_22222222_11111111} -len 4 -type write
+# run_hw_axi [get_hw_axi_txns write_txn]
+INFO: [Labtoolstcl 44-481] WRITE DATA is: 44444444_33333333_22222222_11111111
+# create_hw_axi_txn read_txn [get_hw_axis hw_axi_1] -address 80000004 -len 4 -type read
+# run_hw_axi [get_hw_axi_txns read_txn]
+INFO: [Labtoolstcl 44-481] READ DATA is: 1111bbbb444444443333333322222222
+# reset_hw_axi [get_hw_axis hw_axi_1]
+# create_hw_axi_txn write_txn1 [get_hw_axis hw_axi_1] -address 800000A0 -data {12345678_12345678_87654321_87654321_12345678_12345678_87654321_87654321} -len 8 -type write
+# run_hw_axi [get_hw_axi_txns write_txn1]
+INFO: [Labtoolstcl 44-481] WRITE DATA is: 12345678_12345678_87654321_87654321_12345678_12345678_87654321_87654321
+# create_hw_axi_txn read_txn1 [get_hw_axis hw_axi_1] -address 800000A0 -len 8 -type read
+# run_hw_axi [get_hw_axi_txns read_txn1]
+INFO: [Labtoolstcl 44-481] READ DATA is: 1234567812345678876543218765432112345678123456788765432187654321
