@@ -1491,7 +1491,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<<< HEAD:logtel/lab20_axi_1/lab20_axi_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
             <spirit:value>Tue Mar 18 10:13:21 UTC 2025</spirit:value>
+========
+            <spirit:value>Mon Mar 17 12:55:11 UTC 2025</spirit:value>
+>>>>>>>> main:logtel/lab20/lab20.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1509,7 +1513,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<<< HEAD:logtel/lab20_axi_1/lab20_axi_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
             <spirit:value>Tue Mar 18 10:13:20 UTC 2025</spirit:value>
+========
+            <spirit:value>Mon Mar 17 12:55:10 UTC 2025</spirit:value>
+>>>>>>>> main:logtel/lab20/lab20.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1527,7 +1535,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<<< HEAD:logtel/lab20_axi_1/lab20_axi_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
             <spirit:value>Tue Mar 18 10:17:33 UTC 2025</spirit:value>
+========
+            <spirit:value>Mon Mar 17 12:56:33 UTC 2025</spirit:value>
+>>>>>>>> main:logtel/lab20/lab20.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1545,7 +1557,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<<< HEAD:logtel/lab20_axi_1/lab20_axi_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
             <spirit:value>Tue Mar 18 10:13:22 UTC 2025</spirit:value>
+========
+            <spirit:value>Mon Mar 17 12:55:11 UTC 2025</spirit:value>
+>>>>>>>> main:logtel/lab20/lab20.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1576,7 +1592,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<<< HEAD:logtel/lab20_axi_1/lab20_axi_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
             <spirit:value>Tue Mar 18 10:13:21 UTC 2025</spirit:value>
+========
+            <spirit:value>Mon Mar 17 12:55:11 UTC 2025</spirit:value>
+>>>>>>>> main:logtel/lab20/lab20.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1594,7 +1614,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<<< HEAD:logtel/lab20_axi_1/lab20_axi_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
             <spirit:value>Tue Mar 18 10:13:22 UTC 2025</spirit:value>
+========
+            <spirit:value>Mon Mar 17 12:55:11 UTC 2025</spirit:value>
+>>>>>>>> main:logtel/lab20/lab20.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1613,7 +1637,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<<< HEAD:logtel/lab20_axi_1/lab20_axi_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
             <spirit:value>Tue Mar 18 10:13:15 UTC 2025</spirit:value>
+========
+            <spirit:value>Mon Mar 17 12:55:09 UTC 2025</spirit:value>
+>>>>>>>> main:logtel/lab20/lab20.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1633,7 +1661,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<<< HEAD:logtel/lab20_axi_1/lab20_axi_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
             <spirit:value>Tue Mar 18 10:13:20 UTC 2025</spirit:value>
+========
+            <spirit:value>Mon Mar 17 12:55:11 UTC 2025</spirit:value>
+>>>>>>>> main:logtel/lab20/lab20.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1653,7 +1685,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<<< HEAD:logtel/lab20_axi_1/lab20_axi_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
             <spirit:value>Tue Mar 18 10:13:21 UTC 2025</spirit:value>
+========
+            <spirit:value>Mon Mar 17 12:55:11 UTC 2025</spirit:value>
+>>>>>>>> main:logtel/lab20/lab20.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xml
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>

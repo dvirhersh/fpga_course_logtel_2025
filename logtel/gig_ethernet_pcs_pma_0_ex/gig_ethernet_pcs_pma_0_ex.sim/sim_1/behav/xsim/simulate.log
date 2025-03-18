@@ -1,7 +1,0 @@
-Time resolution is 1 ps
-Note: Timing checks are not valid
-
-Time: 0 ps  Iteration: 0  Process: /demo_tb/p_configuration  File: C:/FPGA/logtel/gig_ethernet_pcs_pma_0_ex/imports/demo_tb.vhd
-Note: Resetting core...
-
-Time: 0 ps  Iteration: 0  Process: /demo_tb/p_configuration  File: C:/FPGA/logtel/gig_ethernet_pcs_pma_0_ex/imports/demo_tb.vhd

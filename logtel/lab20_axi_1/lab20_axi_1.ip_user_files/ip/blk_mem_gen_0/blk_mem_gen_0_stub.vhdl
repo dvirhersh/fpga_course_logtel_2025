@@ -1,11 +1,19 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
+<<<<<<<< HEAD:logtel/lab20_axi_1/lab20_axi_1.ip_user_files/ip/blk_mem_gen_0/blk_mem_gen_0_stub.vhdl
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
 -- Date        : Tue Mar 18 12:17:30 2025
 -- Host        : dvirhersh_comp running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/FPGA/logtel/lab20_axi_1/lab20_axi_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.vhdl
+========
+-- Tool Version: Vivado v.2024.2.1 (win64) Build 5266912 Sun Dec 15 09:03:24 MST 2024
+-- Date        : Mon Mar 17 14:56:32 2025
+-- Host        : dvirhersh_comp running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/FPGA/logtel/lab20/lab20.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.vhdl
+>>>>>>>> main:logtel/lab20/blk_mem_gen_0_ex/blk_mem_gen_0_ex.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.vhdl
 -- Design      : blk_mem_gen_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-1

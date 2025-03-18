@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
+<<<<<<< HEAD:logtel/lab20_axi_2/lab20_axi_2.runs/impl_1/.init_design.begin.rst
     <Process Command=".planAhead." Owner="dvirh" Host="DVIRHERSH_COMP" Pid="16764">
+=======
+    <Process Command=".planAhead." Owner="dvirh" Host="DVIRHERSH_COMP" Pid="22384">
+>>>>>>> main:logtel/lab19_axi/lab19_axi.runs/impl_1/.init_design.begin.rst
     </Process>
 </ProcessHandle>
