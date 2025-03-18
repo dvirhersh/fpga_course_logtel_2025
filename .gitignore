@@ -7,7 +7,7 @@
 *.runs/ 
 # *.gen/
 # *.tmp/
-# *.xsim/
+*.xsim/
 # *.xpr/
 # *.xpr.lock/
 # *.jou

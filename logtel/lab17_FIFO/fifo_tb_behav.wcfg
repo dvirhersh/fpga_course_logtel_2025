@@ -11,15 +11,19 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="98.710 ns"></ZoomStartTime>
-      <ZoomEndTime time="183.406 ns"></ZoomEndTime>
-      <Cursor1Time time="0.000 ns"></Cursor1Time>
+      <ZoomStartTime time="655,310.892 ns"></ZoomStartTime>
+      <ZoomEndTime time="655,472.493 ns"></ZoomEndTime>
+      <Cursor1Time time="655,380.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="158"></NameColumnWidth>
+      <NameColumnWidth column_width="121"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="19" />
+   <WVObjectSize size="9" />
+   <wave_markers>
+      <marker time="10185100" label="" />
+      <marker time="655380000" label="" />
+   </wave_markers>
    <wvobject fp_name="/fifo_tb/wr_clk" type="logic">
       <obj_property name="ElementShortName">wr_clk</obj_property>
       <obj_property name="ObjectShortName">wr_clk</obj_property>
@@ -67,43 +71,5 @@
       <obj_property name="ObjectShortName">empty</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject type="divider" fp_name="divider31">
-      <obj_property name="label">fifo</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fifo_tb/fifo_dvir/wr_clk" type="logic">
-      <obj_property name="ElementShortName">wr_clk</obj_property>
-      <obj_property name="ObjectShortName">wr_clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fifo_tb/fifo_dvir/rd_clk" type="logic">
-      <obj_property name="ElementShortName">rd_clk</obj_property>
-      <obj_property name="ObjectShortName">rd_clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fifo_tb/fifo_dvir/din" type="array">
-      <obj_property name="ElementShortName">din[15:0]</obj_property>
-      <obj_property name="ObjectShortName">din[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fifo_tb/fifo_dvir/wr_en" type="logic">
-      <obj_property name="ElementShortName">wr_en</obj_property>
-      <obj_property name="ObjectShortName">wr_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fifo_tb/fifo_dvir/rd_en" type="logic">
-      <obj_property name="ElementShortName">rd_en</obj_property>
-      <obj_property name="ObjectShortName">rd_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fifo_tb/fifo_dvir/dout" type="array">
-      <obj_property name="ElementShortName">dout[15:0]</obj_property>
-      <obj_property name="ObjectShortName">dout[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fifo_tb/fifo_dvir/full" type="logic">
-      <obj_property name="ElementShortName">full</obj_property>
-      <obj_property name="ObjectShortName">full</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fifo_tb/fifo_dvir/empty" type="logic">
-      <obj_property name="ElementShortName">empty</obj_property>
-      <obj_property name="ObjectShortName">empty</obj_property>
-   </wvobject>
-   <wvobject type="divider" fp_name="divider40">
    </wvobject>
 </wave_config>
