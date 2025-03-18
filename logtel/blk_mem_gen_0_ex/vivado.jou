@@ -35,3 +35,239 @@ save_wave_config {C:/FPGA/logtel/blk_mem_gen_0_ex/blk_mem_gen_0_tb_behav.wcfg}
 save_wave_config {C:/FPGA/logtel/blk_mem_gen_0_ex/blk_mem_gen_0_tb_behav.wcfg}
 save_wave_config {C:/FPGA/logtel/blk_mem_gen_0_ex/blk_mem_gen_0_tb_behav.wcfg}
 save_wave_config {C:/FPGA/logtel/blk_mem_gen_0_ex/blk_mem_gen_0_tb_behav.wcfg}
+close_sim
+close_project
+create_project lab20_axi_2 C:/FPGA/logtel/lab20_axi_2 -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:nexys-a7-100t:part0:1.2 [current_project]
+set_property target_language VHDL [current_project]
+create_bd_design "lab20_2_bd"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:jtag_axi:1.2 jtag_axi_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0
+endgroup
+set_property CONFIG.PROTOCOL {2} [get_bd_cells jtag_axi_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_interconnect_0/ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/jtag_axi_0/M_AXI} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {usb_uart ( USB UART ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_uartlite_0/UART]
+endgroup
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets clk_wiz_locked] [get_bd_cells rst_clk_wiz_100M]
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_aresetn]
+startgroup
+make_bd_pins_external  [get_bd_pins jtag_axi_0/aresetn]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins clk_wiz/clk_in1]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins clk_wiz/reset]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_uartlite_0/interrupt]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_uartlite_0_UART] [get_bd_intf_ports usb_uart]
+startgroup
+make_bd_pins_external  [get_bd_pins axi_uartlite_0/rx] [get_bd_pins axi_uartlite_0/tx]
+endgroup
+set_property name rx [get_bd_ports rx_0]
+set_property name aresetn [get_bd_ports aresetn_0]
+set_property name clk_in1 [get_bd_ports clk_in1_0]
+set_property name reset [get_bd_ports reset_0]
+set_property name tx [get_bd_ports tx_0]
+set_property name interrupt [get_bd_ports interrupt_0]
+set_property name reset_1 [get_bd_ports reset]
+connect_bd_net [get_bd_ports aresetn] [get_bd_pins axi_interconnect_0/M00_ARESETN]
+set_property location {403 210} [get_bd_ports aresetn]
+undo
+save_bd_design
+connect_bd_net [get_bd_ports aresetn] [get_bd_pins axi_interconnect_0/ARESETN]
+connect_bd_net [get_bd_ports aresetn] [get_bd_pins axi_interconnect_0/S00_ARESETN]
+connect_bd_net [get_bd_ports aresetn] [get_bd_pins axi_interconnect_0/M01_ARESETN]
+connect_bd_net [get_bd_ports aresetn] [get_bd_pins axi_uartlite_0/s_axi_aresetn]
+connect_bd_net [get_bd_pins clk_wiz/clk_out1] [get_bd_pins axi_interconnect_0/M01_ACLK]
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+validate_bd_design
+save_bd_design
+add_files -fileset constrs_1 -norecurse C:/FPGA/logtel/for_axi_labs/bh_llb.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+delete_bd_objs [get_bd_intf_nets jtag_axi_0_M_AXI] [get_bd_intf_nets axi_interconnect_0_M00_AXI] [get_bd_cells axi_interconnect_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz/clk_out1 (100 MHz)} Clk_slave {/clk_wiz/clk_out1 (100 MHz)} Clk_xbar {/clk_wiz/clk_out1 (100 MHz)} Master {/jtag_axi_0/M_AXI} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI]
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets clk_wiz_locked] [get_bd_nets clk_in1_0_1] [get_bd_cells clk_wiz]
+delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_aresetn] [get_bd_nets reset_0_1] [get_bd_cells rst_clk_wiz_100M]
+delete_bd_objs [get_bd_intf_nets jtag_axi_0_M_AXI] [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_cells axi_smc]
+delete_bd_objs [get_bd_nets aresetn_0_1]
+delete_bd_objs [get_bd_nets rx_0_1]
+delete_bd_objs [get_bd_nets clk_wiz_clk_out1]
+delete_bd_objs [get_bd_nets axi_uartlite_0_interrupt]
+delete_bd_objs [get_bd_nets axi_uartlite_0_tx]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/jtag_axi_0/M_AXI} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {usb_uart ( USB UART ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_uartlite_0/UART]
+endgroup
+startgroup
+delete_bd_objs [get_bd_intf_nets jtag_axi_0_M_AXI] [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_intf_nets axi_uartlite_0_UART]
+delete_bd_objs [get_bd_nets clk_in1_1] [get_bd_nets rst_clk_in1_100M_peripheral_aresetn]
+delete_bd_objs [get_bd_ports clk_in1] [get_bd_ports tx] [get_bd_ports interrupt] [get_bd_ports reset_1] [get_bd_ports rx] [get_bd_ports aresetn]
+delete_bd_objs [get_bd_intf_ports usb_uart]
+delete_bd_objs [get_bd_cells axi_smc] [get_bd_cells jtag_axi_0] [get_bd_cells rst_clk_in1_100M] [get_bd_cells axi_uartlite_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:jtag_axi:1.2 jtag_axi_0
+endgroup
+set_property CONFIG.PROTOCOL {2} [get_bd_cells jtag_axi_0]
+regenerate_bd_layout
+validate_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_intc:4.1 axi_intc_0
+endgroup
+delete_bd_objs [get_bd_cells axi_intc_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_interconnect:2.1 axis_interconnect_0
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_intc:4.1 axi_intc_0
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout
+set_property location {0.5 -511 447} [get_bd_cells axi_uartlite_0]
+set_property location {1.5 -277 439} [get_bd_cells axi_intc_0]
+set_property location {0.5 -741 434} [get_bd_cells jtag_axi_0]
+set_property location {3.5 -39 400} [get_bd_cells axis_interconnect_0]
+set_property location {5 257 379} [get_bd_cells axi_interconnect_0]
+regenerate_bd_layout
+delete_bd_objs [get_bd_cells axi_intc_0]
+set_property CONFIG.NUM_MI {1} [get_bd_cells axis_interconnect_0]
+delete_bd_objs [get_bd_cells axi_interconnect_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/jtag_axi_0/M_AXI} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {usb_uart ( USB UART ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_uartlite_0/UART]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axis_interconnect_0/ACLK]
+endgroup
+validate_bd_design
+delete_bd_objs [get_bd_nets clk_wiz_1_locked] [get_bd_nets rst_clk_wiz_1_100M_peripheral_aresetn] [get_bd_cells rst_clk_wiz_1_100M]
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets clk_wiz_locked] [get_bd_cells rst_clk_wiz_100M]
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets jtag_axi_0_M_AXI] [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_cells axi_smc]
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets clk_wiz_1_clk_out1] [get_bd_cells clk_wiz_1]
+regenerate_bd_layout
+set_property location {0.5 -302 124} [get_bd_cells clk_wiz]
+set_property location {1.5 -92 117} [get_bd_cells jtag_axi_0]
+delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_aresetn]
+delete_bd_objs [get_bd_nets clk_wiz_clk_out1]
+set_property location {3 143 120} [get_bd_cells axis_interconnect_0]
+set_property location {4 437 126} [get_bd_cells axi_uartlite_0]
+set_property location {4 430 146} [get_bd_cells axi_uartlite_0]
+delete_bd_objs [get_bd_intf_nets axi_uartlite_0_UART] [get_bd_intf_ports usb_uart]
+startgroup
+make_bd_pins_external  [get_bd_pins axi_uartlite_0/rx]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_uartlite_0/tx]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_uartlite_0/interrupt]
+endgroup
+delete_bd_objs [get_bd_nets rx_0_1]
+regenerate_bd_layout
+startgroup
+delete_bd_objs [get_bd_nets axi_uartlite_0_tx] [get_bd_nets axi_uartlite_0_interrupt]
+delete_bd_objs [get_bd_ports tx_0] [get_bd_ports interrupt_0] [get_bd_ports rx_0]
+endgroup
+regenerate_bd_layout
+delete_bd_objs [get_bd_cells axis_interconnect_0]
+delete_bd_objs [get_bd_cells clk_wiz]
+regenerate_bd_layout
+validate_bd_design
+validate_bd_design
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/jtag_axi_0/M_AXI} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {usb_uart ( USB UART ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_uartlite_0/UART]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System Clock ) } Manual_Source {New External Port (ACTIVE_LOW)}}  [get_bd_pins clk_wiz/clk_in1]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( Reset ) } Manual_Source {New External Port (ACTIVE_HIGH)}}  [get_bd_pins clk_wiz/reset]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( Reset ) } Manual_Source {Auto}}  [get_bd_pins rst_clk_wiz_100M/ext_reset_in]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+startgroup
+make_bd_pins_external  [get_bd_pins axi_uartlite_0/tx]
+endgroup
+set_property name tx [get_bd_ports tx_0]
+regenerate_bd_layout
+startgroup
+make_bd_pins_external  [get_bd_cells axi_uartlite_0]
+make_bd_intf_pins_external  [get_bd_cells axi_uartlite_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_uartlite_0/rx]
+endgroup
+set_property name rx [get_bd_ports rx_0]
+set_property name aresetn [get_bd_ports reset]
+set_property name clk_in1 [get_bd_ports sys_clock]
+set_property name reset_1 [get_bd_ports reset_0]
+set_property name interrupt [get_bd_ports interrupt_0]
+save_bd_design
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+validate_bd_design -force
+delete_bd_objs [get_bd_intf_nets axi_uartlite_0_UART] [get_bd_intf_ports usb_uart]
+save_bd_design
+validate_bd_design
+undo
+regenerate_bd_layout
+save_bd_design
+validate_bd_design -force
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+validate_bd_design -force
+save_bd_design
+make_wrapper -files [get_files C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/lab20_2_bd.bd] -top
+add_files -norecurse c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/hdl/lab20_2_bd_wrapper.vhd
+generate_target Simulation [get_files C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/lab20_2_bd.bd]
+launch_simulation
+source lab20_2_bd_wrapper.tcl
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_sim
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/impl_1/lab20_2_bd_wrapper.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/impl_1/lab20_2_bd_wrapper.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/impl_1/lab20_2_bd_wrapper.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/impl_1/lab20_2_bd_wrapper.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/impl_1/lab20_2_bd_wrapper.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/impl_1/lab20_2_bd_wrapper.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+source C:/FPGA/logtel/for_axi_labs/bh_demo_uart_transsmit.tcl
+open_bd_design {C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/lab20_2_bd.bd}
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout

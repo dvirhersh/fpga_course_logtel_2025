@@ -1010,3 +1010,2690 @@ selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, S_AXI_RLAST]
 // TclEventType: WAVEFORM_UPDATE_TITLE
 // Tcl Message: save_wave_config {C:/FPGA/logtel/blk_mem_gen_0_ex/blk_mem_gen_0_tb_behav.wcfg} 
 // TclEventType: FILE_SET_CHANGE
+// Elapsed time: 197 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (PAResourceTtoZ.TaskBanner_CLOSE)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - blk_mem_gen_0_tb", "DesignTask.SIMULATION");
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// WARNING: HEventQueue.dispatchEvent() is taking  1514 ms.
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bh (Close Progress)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (PAResourceTtoZ.TaskBanner_CLOSE)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 895 MB. GUI used memory: 78 MB. Current time: 3/18/25, 12:45:40 PM IST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bh (Close Project Progress)
+// Elapsed time: 15 seconds
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // t (PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "lab20_axi_2", true); // ad (PAResourceOtoP.ProjectNameChooser_PROJECT_NAME)
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // g (PAResourceOtoP.PartChooser_TABBED_PANE)
+// [GUI Memory]: 172 MB (+3534kb) [00:26:29]
+setText("PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD", "100t"); // OverlayTextField (PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Nexys A7-100T ; Nexys A7-100T ; Nexys A7-100T ; digilentinc.com ; 1.2 ; Nexys A7-100T ; 324 ; D.0 ; 210 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 32 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 0, "Nexys A7-100T", 0, false); // n (PAResourceAtoD.BoardChooser_BOARD_TABLE)
+selectButton("NEXT", "Next", "New Project"); // JButton (NEXT)
+// Tcl Message: create_project lab20_axi_2 C:/FPGA/logtel/lab20_axi_2 -part xc7a100tcsg324-1 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 184 MB (+3201kb) [00:26:44]
+// WARNING: HEventQueue.dispatchEvent() is taking  4520 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Downloads/Vivado/2024.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part digilentinc.com:nexys-a7-100t:part0:1.2 [current_project] 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property target_language VHDL [current_project] 
+// Elapsed time: 14 seconds
+selectButton("FINISH", "Finish", "New Project"); // JButton (FINISH)
+// 'g' command handler elapsed time: 47 seconds
+dismissDialog("Create Project"); // bh (Create Project Progress)
+dismissDialog("New Project"); // f (dialog2)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 6, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+// Elapsed time: 43 seconds
+setText(PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME, "lab20_2_bd", true); // ad (PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Block Design"); // a (RDIResource.BaseDialog_OK)
+// 'P' command handler elapsed time: 43 seconds
+dismissDialog("Create Block Design"); // aB (lab20_2_bd)
+// TclEventType: LOAD_FEATURE
+// Tcl Message: create_bd_design "lab20_2_bd" 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Wrote  : <C:\FPGA\logtel\lab20_axi_2\lab20_axi_2.srcs\sources_1\bd\lab20_2_bd\lab20_2_bd.bd>  
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  3195 ms.
+// Elapsed time: 32 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// HMemoryUtils.trashcanNow. Engine heap size: 924 MB. GUI used memory: 85 MB. Current time: 3/18/25, 12:48:10 PM IST
+// Tcl Message: create_bd_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+dismissDialog("Create Block Design"); // bh (Create Block Design Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01m:34s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01m:36s
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, (String) null); // C (PAResourceQtoS.SystemBuilderView_ADD_IP)
+// Elapsed time: 12 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "uart"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "uart"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "uart"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bh (Add IP Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01m:54s
+// WARNING: HTimer (Open addressing views timer) is taking 368ms to process. Increasing delay to 1300 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01m:56s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_uartlite_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_uartlite_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // m (dialog3)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+// HMemoryUtils.trashcanNow. Engine heap size: 952 MB. GUI used memory: 88 MB. Current time: 3/18/25, 12:48:44 PM IST
+// [Engine Memory]: 952 MB (+14481kb) [00:28:51]
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "jtag to"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "jtag to"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "jtag to"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "jtag to"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: startgroup 
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:jtag_axi:1.2 jtag_axi_0 
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// No Address Blocks Available for network [Network 0]
+// WARNING: HEventQueue.dispatchEvent() is taking  1286 ms.
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bh (Add IP Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02m:22s
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02m:24s
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "axi inter"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Interconnect", 1, "AXI Interconnect", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Interconnect", 1); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Interconnect", 1, "AXI Interconnect", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bh (Add IP Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 976 MB. GUI used memory: 90 MB. Current time: 3/18/25, 12:49:14 PM IST
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02m:36s
+// [Engine Memory]: 1,005 MB (+5585kb) [00:29:23]
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /jtag_axi_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /jtag_axi_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+selectComboBox("AXI Protocol (PROTOCOL)", "AXI4LITE", 1); // D (AXI Protocol (PROTOCOL))
+selectButton(RDIResource.BaseDialog_OK, "OK", "Re-customize IP"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Re-customize IP"); // m (dialog4)
+// TclEventType: RSB_PROPERTY_CHANGE
+// No Address Blocks Available for network [Network 0]
+// TclEventType: RSB_PROPERTY_CHANGE
+// No Address Blocks Available for network [Network 0]
+// TclEventType: RSB_PROPERTY_CHANGE
+// No Address Blocks Available for network [Network 0]
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property CONFIG.PROTOCOL {2} [get_bd_cells jtag_axi_0] 
+// TclEventType: RSB_PROPERTY_CHANGE
+// No Address Blocks Available for network [Network 0]
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// No Address Blocks Available for network [Network 0]
+dismissDialog("Customize IP"); // bh (Customize IP Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02m:46s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_interconnect_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// PAPropertyPanels.initPanels (axi_interconnect_0) elapsed time: 0.2s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_interconnect_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_interconnect_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_interconnect_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // C (Re-customize IP Progress)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Slave Interfaces", 1); // cK (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Master Interfaces", 2); // cK (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Top Level Settings", 0); // cK (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Re-customize IP"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Re-customize IP"); // m (dialog5)
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION)
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (3 out of 3 selected)]", 0, true, true, ui.utils.collection.couples.TriState.True); // G.c (PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE) - Node
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Run Connection Automation"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Run Connection Automation"); // G (dialog6)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// Tcl Message: startgroup 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_interconnect_0/ACLK] 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,094 MB. GUI used memory: 93 MB. Current time: 3/18/25, 12:50:14 PM IST
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: apply_bd_automation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/jtag_axi_0/M_AXI} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,190 MB. GUI used memory: 94 MB. Current time: 3/18/25, 12:50:29 PM IST
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 1,191 MB (+142738kb) [00:30:36]
+// WARNING: HEventQueue.dispatchEvent() is taking  1305 ms.
+// Tcl Message: Slave segment '/axi_uartlite_0/S_AXI/Reg' is being assigned into address space '/jtag_axi_0/Data' at <0x4060_0000 [ 64K ]>. 
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {usb_uart ( USB UART ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_uartlite_0/UART] 
+// Tcl Message: INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /axi_uartlite_0] INFO: [board_rule 100-100] set_property CONFIG.UARTLITE_BOARD_INTERFACE usb_uart [get_bd_cells /axi_uartlite_0] INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 usb_uart INFO: [BoardRule 102-9] connect_bd_intf_net /usb_uart /axi_uartlite_0/UART 
+// Tcl Message: endgroup 
+// Elapsed time: 20 seconds
+dismissDialog("Run Connection Automation"); // bh (Run Connection Automation Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 03m:54s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 03m:56s
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed time: 15 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /rst_clk_wiz_100M]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_locked] [get_bd_cells rst_clk_wiz_100M] 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 04m:16s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 04m:18s
+// Elapsed time: 20 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed time: 13 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /clk_wiz/reset]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// PAPropertyPanels.initPanels (reset) elapsed time: 0.2s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /clk_wiz_clk_out1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// PAPropertyPanels.initPanels (clk_wiz_clk_out1) elapsed time: 0.3s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /rst_clk_wiz_100M_peripheral_aresetn]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_aresetn] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /jtag_axi_0/aresetn]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins jtag_axi_0/aresetn] 
+// Tcl Message: endgroup 
+// Elapsed time: 12 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /clk_wiz/clk_in1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins clk_wiz/clk_in1] 
+// Tcl Message: endgroup 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /clk_wiz/reset]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins clk_wiz/reset] 
+// Tcl Message: endgroup 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_uartlite_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /axi_uartlite_0/interrupt]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins axi_uartlite_0/interrupt] 
+// Tcl Message: endgroup 
+dismissDialog("Create External Connection"); // bh (Create External Connection Progress)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_uartlite_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_ports /usb_uart]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// PAPropertyPanels.initPanels (usb_uart) elapsed time: 0.2s
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets axi_uartlite_0_UART] [get_bd_intf_ports usb_uart] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_pins /axi_uartlite_0/UART]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /axi_uartlite_0/rx]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /axi_uartlite_0/rx]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /axi_uartlite_0/tx]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins axi_uartlite_0/rx] [get_bd_pins axi_uartlite_0/tx] 
+// Tcl Message: endgroup 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /rx_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// PAPropertyPanels.initPanels (rx_0) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_PROPERTIES_WINDOW
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "rx"); // ad (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name rx [get_bd_ports rx_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name rx [get_bd_ports rx_0] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /aresetn_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "aresetn"); // ad (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name aresetn [get_bd_ports aresetn_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name aresetn [get_bd_ports aresetn_0] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /clk_in1_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "clk_in1"); // ad (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name clk_in1 [get_bd_ports clk_in1_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name clk_in1 [get_bd_ports clk_in1_0] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /reset_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "reset"); // ad (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name reset [get_bd_ports reset_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name reset [get_bd_ports reset_0] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /tx_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "tx"); // ad (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name tx [get_bd_ports tx_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name tx [get_bd_ports tx_0] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /interrupt_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "interrupt"); // ad (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name interrupt [get_bd_ports interrupt_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name interrupt [get_bd_ports interrupt_0] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /reset]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "reset_1"); // ad (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name reset_1 [get_bd_ports reset]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name reset_1 [get_bd_ports reset] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports aresetn] [get_bd_pins axi_interconnect_0/M00_ARESETN] 
+// Tcl Command: 'set_property location {403 210} [get_bd_ports aresetn]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {403 210} [get_bd_ports aresetn] 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+// Elapsed time: 17 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property location {403 210} [get_bd_ports aresetn]' 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: Wrote  : <C:\FPGA\logtel\lab20_axi_2\lab20_axi_2.srcs\sources_1\bd\lab20_2_bd\lab20_2_bd.bd>  Wrote  : <C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/ui/bd_1d705763.ui>  
+// TclEventType: RSB_SAVE_DIAGRAM
+dismissDialog("Save Design"); // bh (Save Design Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 06m:20s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 06m:22s
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports aresetn] [get_bd_pins axi_interconnect_0/ARESETN] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports aresetn] [get_bd_pins axi_interconnect_0/S00_ARESETN] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports aresetn] [get_bd_pins axi_interconnect_0/M01_ARESETN] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports aresetn] [get_bd_pins axi_uartlite_0/s_axi_aresetn] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins clk_wiz/clk_out1] [get_bd_pins axi_interconnect_0/M01_ACLK] 
+// Elapsed time: 61 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed time: 37 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed time: 14 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:\FPGA\logtel\lab20_axi_2\lab20_axi_2.srcs\sources_1\bd\lab20_2_bd\lab20_2_bd.bd>  Wrote  : <C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/ui/bd_1d705763.ui>  
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 08m:14s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 08m:16s
+// Elapsed time: 16 seconds
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // C (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate 
+dismissDialog("Validate Design"); // bh (Validate Design Progress)
+// Elapsed time: 10 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // dQ.a (dialog7)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:\FPGA\logtel\lab20_axi_2\lab20_axi_2.srcs\sources_1\bd\lab20_2_bd\lab20_2_bd.bd>  Wrote  : <C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/ui/bd_1d705763.ui>  
+// Elapsed time: 22 seconds
+dismissDialog("Save Design"); // bh (Save Design Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 09m:06s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 09m:08s
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3486 ms. Increasing delay to 10458 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1028 ms. Decreasing delay to 3028 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2045 ms. Increasing delay to 6135 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5221 ms. Increasing delay to 15663 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5 ms. Decreasing delay to 2005 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1827 ms. Increasing delay to 5481 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2890 ms. Increasing delay to 8670 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2537 ms. Increasing delay to 3000 ms.
+// Elapsed time: 252 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES)
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS, "Add", "Add Sources"); // C (PAResourceAtoD.ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS, Add)
+selectMenuItem(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files..."); // aq (PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, Add Files...)
+// Elapsed time: 43 seconds
+setFileChooser("C:/FPGA/logtel/for_axi_labs/bh_llb.xdc");
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 54 seconds
+dismissDialog("Add Sources"); // c (dialog8)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse C:/FPGA/logtel/for_axi_labs/bh_llb.xdc 
+unMinimizeFrame(PAResourceOtoP.PAViews_SYSTEM_HIERARCHY, "Design"); // R (PAResourceOtoP.PAViews_SYSTEM_HIERARCHY, System Hierarchy)
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // R (RDIResource.RDIViews_PROPERTIES, Properties)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 3, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// PAPropertyPanels.initPanels (bh_llb.xdc) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, bh_llb.xdc]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, bh_llb.xdc]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+floatFrame(PAResourceOtoP.PAViews_CODE, "bh_llb.xdc"); // R (PAResourceOtoP.PAViews_CODE, Code)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("bh_llb.xdc", 494, 184); // ae (bh_llb.xdc)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_in1", true); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_in1"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_in1"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_in1"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset_1", true); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset_1"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 15 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "aresetn", true); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "aresetn"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+selectCodeEditor("bh_llb.xdc", 713, 468); // ae (bh_llb.xdc)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rx", true); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rx"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 17 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "interrupt", true); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "interrupt"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 77 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes", "No Implementation Results Available"); // a (RDIResource.BaseDialog_YES)
+dismissDialog("No Implementation Results Available"); // u (dialog10)
+dismissDialog("Resetting Runs"); // bh (Resetting Runs Progress)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: INFO: [BD 41-1662] The design 'lab20_2_bd.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: Wrote  : <C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/ui/bd_1d705763.ui>  
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: VHDL Output written to : C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/synth/lab20_2_bd.vhd VHDL Output written to : C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/sim/lab20_2_bd.vhd VHDL Output written to : C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/hdl/lab20_2_bd_wrapper.vhd 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 . 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 . 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar . 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz . 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: Exporting to file C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/hw_handoff/lab20_2_bd.hwh Generated Hardware Definition File C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/synth/lab20_2_bd.hwdef 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: ERROR: [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]). 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]).  
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/cM.a': 26s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 17m:28s
+// Elapsed time: 29 seconds
+dismissDialog("Launch Run Critical Messages"); // bc (dialog11)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_interconnect_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_interconnect_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // C (Re-customize IP Progress)
+selectComboBox("Interconnect Optimization Strategy (STRATEGY)", "Minimize Area", 1); // bN (Interconnect Optimization Strategy (STRATEGY))
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Slave Interfaces", 1); // cK (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Master Interfaces", 2); // cK (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+dismissDialog("Re-customize IP"); // m (dialog12)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 17m:54s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_interconnect_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_interconnect_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // C (Re-customize IP Progress)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Slave Interfaces", 1); // cK (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Master Interfaces", 2); // cK (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Top Level Settings", 0); // cK (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+dismissDialog("Re-customize IP"); // m (dialog13)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_interconnect_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_nets jtag_axi_0_M_AXI] [get_bd_intf_nets axi_interconnect_0_M00_AXI] [get_bd_cells axi_interconnect_0] 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+dismissDialog("Confirm Delete"); // bh (Confirm Delete Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 18m:38s
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 18m:40s
+selectButton(RDIResource.BaseDialog_OK, "OK", "Run Connection Automation"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Run Connection Automation"); // G (dialog14)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz/clk_out1 (100 MHz)} Clk_slave {/clk_wiz/clk_out1 (100 MHz)} Clk_xbar {/clk_wiz/clk_out1 (100 MHz)} Master {/jtag_axi_0/M_AXI} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI] 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+dismissDialog("Run Connection Automation"); // bh (Run Connection Automation Progress)
+// [GUI Memory]: 196 MB (+2346kb) [00:45:31]
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 18m:46s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 18m:48s
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /clk_wiz]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_locked] [get_bd_nets clk_in1_0_1] [get_bd_cells clk_wiz] 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Confirm Delete"); // bh (Confirm Delete Progress)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /rst_clk_wiz_100M]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 18m:56s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 18m:58s
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_aresetn] [get_bd_nets reset_0_1] [get_bd_cells rst_clk_wiz_100M] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_smc]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_intf_nets jtag_axi_0_M_AXI] [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_cells axi_smc] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /aresetn_0_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 19m:02s
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_nets aresetn_0_1] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /rx_0_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_nets rx_0_1] 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 19m:04s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /clk_wiz_clk_out1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_clk_out1] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /axi_uartlite_0_tx]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /axi_uartlite_0_interrupt]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_nets axi_uartlite_0_interrupt] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /axi_uartlite_0_tx]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_nets axi_uartlite_0_tx] 
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION)
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (2 out of 2 selected)]", 0, true, true, ui.utils.collection.couples.TriState.True); // G.c (PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE) - Node
+selectButton(RDIResource.BaseDialog_OK, "OK", "Run Connection Automation"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Run Connection Automation"); // G (dialog15)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: startgroup 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/jtag_axi_0/M_AXI} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI] 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {usb_uart ( USB UART ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_uartlite_0/UART] 
+// Tcl Message: INFO: [board_rule 100-100] set_property CONFIG.UARTLITE_BOARD_INTERFACE usb_uart [get_bd_cells /axi_uartlite_0] INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 usb_uart INFO: [BoardRule 102-9] connect_bd_intf_net /usb_uart /axi_uartlite_0/UART 
+// Tcl Message: endgroup 
+dismissDialog("Run Connection Automation"); // bh (Run Connection Automation Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 19m:20s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 19m:22s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_smc]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /jtag_axi_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /rst_clk_in1_100M]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_uartlite_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_smc]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /jtag_axi_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /rst_clk_in1_100M]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_uartlite_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_nets /jtag_axi_0_M_AXI]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /rst_clk_in1_100M_peripheral_aresetn]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /clk_in1_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_nets /axi_smc_M00_AXI]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_nets /axi_uartlite_0_UART]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_nets /jtag_axi_0_M_AXI]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_smc]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /clk_in1_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /rst_clk_in1_100M_peripheral_aresetn]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /jtag_axi_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /rst_clk_in1_100M]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_nets /axi_smc_M00_AXI]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_nets /axi_uartlite_0_UART]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_uartlite_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /clk_in1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /tx]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /interrupt]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_ports /usb_uart]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /reset_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /rx]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /aresetn]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// PAPropertyPanels.initPanels (jtag_axi_0_M_AXI) elapsed time: 0.2s
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Confirm Delete"); // a (RDIResource.BaseDialog_OK)
+// Tcl Message: startgroup 
+dismissDialog("Confirm Delete"); // a (dialog16)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: delete_bd_objs [get_bd_intf_nets jtag_axi_0_M_AXI] [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_intf_nets axi_uartlite_0_UART] 
+// Tcl Message: delete_bd_objs [get_bd_nets clk_in1_1] [get_bd_nets rst_clk_in1_100M_peripheral_aresetn] 
+// Tcl Message: delete_bd_objs [get_bd_ports clk_in1] [get_bd_ports tx] [get_bd_ports interrupt] [get_bd_ports reset_1] [get_bd_ports rx] [get_bd_ports aresetn] 
+// Tcl Message: delete_bd_objs [get_bd_intf_ports usb_uart] 
+// Tcl Message: delete_bd_objs [get_bd_cells axi_smc] [get_bd_cells jtag_axi_0] [get_bd_cells rst_clk_in1_100M] [get_bd_cells axi_uartlite_0] 
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: endgroup 
+dismissDialog("Confirm Delete"); // bh (Confirm Delete Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 19m:32s
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 19m:34s
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "axi_uart"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Uartlite", 1, "AXI Uartlite", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Uartlite", 1); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Uartlite", 1, "AXI Uartlite", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0 
+// Tcl Message: endgroup 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 19m:42s
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 19m:44s
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "jtag"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "JTAG to AXI Master", 2, "JTAG to AXI Master", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "JTAG to AXI Master", 2); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "JTAG to AXI Master", 2, "JTAG to AXI Master", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:jtag_axi:1.2 jtag_axi_0 
+// Tcl Message: endgroup 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /jtag_axi_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /jtag_axi_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 19m:48s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 19m:50s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /jtag_axi_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /jtag_axi_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+selectComboBox("AXI Protocol (PROTOCOL)", "AXI4LITE", 1); // D (AXI Protocol (PROTOCOL))
+selectButton(RDIResource.BaseDialog_OK, "OK", "Re-customize IP"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Re-customize IP"); // m (dialog17)
+// TclEventType: RSB_PROPERTY_CHANGE
+// No Address Blocks Available for network [Network 0]
+// TclEventType: RSB_PROPERTY_CHANGE
+// No Address Blocks Available for network [Network 0]
+// TclEventType: RSB_PROPERTY_CHANGE
+// No Address Blocks Available for network [Network 0]
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property CONFIG.PROTOCOL {2} [get_bd_cells jtag_axi_0] 
+// TclEventType: RSB_PROPERTY_CHANGE
+// No Address Blocks Available for network [Network 0]
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// No Address Blocks Available for network [Network 0]
+dismissDialog("Customize IP"); // bh (Customize IP Progress)
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // C (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design 
+// Tcl Message: ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source:  /axi_uartlite_0/s_axi_aclk /jtag_axi_0/aclk  
+// Tcl Message: ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors. 
+// No Address Blocks Available for network [Network 0]
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // dQ.a (dialog18)
+// Elapsed time: 12 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "axi inter"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Interrupt Controller", 2, "AXI Interrupt Controller", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Interrupt Controller", 2); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Interrupt Controller", 2, "AXI Interrupt Controller", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_intc:4.1 axi_intc_0 
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bh (Add IP Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 20m:26s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 20m:28s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_intc_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_cells axi_intc_0] 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 20m:34s
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 20m:36s
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "axi int"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI4-Stream Interconnect", 0, "AXI4-Stream Interconnect", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "axi int"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Interconnect", 1, "AXI Interconnect", 0, false, false, true, false, false, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Control Key
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "axi int"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Interrupt Controller", 2, "AXI Interrupt Controller", 0, false, false, true, false, false, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Control Key
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "axi int"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axis_interconnect:2.1 axis_interconnect_0 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_ADD_OBJECT
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_intc:4.1 axi_intc_0 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bh (Add IP Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 20m:50s
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 20m:52s
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // C (PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Tcl Command: 'set_property location {0.5 -511 447} [get_bd_cells axi_uartlite_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {0.5 -511 447} [get_bd_cells axi_uartlite_0] 
+// Tcl Command: 'set_property location {1.5 -277 439} [get_bd_cells axi_intc_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1.5 -277 439} [get_bd_cells axi_intc_0] 
+// Tcl Command: 'set_property location {0.5 -741 434} [get_bd_cells jtag_axi_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {0.5 -741 434} [get_bd_cells jtag_axi_0] 
+// Tcl Command: 'set_property location {3.5 -39 400} [get_bd_cells axis_interconnect_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3.5 -39 400} [get_bd_cells axis_interconnect_0] 
+// Tcl Command: 'set_property location {5 257 379} [get_bd_cells axi_interconnect_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {5 257 379} [get_bd_cells axi_interconnect_0] 
+// Elapsed time: 11 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed time: 12 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_intc_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_cells axi_intc_0] 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:24s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:26s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axis_interconnect_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axis_interconnect_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Slave Interfaces", 1); // bd (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Master Interfaces", 2); // bd (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Toplevel Settings", 0); // bd (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+selectComboBox("Number of Master Interfaces (NUM_MI)", "1", 0); // D (Number of Master Interfaces (NUM_MI))
+selectButton(RDIResource.BaseDialog_OK, "OK", "Re-customize IP"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Re-customize IP"); // m (dialog19)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// [GUI Memory]: 205 MB (+163kb) [00:48:30]
+// No Address Blocks Available for network [Network 0]
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: set_property CONFIG.NUM_MI {1} [get_bd_cells axis_interconnect_0] 
+dismissDialog("Customize IP"); // bh (Customize IP Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:46s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_interconnect_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_cells axi_interconnect_0] 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:50s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:52s
+// Elapsed time: 10 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axis_interconnect_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axis_interconnect_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Slave Interfaces", 1); // bd (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Master Interfaces", 2); // bd (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Re-customize IP"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Re-customize IP"); // m (dialog20)
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION)
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (3 out of 3 selected)]", 0, true, true, ui.utils.collection.couples.TriState.True); // G.c (PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE) - Node
+selectButton(RDIResource.BaseDialog_OK, "OK", "Run Connection Automation"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Run Connection Automation"); // G (dialog21)
+// Tcl Message: startgroup 
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/jtag_axi_0/M_AXI} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI] 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// Tcl Message: Slave segment '/axi_uartlite_0/S_AXI/Reg' is being assigned into address space '/jtag_axi_0/Data' at <0x4060_0000 [ 64K ]>. 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {usb_uart ( USB UART ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_uartlite_0/UART] 
+// Tcl Message: INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /axi_uartlite_0] INFO: [board_rule 100-100] set_property CONFIG.UARTLITE_BOARD_INTERFACE usb_uart [get_bd_cells /axi_uartlite_0] INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 usb_uart INFO: [BoardRule 102-9] connect_bd_intf_net /usb_uart /axi_uartlite_0/UART 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axis_interconnect_0/ACLK] 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: endgroup 
+dismissDialog("Run Connection Automation"); // bh (Run Connection Automation Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:22s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:24s
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // C (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design 
+// Tcl Message: ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source:  /axis_interconnect_0/S00_AXIS_ACLK /axis_interconnect_0/M00_AXIS_ACLK /clk_wiz/clk_in1 /clk_wiz_1/clk_in1  
+// Tcl Message: ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors. 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // dQ.a (dialog22)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /rst_clk_wiz_1_100M]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_1_locked] [get_bd_nets rst_clk_wiz_1_100M_peripheral_aresetn] [get_bd_cells rst_clk_wiz_1_100M] 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:38s
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:40s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /rst_clk_wiz_100M]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_locked] [get_bd_cells rst_clk_wiz_100M] 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:46s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_smc]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:48s
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_intf_nets jtag_axi_0_M_AXI] [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_cells axi_smc] 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:50s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:52s
+// Elapsed time: 12 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /clk_wiz_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_1_clk_out1] [get_bd_cells clk_wiz_1] 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 23m:04s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 23m:06s
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Tcl Command: 'set_property location {0.5 -302 124} [get_bd_cells clk_wiz]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {0.5 -302 124} [get_bd_cells clk_wiz] 
+// Tcl Command: 'set_property location {1.5 -92 117} [get_bd_cells jtag_axi_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1.5 -92 117} [get_bd_cells jtag_axi_0] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /rst_clk_wiz_100M_peripheral_aresetn]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_nets rst_clk_wiz_100M_peripheral_aresetn] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /clk_wiz_clk_out1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_clk_out1] 
+// Tcl Command: 'set_property location {3 143 120} [get_bd_cells axis_interconnect_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 143 120} [get_bd_cells axis_interconnect_0] 
+// Tcl Command: 'set_property location {4 437 126} [get_bd_cells axi_uartlite_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 437 126} [get_bd_cells axi_uartlite_0] 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+// Tcl Command: 'set_property location {4 430 146} [get_bd_cells axi_uartlite_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 430 146} [get_bd_cells axi_uartlite_0] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_ports /usb_uart]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_intf_nets axi_uartlite_0_UART] [get_bd_intf_ports usb_uart] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /axi_uartlite_0/rx]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins axi_uartlite_0/rx] 
+// Tcl Message: endgroup 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /axi_uartlite_0/tx]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins axi_uartlite_0/tx] 
+// Tcl Message: endgroup 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /axi_uartlite_0/interrupt]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins axi_uartlite_0/interrupt] 
+// Tcl Message: endgroup 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_pins /axi_uartlite_0/S_AXI]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_pins /axi_uartlite_0/S_AXI]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_pins /axis_interconnect_0/M00_AXIS]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_pins /axis_interconnect_0/M00_AXIS]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /rx_0_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_nets rx_0_1] 
+// Elapsed time: 12 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /tx_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /tx_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /interrupt_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /tx_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /interrupt_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /rx_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /tx_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /interrupt_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /rx_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /axi_uartlite_0_tx]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /tx_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /interrupt_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /rx_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /axi_uartlite_0_tx]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /axi_uartlite_0_interrupt]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Confirm Delete"); // a (RDIResource.BaseDialog_OK)
+// Tcl Message: startgroup 
+dismissDialog("Confirm Delete"); // a (dialog23)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_nets axi_uartlite_0_tx] [get_bd_nets axi_uartlite_0_interrupt] 
+// Tcl Message: delete_bd_objs [get_bd_ports tx_0] [get_bd_ports interrupt_0] [get_bd_ports rx_0] 
+// Tcl Message: endgroup 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axis_interconnect_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_cells axis_interconnect_0] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /clk_wiz]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 24m:34s
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// No Address Blocks Available for network [Network 0]
+// Tcl Message: delete_bd_objs [get_bd_cells clk_wiz] 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 24m:36s
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 24m:38s
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // C (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// Tcl Message: validate_bd_design 
+// Tcl Message: ERROR: [BD 41-1075] Cannot assign slave segment '/axi_uartlite_0/S_AXI/Reg' into address space '/jtag_axi_0/Data' at address '0x4060_0000 [ 64K ]'. Master segment '/jtag_axi_0/Data/SEG_axi_uartlite_0_Reg' is invalid. The proposed address '0x4060_0000 [ 64K ]' cannot be assigned through an incomplete addressing path. 
+// Tcl Message: ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors. 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // dQ.a (dialog24)
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // C (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// Tcl Message: validate_bd_design 
+// Tcl Message: ERROR: [BD 41-1075] Cannot assign slave segment '/axi_uartlite_0/S_AXI/Reg' into address space '/jtag_axi_0/Data' at address '0x4060_0000 [ 64K ]'. Master segment '/jtag_axi_0/Data/SEG_axi_uartlite_0_Reg' is invalid. The proposed address '0x4060_0000 [ 64K ]' cannot be assigned through an incomplete addressing path. 
+// Tcl Message: ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors. 
+dismissDialog("Critical Messages"); // dQ.a (dialog25)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /jtag_axi_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /jtag_axi_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // m (dialog26)
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION)
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (2 out of 2 selected)]", 0, true, true, ui.utils.collection.couples.TriState.True); // G.c (PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE) - Node
+selectButton(RDIResource.BaseDialog_OK, "OK", "Run Connection Automation"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Run Connection Automation"); // G (dialog27)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// Tcl Message: startgroup 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/jtag_axi_0/M_AXI} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI] 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {usb_uart ( USB UART ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_uartlite_0/UART] 
+// Tcl Message: INFO: [board_rule 100-100] set_property CONFIG.UARTLITE_BOARD_INTERFACE usb_uart [get_bd_cells /axi_uartlite_0] INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 usb_uart INFO: [BoardRule 102-9] connect_bd_intf_net /usb_uart /axi_uartlite_0/UART 
+// Tcl Message: endgroup 
+dismissDialog("Run Connection Automation"); // bh (Run Connection Automation Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 25m:02s
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 25m:04s
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (3 out of 3 selected)]", 0, true, true, ui.utils.collection.couples.TriState.True); // G.c (PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE) - Node
+selectButton(RDIResource.BaseDialog_OK, "OK", "Run Connection Automation"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Run Connection Automation"); // G (dialog28)
+// Tcl Message: startgroup 
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System Clock ) } Manual_Source {New External Port (ACTIVE_LOW)}}  [get_bd_pins clk_wiz/clk_in1] 
+// Tcl Message: INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz] INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz] 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// Tcl Message: INFO: [BoardRule 102-10] create_bd_port -dir I sys_clock -type clk INFO: [BoardRule 102-5] set_property CONFIG.FREQ_HZ 100000000 /sys_clock INFO: [BoardRule 102-6] set_property CONFIG.PHASE 0.0 /sys_clock INFO: [BoardRule 102-15] connect_bd_net /sys_clock /clk_wiz/clk_in1 INFO: [BoardRule 102-17] set_property CONFIG.FREQ_HZ 100000000 /sys_clock 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( Reset ) } Manual_Source {New External Port (ACTIVE_HIGH)}}  [get_bd_pins clk_wiz/reset] 
+// Tcl Message: INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /clk_wiz] 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( Reset ) } Manual_Source {Auto}}  [get_bd_pins rst_clk_wiz_100M/ext_reset_in] 
+// Tcl Message: INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /rst_clk_wiz_100M] INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /rst_clk_wiz_100M] INFO: [BoardRule 102-10] create_bd_port -dir I reset_0 -type rst INFO: [BoardRule 102-7] set_property CONFIG.POLARITY ACTIVE_LOW /reset_0 INFO: [BoardRule 102-15] connect_bd_net /reset_0 /rst_clk_wiz_100M/ext_reset_in INFO: [BoardRule 102-18] set_property CONFIG.POLARITY ACTIVE_LOW /reset_0 
+// Tcl Message: endgroup 
+dismissDialog("Run Connection Automation"); // bh (Run Connection Automation Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 25m:10s
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 25m:12s
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // C (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// Tcl Message: validate_bd_design 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing. INFO: [xilinx.com:ip:smartconnect:1.0-1] lab20_2_bd_axi_smc_3: SmartConnect lab20_2_bd_axi_smc_3 is in Low-Area Mode. 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: xit::source_ipfile: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// [GUI Memory]: 217 MB (+757kb) [00:52:15]
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate 
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// Elapsed time: 11 seconds
+dismissDialog("Validate Design"); // bh (Validate Design Progress)
+selectButton("OptionPane.button", "OK", "Validate Design"); // JButton (OptionPane.button)
+// Elapsed time: 34 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: Wrote  : <C:\FPGA\logtel\lab20_axi_2\lab20_axi_2.srcs\sources_1\bd\lab20_2_bd\lab20_2_bd.bd>  Wrote  : <C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/ui/bd_1d705763.ui>  
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+dismissDialog("Save Design"); // bh (Save Design Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 26m:14s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 26m:16s
+// Elapsed time: 153 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /axi_uartlite_0/interrupt]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed time: 18 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /axi_uartlite_0/tx]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins axi_uartlite_0/tx] 
+// Tcl Message: endgroup 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /tx_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_PROPERTIES_WINDOW
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "tx"); // ad (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name tx [get_bd_ports tx_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name tx [get_bd_ports tx_0] 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_pins /axi_uartlite_0/UART]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_pins /axi_uartlite_0/UART]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_pins /axi_uartlite_0/UART]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_uartlite_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_cells axi_uartlite_0] 
+// Tcl Message: make_bd_intf_pins_external  [get_bd_cells axi_uartlite_0] 
+// Tcl Message: endgroup 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_pins /axi_uartlite_0/UART]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_pins /axi_uartlite_0/UART]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /axi_uartlite_0/rx]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins axi_uartlite_0/rx] 
+// Tcl Message: endgroup 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /rx_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "rx"); // ad (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name rx [get_bd_ports rx_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name rx [get_bd_ports rx_0] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /reset]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "aresetn"); // ad (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name aresetn [get_bd_ports reset]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name aresetn [get_bd_ports reset] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /sys_clock]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "clk_in1"); // ad (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name clk_in1 [get_bd_ports sys_clock]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name clk_in1 [get_bd_ports sys_clock] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /reset_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "reset_1"); // ad (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name reset_1 [get_bd_ports reset_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name reset_1 [get_bd_ports reset_0] 
+// Elapsed time: 14 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /interrupt_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "interrupt"); // ad (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name interrupt [get_bd_ports interrupt_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name interrupt [get_bd_ports interrupt_0] 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:\FPGA\logtel\lab20_axi_2\lab20_axi_2.srcs\sources_1\bd\lab20_2_bd\lab20_2_bd.bd>  Wrote  : <C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/ui/bd_1d705763.ui>  
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 602ms to process. Increasing delay to 3000 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 30m:27s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 30m:28s
+// Elapsed time: 11 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // C (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: validate_bd_design 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing. INFO: [xilinx.com:ip:smartconnect:1.0-1] lab20_2_bd_axi_smc_3: SmartConnect lab20_2_bd_axi_smc_3 is in Low-Area Mode. 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: xit::source_ipfile: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// Elapsed time: 10 seconds
+dismissDialog("Validate Design"); // bh (Validate Design Progress)
+selectButton("OptionPane.button", "OK", "Validate Design"); // JButton (OptionPane.button)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:\FPGA\logtel\lab20_axi_2\lab20_axi_2.srcs\sources_1\bd\lab20_2_bd\lab20_2_bd.bd>  Wrote  : <C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/ui/bd_1d705763.ui>  
+dismissDialog("Save Design"); // bh (Save Design Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 31m:01s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 31m:04s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+selectButton("OptionPane.button", "Rerun Validate Design", "Validate Design"); // JButton (OptionPane.button)
+// Tcl Command: 'validate_bd_design -force'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: validate_bd_design -force 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing. INFO: [xilinx.com:ip:smartconnect:1.0-1] lab20_2_bd_axi_smc_3: SmartConnect lab20_2_bd_axi_smc_3 is in Low-Area Mode. 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: xit::source_ipfile: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate 
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// Elapsed time: 12 seconds
+dismissDialog("Validate Design"); // bh (Validate Design Progress)
+selectButton("OptionPane.button", "OK", "Validate Design"); // JButton (OptionPane.button)
+// Elapsed time: 47 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_ports /usb_uart]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets axi_uartlite_0_UART] [get_bd_intf_ports usb_uart] 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:\FPGA\logtel\lab20_axi_2\lab20_axi_2.srcs\sources_1\bd\lab20_2_bd\lab20_2_bd.bd>  Wrote  : <C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/ui/bd_1d705763.ui>  
+dismissDialog("Save Design"); // bh (Save Design Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 32m:19s
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // C (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: validate_bd_design 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing. INFO: [xilinx.com:ip:smartconnect:1.0-1] lab20_2_bd_axi_smc_3: SmartConnect lab20_2_bd_axi_smc_3 is in Low-Area Mode. 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: xit::source_ipfile: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate 
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// Elapsed time: 10 seconds
+dismissDialog("Validate Design"); // bh (Validate Design Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 32m:31s
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // dQ.a (dialog29)
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets axi_uartlite_0_UART] [get_bd_intf_ports usb_uart]' 
+// Elapsed time: 20 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:\FPGA\logtel\lab20_axi_2\lab20_axi_2.srcs\sources_1\bd\lab20_2_bd\lab20_2_bd.bd>  Wrote  : <C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/ui/bd_1d705763.ui>  
+dismissDialog("Save Design"); // bh (Save Design Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 33m:11s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 33m:14s
+// Elapsed time: 26 seconds
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // C (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+selectButton("OptionPane.button", "Rerun Validate Design", "Validate Design"); // JButton (OptionPane.button)
+// Tcl Command: 'validate_bd_design -force'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: validate_bd_design -force 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing. INFO: [xilinx.com:ip:smartconnect:1.0-1] lab20_2_bd_axi_smc_3: SmartConnect lab20_2_bd_axi_smc_3 is in Low-Area Mode. 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: xit::source_ipfile: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate 
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// Elapsed time: 11 seconds
+dismissDialog("Validate Design"); // bh (Validate Design Progress)
+// WARNING: updateGUI() is taking  1034 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1035 ms.
+selectButton("OptionPane.button", "OK", "Validate Design"); // JButton (OptionPane.button)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,217 MB. GUI used memory: 141 MB. Current time: 3/18/25, 1:20:30 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  1330 ms.
+// Elapsed time: 66 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // B (PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save", "Save Project"); // a (PAResourceQtoS.SaveProjectUtils_SAVE)
+dismissDialog("Save Project"); // ac.d (dialog30)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:\FPGA\logtel\lab20_axi_2\lab20_axi_2.srcs\sources_1\bd\lab20_2_bd\lab20_2_bd.bd>  Wrote  : <C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/ui/bd_1d705763.ui>  
+dismissDialog("Save Constraints"); // bh (Save Constraints Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 35m:11s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 35m:14s
+selectButton(RDIResource.BaseDialog_YES, "Yes", "No Implementation Results Available"); // a (RDIResource.BaseDialog_YES)
+// 'cM' command handler elapsed time: 15 seconds
+dismissDialog("No Implementation Results Available"); // u (dialog31)
+dismissDialog("Resetting Runs"); // bh (Resetting Runs Progress)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: INFO: [BD 41-1662] The design 'lab20_2_bd.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: VHDL Output written to : C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/synth/lab20_2_bd.vhd 
+// Tcl Message: VHDL Output written to : C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/sim/lab20_2_bd.vhd VHDL Output written to : C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/hdl/lab20_2_bd_wrapper.vhd 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 . 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 . 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: Exporting to file c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/ip/lab20_2_bd_axi_smc_3/bd_0/hw_handoff/lab20_2_bd_axi_smc_3.hwh Generated Hardware Definition File c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/ip/lab20_2_bd_axi_smc_3/bd_0/synth/lab20_2_bd_axi_smc_3.hwdef 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc . 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz . 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_100M . INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_inv_0 . 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: Exporting to file C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/hw_handoff/lab20_2_bd.hwh Generated Hardware Definition File C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/synth/lab20_2_bd.hwdef 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 1,217 MB. GUI used memory: 143 MB. Current time: 3/18/25, 1:22:25 PM IST
+// Tcl Message: ERROR: [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]). 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]).  
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/cM.a': 31s
+// Elapsed time: 34 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Launch Run Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 35m:50s
+dismissDialog("Launch Run Critical Messages"); // bc (dialog32)
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // C (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design -force'
+selectButton("OptionPane.button", "Rerun Validate Design", "Validate Design"); // JButton (OptionPane.button)
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: validate_bd_design -force 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing. INFO: [xilinx.com:ip:smartconnect:1.0-1] lab20_2_bd_axi_smc_3: SmartConnect lab20_2_bd_axi_smc_3 is in Low-Area Mode. 
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: xit::source_ipfile: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz clk_wiz propagate 
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// Elapsed time: 11 seconds
+dismissDialog("Validate Design"); // bh (Validate Design Progress)
+selectButton("OptionPane.button", "OK", "Validate Design"); // JButton (OptionPane.button)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:\FPGA\logtel\lab20_axi_2\lab20_axi_2.srcs\sources_1\bd\lab20_2_bd\lab20_2_bd.bd>  
+dismissDialog("Save Design"); // bh (Save Design Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 36m:14s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 36m:17s
+// Elapsed time: 29 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R (PAResourceOtoP.PAViews_SOURCES, Sources)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab20_2_bd (lab20_2_bd.bd)]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // an (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // aq (PAResourceCommand.PACommandNames_CREATE_TOP_HDL, create_top_hdl_menu)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create HDL Wrapper"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create HDL Wrapper"); // a (dialog33)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: make_wrapper -files [get_files C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/lab20_2_bd.bd] -top 
+// Tcl Message: INFO: [BD 41-1662] The design 'lab20_2_bd.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: VHDL Output written to : C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/synth/lab20_2_bd.vhd 
+// Tcl Message: VHDL Output written to : C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/sim/lab20_2_bd.vhd VHDL Output written to : C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/hdl/lab20_2_bd_wrapper.vhd 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/hdl/lab20_2_bd_wrapper.vhd 
+dismissDialog("Create HDL Wrapper"); // bh (Create HDL Wrapper Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 36m:53s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 37m:02s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 37m:05s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 37m:08s
+// Elapsed time: 34 seconds
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // C (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectButton("OptionPane.button", "Cancel", "Validate Design"); // JButton (OptionPane.button)
+// Elapsed time: 58 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_NO, "No", "No Implementation Results Available"); // a (RDIResource.BaseDialog_NO)
+// 'cM' command handler elapsed time: 9 seconds
+dismissDialog("No Implementation Results Available"); // u (dialog34)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab20_2_bd_wrapper(STRUCTURE) (lab20_2_bd_wrapper.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab20_2_bd_wrapper(STRUCTURE) (lab20_2_bd_wrapper.vhd), lab20_2_bd_i : lab20_2_bd (lab20_2_bd.bd), lab20_2_bd(STRUCTURE) (lab20_2_bd.vhd)]", 3, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab20_2_bd_wrapper(STRUCTURE) (lab20_2_bd_wrapper.vhd), lab20_2_bd_i : lab20_2_bd (lab20_2_bd.bd), lab20_2_bd(STRUCTURE) (lab20_2_bd.vhd)]", 3, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1121 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab20_2_bd_wrapper(STRUCTURE) (lab20_2_bd_wrapper.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab20_2_bd_wrapper(STRUCTURE) (lab20_2_bd_wrapper.vhd)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // aq (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: generate_target Simulation [get_files C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/lab20_2_bd.bd] 
+// Tcl Message: INFO: [BD 41-1662] The design 'lab20_2_bd.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: VHDL Output written to : C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/synth/lab20_2_bd.vhd 
+// Tcl Message: VHDL Output written to : C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/sim/lab20_2_bd.vhd VHDL Output written to : C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/hdl/lab20_2_bd_wrapper.vhd 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: Exporting to file c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/ip/lab20_2_bd_axi_smc_3/bd_0/hw_handoff/lab20_2_bd_axi_smc_3.hwh 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Generated Hardware Definition File c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/ip/lab20_2_bd_axi_smc_3/bd_0/synth/lab20_2_bd_axi_smc_3.hwdef 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: Exporting to file C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/hw_handoff/lab20_2_bd.hwh Generated Hardware Definition File C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/synth/lab20_2_bd.hwdef 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// Tcl Message: ERROR: [Common 17-39] 'generate_target' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.  (Run Simulation)'
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/h': 23s
+// 'd' command handler elapsed time: 23 seconds
+// Elapsed time: 23 seconds
+selectButton("OptionPane.button", "OK", "Run Simulation"); // JButton (OptionPane.button)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 788ms to process. Increasing delay to 4000 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 39m:15s
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // a (dialog35)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (PAResourceAtoD.AbstractFileView_RELOAD)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab20_2_bd_wrapper.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab20_2_bd_wrapper.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Map", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_ADDRESS_MAP, "Address Map"); // k (PAResourceOtoP.PAViews_ADDRESS_MAP, PlanAheadTabAddress Map)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_ADDRESS_EDITOR, "Address Editor"); // c (PAResourceOtoP.PAViews_ADDRESS_EDITOR, PlanAheadTabAddress Editor)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 39m:33s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // C (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, System_validate_bd_design_rsb)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// 'dQ' command handler elapsed time: 18 seconds
+// Elapsed time: 18 seconds
+selectButton("OptionPane.button", "Cancel", "Validate Design"); // JButton (OptionPane.button)
+// Elapsed time: 448 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // aq (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'lab20_2_bd_wrapper' 
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -L uvm -L axi_vip_v1_1_19 -L smartconnect_v1_0 -L xilinx_vip -prj lab20_2_bd_wrapper_vlog.prj" !! WARNING !! "PYTHONPATH" variable is set greater than default max string limit of "519" characters. Please ignore this, if you have already made changes to your system registry to accept more than default limit of 519 characters. !! WARNING !! 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '9' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.sim/sim_1/behav/xsim' 
+// Tcl Message: Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=4,...] Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...] Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...] Compiling architecture rtl of entity axi_uartlite_v2_0_37.axi_uartlite [\axi_uartlite(c_family="artix7")...] Compiling architecture lab20_2_bd_axi_uartlite_0_1_arch of entity xil_defaultlib.lab20_2_bd_axi_uartlite_0_1 [lab20_2_bd_axi_uartlite_0_1_defa...] Compiling module unisims_ver.IBUF Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,... 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,217 MB. GUI used memory: 133 MB. Current time: 3/18/25, 1:34:33 PM IST
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot lab20_2_bd_wrapper_behav 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '18' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "lab20_2_bd_wrapper_behav -key {Behavioral:sim_1:Functional:lab20_2_bd_wrapper} -tclbatch {lab20_2_bd_wrapper.tcl} -protoinst "protoinst_files/bd_fbbb.protoinst" -protoinst "protoinst_files/lab20_2_bd.protoinst" -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 34 seconds
+floatFrame(PAResourceOtoP.PAViews_CODE, "bh_llb.xdc"); // R (PAResourceOtoP.PAViews_CODE, Code)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source lab20_2_bd_wrapper.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,217 MB. GUI used memory: 138 MB. Current time: 3/18/25, 1:34:38 PM IST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab20_2_bd_wrapper_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:36 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/h': 35s
+// 'd' command handler elapsed time: 35 seconds
+dismissDialog("Run Simulation"); // e (Run Simulation Progress)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "lab20_2_bd_i ; lab20_2_bd(STRUCTURE) ; VHDL Entity", 1, "lab20_2_bd_i", 0, true); // c (PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE) - Node
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.TclConsoleView_CLEAR_ALL_OUTPUT_IN_TCL_CONSOLE, "Tcl Console_remove"); // C (RDIResource.TclConsoleView_CLEAR_ALL_OUTPUT_IN_TCL_CONSOLE, Tcl Console_remove)
+selectButton("OptionPane.button", "Yes", "Tcl Console"); // JButton (OptionPane.button)
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,217 MB. GUI used memory: 137 MB. Current time: 3/18/25, 1:34:48 PM IST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aa
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // C (PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, Messages_cleanUpMessages)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.ip_user_files/bd/lab20_2_bd/ip/lab20_2_bd_axi_smc_3/bd_0/sim/bd_fbbb.v:616]. ]", 2, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.ip_user_files/bd/lab20_2_bd/ip/lab20_2_bd_axi_smc_3/bd_0/sim/bd_fbbb.v:616]. ]", 2, true, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.ip_user_files/bd/lab20_2_bd/ip/lab20_2_bd_axi_smc_3/bd_0/sim/bd_fbbb.v:616]. , [VRFC 10-5021] port 'sl_iport0' is not connected on this instance [C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.ip_user_files/bd/lab20_2_bd/ip/lab20_2_bd_jtag_axi_0_1/sim/lab20_2_bd_jtag_axi_0_1.v:130]. ]", 3, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.ip_user_files/bd/lab20_2_bd/ip/lab20_2_bd_axi_smc_3/bd_0/sim/bd_fbbb.v:616]. , [VRFC 10-5021] port 'sl_iport0' is not connected on this instance [C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.ip_user_files/bd/lab20_2_bd/ip/lab20_2_bd_jtag_axi_0_1/sim/lab20_2_bd_jtag_axi_0_1.v:130]. ]", 3, false, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: Exporting to file c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/ip/lab20_2_bd_axi_smc_3/bd_0/hw_handoff/lab20_2_bd_axi_smc_3.hwh Generated Hardware Definition File c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/ip/lab20_2_bd_axi_smc_3/bd_0/synth/lab20_2_bd_axi_smc_3.hwdef 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// 'i' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bh (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 48m:37s
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 48m:41s
+// Elapsed time: 45 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (PAResourceTtoZ.TaskBanner_CLOSE)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - lab20_2_bd_wrapper", "DesignTask.SIMULATION");
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+floatFrame(PAResourceOtoP.PAViews_CODE, "bh_llb.xdc"); // R (PAResourceOtoP.PAViews_CODE, Code)
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bh (Close Progress)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3539 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5833 ms. Increasing delay to 5000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1204ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1204 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4649 ms. Increasing delay to 6000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 238 MB (+11626kb) [01:19:40]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 322 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Completed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// Tcl Message: [Tue Mar 18 13:41:24 2025] Launched impl_1... Run output will be captured here: C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bh (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 336 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab20_2_bd_wrapper(STRUCTURE) (lab20_2_bd_wrapper.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab20_2_bd_wrapper(STRUCTURE) (lab20_2_bd_wrapper.vhd)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 46 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 16); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 16); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 28, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// TclEventType: DEBUG_PORT_ADD
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1033 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,301 MB. GUI used memory: 149 MB. Current time: 3/18/25, 1:48:13 PM IST
+// [Engine Memory]: 1,309 MB (+61364kb) [01:28:20]
+// Xgd.load filename: C:/FPGA/logtel/blk_mem_gen_0_ex/.Xil/Vivado-34756-dvirhersh_comp/xc7a100t_floorplan.xgd_1DE6 elapsed time: 0.9s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,491 MB. GUI used memory: 165 MB. Current time: 3/18/25, 1:48:21 PM IST
+// Xgd.load filename: C:/FPGA/logtel/blk_mem_gen_0_ex/.Xil/Vivado-34756-dvirhersh_comp/xc7a100t_detail.xgd_1DE6 elapsed time: 9.7s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 10.8s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.6s
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,627 MB (+264945kb) [01:28:37]
+// DeviceView Instantiated
+// PAPropertyPanels.initPanels (lab20_2_bd_wrapper.vhd) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  8788 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.204 . Memory (MB): peak = 2234.910 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2024.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Chipscope 16-324] Core: lab20_2_bd_i/jtag_axi_0 UUID: a980947f-2511-5f8c-b3a1-b4472227b51d  
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/ip/lab20_2_bd_clk_wiz_2/lab20_2_bd_clk_wiz_2.xdc:54] INFO: [Timing 38-2] Deriving generated clocks [c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/ip/lab20_2_bd_clk_wiz_2/lab20_2_bd_clk_wiz_2.xdc:54] 
+// Tcl Message: Finished Parsing XDC File [c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/ip/lab20_2_bd_clk_wiz_2/lab20_2_bd_clk_wiz_2.xdc] for cell 'lab20_2_bd_i/clk_wiz/inst' Parsing XDC File [c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/ip/lab20_2_bd_rst_clk_wiz_100M_2/lab20_2_bd_rst_clk_wiz_100M_2_board.xdc] for cell 'lab20_2_bd_i/rst_clk_wiz_100M/U0' 
+// Tcl Message: INFO: [Project 1-1714] 22 XPM XDC files have been applied to the design. INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2689.980 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 44 instances were transformed.   RAM64M => RAM64M (RAMD64E(x4)): 44 instances  
+// HMemoryUtils.trashcanNow. Engine heap size: 1,669 MB. GUI used memory: 176 MB. Current time: 3/18/25, 1:48:38 PM IST
+// Elapsed time: 48 seconds
+floatFrame(PAResourceOtoP.PAViews_CODE, "bh_llb.xdc"); // R (PAResourceOtoP.PAViews_CODE, Code)
+// TclEventType: CURR_DESIGN_SET
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:01:02 ; elapsed = 00:00:49 . Memory (MB): peak = 2890.746 ; gain = 655.836 
+// ExpRunCommands.openSynthResults elapsed time: 50s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/q.a': 50s
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+dismissDialog("Open Synthesized Design"); // bh (Open Synthesized Design Progress)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 23 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Implementation Completed"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Implementation Completed"); // W.a (dialog36)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // J (dialog37)
+// Elapsed time: 14 seconds
+selectCodeEditor("bh_llb.xdc", 591, 304); // ae (bh_llb.xdc)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "areset", true); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reset_1"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rx", true); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rx"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx", true); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "tx"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "interrupt", true); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "interrupt"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// [GUI Memory]: 258 MB (+8116kb) [01:30:00]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 34, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Tue Mar 18 13:49:54 2025] Launched impl_1... Run output will be captured here: C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [Engine Memory]: 1,713 MB (+4717kb) [01:31:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 180 MB. Current time: 3/18/25, 1:51:06 PM IST
+// Elapsed time: 75 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Bitstream Generation Completed"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Bitstream Generation Completed"); // W.a (dialog38)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 35, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Tcl (Dont Echo) Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1430 ms.
+// Tcl Message: open_hw_manager 
+floatFrame(PAResourceOtoP.PAViews_CODE, "bh_llb.xdc"); // R (PAResourceOtoP.PAViews_CODE, Code)
+// [Engine Memory]: 1,809 MB (+10499kb) [01:31:23]
+dismissDialog("Open Hardware Manager"); // bh (Open Hardware Manager Progress)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (PAResourceOtoP.ProgramDebugTab_OPEN_TARGET)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // aq (PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, auto_connect_target_menu)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output: !! WARNING !! "PYTHONPATH" variable is set greater than default max string limit of "519" characters. Please ignore this, if you have already made changes to your system registry to accept more than default limit of 519 characters. !! WARNING !!  ****** Xilinx hw_server v2024.2   **** Build date : Oct 29 2024 at 10:25:41     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output: !! WARNING !! "PYTHONPATH" variable is set greater than default max string limit of "519" characters. Please ignore this, if you have already made changes to your system registry to accept more than default limit of 519 characters. !! WARNING !!   ******** Xilinx cs_server v2024.2.0   ****** Build date   : Oct 30 2024-20:19:07     **** Build number : 2024.2.1730312347       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.       ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3154.344 ; gain = 13.938 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292BD03ABA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/impl_1/lab20_2_bd_wrapper.bit} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/impl_1/lab20_2_bd_wrapper.ltx} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/impl_1/lab20_2_bd_wrapper.ltx} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bh (Auto Connect Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,891 MB. GUI used memory: 184 MB. Current time: 3/18/25, 1:51:31 PM IST
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMoreButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null, "Program Device"); // s (PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE)
+dismissFileChooser();
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // a (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aT (dialog39)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/impl_1/lab20_2_bd_wrapper.ltx} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/impl_1/lab20_2_bd_wrapper.ltx} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/impl_1/lab20_2_bd_wrapper.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_AXI_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s). 
+// 'E' command handler elapsed time: 10 seconds
+dismissDialog("Program Device"); // bh (Program Device Progress)
+// [Engine Memory]: 1,918 MB (+19347kb) [01:31:52]
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,918 MB. GUI used memory: 185 MB. Current time: 3/18/25, 1:51:46 PM IST
+// Elapsed time: 28 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device"); // an (PAResourceCommand.PACommandNames_PROGRAM_FPGA, Program Device)
+selectMenuItem(RDIResourceCommand.RDICommands_RUN_SCRIPT, "Run Tcl Script..."); // aq (RDIResourceCommand.RDICommands_RUN_SCRIPT, run_script_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ai (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+// Run Command: RDIResourceCommand.RDICommands_RUN_SCRIPT
+// Tcl (Dont Echo) Command: 'rdi::info_commands {device::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {debug::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {*}'
+// Elapsed time: 40 seconds
+setFileChooser("C:/FPGA/logtel/for_axi_labs/bh_demo_uart_transsmit.tcl");
+// Source Tcl File: 'C:/FPGA/logtel/for_axi_labs/bh_demo_uart_transsmit.tcl'
+// Tcl Command: 'source C:/FPGA/logtel/for_axi_labs/bh_demo_uart_transsmit.tcl'
+// TclEventType: HW_AXI_CHANGE
+// Tcl Message: source C:/FPGA/logtel/for_axi_labs/bh_demo_uart_transsmit.tcl 
+// Tcl Message: # reset_hw_axi [get_hw_axis hw_axi_1] # create_hw_axi_txn write_txn [get_hw_axis hw_axi_1] -address 00000004 -data {11111141} -len 1 -type write # run_hw_axi [get_hw_axi_txns write_txn] 
+// Tcl Message: INFO: [Labtoolstcl 44-481] WRITE DATA is: 11111141 
+// Tcl Message: # create_hw_axi_txn write_txn1 [get_hw_axis hw_axi_1] -address 00000004 -data {11111142} -len 1 -type write # run_hw_axi [get_hw_axi_txns write_txn1] 
+// Tcl Message: INFO: [Labtoolstcl 44-481] WRITE DATA is: 11111142 
+// Tcl Message: # create_hw_axi_txn write_txn2 [get_hw_axis hw_axi_1] -address 00000004 -data {11111143} -len 1 -type write # run_hw_axi [get_hw_axi_txns write_txn2] 
+// Tcl Message: INFO: [Labtoolstcl 44-481] WRITE DATA is: 11111143 
+// Tcl Message: # create_hw_axi_txn write_txn3 [get_hw_axis hw_axi_1] -address 00000004 -data {11111144} -len 1 -type write # run_hw_axi [get_hw_axi_txns write_txn3] 
+// Tcl Message: INFO: [Labtoolstcl 44-481] WRITE DATA is: 11111144 
+// Tcl Message: # create_hw_axi_txn write_txn4 [get_hw_axis hw_axi_1] -address 00000004 -data {11111145} -len 1 -type write # run_hw_axi [get_hw_axi_txns write_txn4] 
+// Tcl Message: INFO: [Labtoolstcl 44-481] WRITE DATA is: 11111145 
+// Tcl Message: # create_hw_axi_txn write_txn5 [get_hw_axis hw_axi_1] -address 00000004 -data {11111146} -len 1 -type write # run_hw_axi [get_hw_axi_txns write_txn5] 
+// Tcl Message: INFO: [Labtoolstcl 44-481] WRITE DATA is: 11111146 
+dismissDialog("Source Tcl Script"); // bh (Source Tcl Script Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,961 MB. GUI used memory: 185 MB. Current time: 3/18/25, 1:53:01 PM IST
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aa
+// Elapsed time: 33 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/lab20_2_bd.bd} 
+floatFrame(PAResourceOtoP.PAViews_CODE, "bh_llb.xdc"); // R (PAResourceOtoP.PAViews_CODE, Code)
+dismissDialog("Open Block Design"); // bh (Open Block Design Progress)
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+unMinimizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // R (PAResourceOtoP.PAViews_TCL_CONSOLE, Tcl Console)
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // C (PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // C (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 

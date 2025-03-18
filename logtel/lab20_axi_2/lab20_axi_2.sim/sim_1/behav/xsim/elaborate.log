@@ -1,0 +1,93 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Downloads/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_lite_ipif_v3_0_4 -L lib_pkg_v1_0_4 -L lib_srl_fifo_v1_0_4 -L lib_cdc_v1_0_3 -L axi_uartlite_v2_0_37 -L jtag_axi -L xlconstant_v1_1_9 -L proc_sys_reset_v5_0_16 -L smartconnect_v1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_33 -L axi_vip_v1_1_19 -L util_vector_logic_v2_0_4 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot lab20_2_bd_wrapper_behav xil_defaultlib.lab20_2_bd_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.ip_user_files/bd/lab20_2_bd/ip/lab20_2_bd_axi_smc_3/bd_0/sim/bd_fbbb.v:616]
+WARNING: [VRFC 10-5021] port 'sl_iport0' is not connected on this instance [C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.ip_user_files/bd/lab20_2_bd/ip/lab20_2_bd_jtag_axi_0_1/sim/lab20_2_bd_jtag_axi_0_1.v:130]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_arith
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_unsigned
+Compiling package axi_lite_ipif_v3_0_4.ipif_pkg
+Compiling package lib_pkg_v1_0_4.lib_pkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xlconstant_v1_1_9.xlconstant_v1_1_9_xlconstant(CON...
+Compiling module xil_defaultlib.bd_fbbb_one_0
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_3.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.proc_sys_reset [\proc_sys_reset(c_family="artix7...]
+Compiling architecture bd_fbbb_psr_aclk_0_arch of entity xil_defaultlib.bd_fbbb_psr_aclk_0 [bd_fbbb_psr_aclk_0_default]
+Compiling module xil_defaultlib.clk_map_imp_12IZ4JE
+Compiling module xpm.xpm_cdc_async_rst(DEST_SYNC_FF=3...
+Compiling module xil_defaultlib.bd_fbbb_m00e_0
+Compiling module xil_defaultlib.m00_exit_pipeline_imp_VRARFL
+Compiling module xil_defaultlib.bd_fbbb_m00s2a_0
+Compiling module xil_defaultlib.bd_fbbb_s00a2s_0
+Compiling module xil_defaultlib.bd_fbbb_s00mmu_0
+Compiling module xil_defaultlib.bd_fbbb_s00sic_0
+Compiling module xil_defaultlib.bd_fbbb_s00tr_0
+Compiling module xil_defaultlib.s00_entry_pipeline_imp_1UYVWIQ
+Compiling module xil_defaultlib.bd_fbbb_sarn_0
+Compiling module xil_defaultlib.bd_fbbb_sawn_0
+Compiling module xil_defaultlib.bd_fbbb_sbn_0
+Compiling module xil_defaultlib.bd_fbbb_srn_0
+Compiling module xil_defaultlib.bd_fbbb_swn_0
+Compiling module xil_defaultlib.s00_nodes_imp_1RIDCAG
+Compiling module xil_defaultlib.bd_fbbb
+Compiling module xil_defaultlib.lab20_2_bd_axi_smc_3
+Compiling architecture rtl of entity axi_uartlite_v2_0_37.baudrate [\baudrate(c_ratio=651)\]
+Compiling architecture implementation of entity lib_cdc_v1_0_3.cdc_sync [\cdc_sync(c_mtbf_stages=4)\]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_4.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=5,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_4.dynshreg_f [\dynshreg_f(c_depth=16,c_dwidth=...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_4.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=8,c_fam...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_4.srl_fifo_f [\srl_fifo_f(c_dwidth=8,c_family=...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_37.uartlite_rx [\uartlite_rx(c_family="artix7")(...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_37.uartlite_tx [\uartlite_tx(c_family="artix7")(...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_37.uartlite_core [\uartlite_core(c_family="artix7"...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=4,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_37.axi_uartlite [\axi_uartlite(c_family="artix7")...]
+Compiling architecture lab20_2_bd_axi_uartlite_0_1_arch of entity xil_defaultlib.lab20_2_bd_axi_uartlite_0_1 [lab20_2_bd_axi_uartlite_0_1_defa...]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.lab20_2_bd_clk_wiz_2_clk_wiz
+Compiling module xil_defaultlib.lab20_2_bd_clk_wiz_2
+Compiling module xil_defaultlib.lab20_2_bd_jtag_axi_0_1
+Compiling module util_vector_logic_v2_0_4.util_vector_logic_v2_0_4_util_ve...
+Compiling module xil_defaultlib.lab20_2_bd_reset_inv_0_0
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_16.proc_sys_reset [\proc_sys_reset(c_family="artix7...]
+Compiling architecture lab20_2_bd_rst_clk_wiz_100m_2_arch of entity xil_defaultlib.lab20_2_bd_rst_clk_wiz_100M_2 [lab20_2_bd_rst_clk_wiz_100m_2_de...]
+Compiling package smartconnect_v1_0.sc_util_v1_0_4_pkg
+Compiling architecture structure of entity xil_defaultlib.lab20_2_bd [lab20_2_bd_default]
+Compiling architecture structure of entity xil_defaultlib.lab20_2_bd_wrapper
+Built simulation snapshot lab20_2_bd_wrapper_behav
