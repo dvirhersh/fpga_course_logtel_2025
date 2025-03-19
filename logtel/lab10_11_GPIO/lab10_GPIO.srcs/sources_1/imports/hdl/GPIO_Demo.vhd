@@ -48,6 +48,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --std_logic_vector types to be used with the + operator to instantiate a 
 --counter.
 use IEEE.std_logic_unsigned.all; -- vhdl-linter-disable-line not-declared
+use IEEE.NUMERIC_STD.ALL;
 
 entity GPIO_demo is
     Port ( SW 			: in  STD_LOGIC_VECTOR (15 downto 0);
@@ -133,10 +134,13 @@ type UART_STATE_TYPE is (RST_REG, LD_INIT_STR, SEND_CHAR, RDY_LOW, WAIT_RDY, WAI
 --second character of the string, and so on.
 type CHAR_ARRAY is array (integer range<>) of std_logic_vector(7 downto 0);
 
-constant TMR_CNTR_MAX : std_logic_vector(26 downto 0) := "101111101011110000100000000"; --100,000,000 = clk cycles per second
+-- constant TMR_CNTR_MAX : std_logic_vector(26 downto 0) := "101111101011110000100000000"; --100,000,000 = clk cycles per second
+constant TMR_CNTR_MAX : std_logic_vector(26 downto 0) := "000000010000000000000000000"; --2,097,152 for quick
+-- constant TMR_CNTR_MAX : std_logic_vector(26 downto 0) := "000000000000000000000100000"; --32 for simulation 
 constant TMR_VAL_MAX : std_logic_vector(3 downto 0) := "1001"; --9
 
 constant RESET_CNTR_MAX : std_logic_vector(17 downto 0) := "110000110101000000";-- 100,000,000 * 0.002 = 200,000 = clk cycles per 2 ms
+-- constant RESET_CNTR_MAX : std_logic_vector(17 downto 0) := "000000010101000000";-- 100,000,000 * 0.002 = 200,000 = clk cycles per 2 ms
 
 constant MAX_STR_LEN : integer := 31;
 
@@ -147,31 +151,12 @@ constant BTN_STR_LEN : natural := 24;
 --are the ASCII values of the indicated character.
 constant WELCOME_STR : CHAR_ARRAY(0 to 30) := (X"0A",  --\n
 															  X"0D",  --\r
-															  X"4E",  --N
-															  X"45",  --E
-															  X"58",  --X
-															  X"59",  --Y
-															  X"53",  --S
-															  X"34",  --4
-															  X"20",  -- 
-															  X"44",  --D
-															  X"44",  --D
-															  X"52",  --R
-															  X"20",  -- 
-															  X"47",  --G
-															  X"50",  --P
-															  X"49",  --I
-															  X"4F",  --O
-															  X"2F",  --/
-															  X"55",  --U
-															  X"41",  --A
-															  X"52",  --R
-															  X"54",  --T
-															  X"20",  -- 
-															  X"44",  --D
-															  X"45",  --E
-															  X"4D",  --M
-															  X"4F",  --O
+															--   Welcome Dvir Hershkovits,!
+															  X"57",X"65",X"6C",X"63",X"6F",X"6D",
+															  X"65",X"20",X"44",X"76",X"69",X"72",
+															  X"20",X"48",X"65",X"72",X"73",X"68",
+															  X"6B",X"6F",X"76",X"69",X"74",X"73",
+															  X"2C",
 															  X"21",  --!
 															  X"0A",  --\n
 															  X"0A",  --\n
@@ -245,8 +230,57 @@ signal pwm_val_reg : std_logic := '0';
 --this counter counts the amount of time paused in the UART reset state
 signal reset_cntr : std_logic_vector (17 downto 0) := (others=>'0');
 
-signal counter : std_logic_vector (42 downto 0) := (others => '0');
+signal counter 		       : std_logic_vector (42 downto 0) := (others => '0');
+signal units_count         : std_logic_vector (3 downto 0) := (others => '0');
+signal tens_count          : std_logic_vector (3 downto 0) := (others => '0');
+signal hundreds_count      : std_logic_vector (3 downto 0) := (others => '0');
+signal thousands_count      : std_logic_vector (3 downto 0) := (others => '0');
+signal units_max, tens_max, hundreds_max, thousands_max : BOOLEAN;
+signal tmr_max_reached : BOOLEAN;
 
+-- Function to get SSEG_CA value
+function get_sseg_ca(digit : std_logic_vector(3 downto 0)) return std_logic_vector is
+	begin
+		case digit is
+			when "0000" => return "11000000";
+			when "0001" => return "11111001";
+			when "0010" => return "10100100";
+			when "0011" => return "10110000";
+			when "0100" => return "10011001";
+			when "0101" => return "10010010";
+			when "0110" => return "10000010";
+			when "0111" => return "11111000";
+			when "1000" => return "10000000";
+			when "1001" => return "10010000";
+			when others => return "11111111";
+		end case;
+	end function;
+
+	procedure count_digit(
+		signal clk 			 : in    std_logic;
+		signal btn_reset 	 : in    std_logic;
+		signal enable 		 : in    BOOLEAN;
+		signal count 		 : inout std_logic_vector(3 downto 0);
+		signal max_flag 	 : out   BOOLEAN;
+		constant TMR_VAL_MAX : in    std_logic_vector(3 downto 0)) is
+	begin
+		if rising_edge(clk) then
+			if btn_reset = '1' then
+				count <= (others => '0');
+				max_flag <= FALSE;
+			elsif enable then
+				if count = TMR_VAL_MAX then
+					count <= (others => '0');
+					max_flag <= TRUE;
+				else
+					count <= count + 1;
+					max_flag <= FALSE;
+				end if;
+			else
+				max_flag <= FALSE;
+			end if;
+		end if;
+	end procedure;
 begin
 
 ----------------------------------------------------------
@@ -254,7 +288,11 @@ begin
 ----------------------------------------------------------
 counter_for_led : process(CLK) begin
 	if rising_edge(CLK) then
-		counter <= counter + 1;
+		if BTN(4) = '1' then
+			counter <= (others => '0');
+		else
+			counter <= counter + 1;
+		end if;
 	end if;
 end process;
 
@@ -276,36 +314,68 @@ with BTN(4) select
 -- 	SSEG_AN(7 downto 4) <= btnDeBnc(3 downto 0)	when '0',
 -- 				  "1111" 			when others;				  
 
-leds_as_counter : process(CLK)
+    -- Units counter
+    digit_units : process(CLK)
+	begin
+		tmr_max_reached <= tmrCntr = TMR_CNTR_MAX;
+        count_digit(CLK, BTN(4), tmr_max_reached, units_count, units_max, TMR_VAL_MAX);
+    end process;
+
+	-- Tens counter
+	digit_tens : process(CLK) begin
+        count_digit(CLK, BTN(4), units_max, tens_count, tens_max, TMR_VAL_MAX);
+    end process;
+
+	-- Hundreds counter
+    digit_hundreds : process(CLK) begin
+        count_digit(CLK, BTN(4), tens_max, hundreds_count, hundreds_max, TMR_VAL_MAX);
+    end process;
+
+	-- thousands counter
+    digit_thousands : process(CLK) begin
+        count_digit(CLK, BTN(4), hundreds_max, thousands_count, thousands_max, TMR_VAL_MAX);
+    end process;
+
+segs_12345678 : process(CLK)
 begin
 	if rising_edge(CLK) then
-		if counter(19 downto 17) = "000" then
-            SSEG_AN(7 downto 0) <= "11111110"; -- '0' = turn on
-			SSEG_CA <= "11111001"; -- 1
-		elsif counter(19 downto 17) = "001" then
-			SSEG_AN(7 downto 0) <= "11111101"; -- '0' = turn on
-			SSEG_CA <= "10100100"; -- 2
-		elsif counter(19 downto 17) = "010" then
-			SSEG_AN(7 downto 0) <= "11111011";
-			SSEG_CA <= "10110000"; -- 3 
-		elsif counter(19 downto 17) = "011" then
-			SSEG_AN(7 downto 0) <= "11110111";
-			SSEG_CA <= "10011001"; -- 4
-		elsif counter(19 downto 17) = "100" then
-			SSEG_AN(7 downto 0) <= "11101111";
-			SSEG_CA <= "10010010"; -- 5
-		elsif counter(19 downto 17) = "101" then
-			SSEG_AN(7 downto 0) <= "11011111";
-			SSEG_CA <= "10000010"; -- 6
-		elsif counter(19 downto 17) = "110" then
-			SSEG_AN(7 downto 0) <= "10111111";
-			SSEG_CA <= "11111000"; -- 7
-		elsif counter(19 downto 17) = "111" then
-			SSEG_AN(7 downto 0) <= "01111111";
-			SSEG_CA <= "10000000"; -- 8
-		else
-			SSEG_AN(7 downto 0) <= "11111111";
-		end if;
+		case counter(19 downto 17) is 
+			when "000" =>
+            	SSEG_AN <= "11111110"; -- '0' = turn on
+				case units_count is
+					when others => SSEG_CA <= get_sseg_ca(units_count);
+				end case;
+			when "001" =>
+				SSEG_AN <= "11111101";
+				case tens_count is
+					when others => SSEG_CA <= get_sseg_ca(tens_count);
+				end case;
+			when "010" =>
+				SSEG_AN <= "11111011";
+				case hundreds_count is
+					when others => SSEG_CA <= get_sseg_ca(hundreds_count);
+				end case;
+			when "011" =>
+			SSEG_AN <= "11110111";
+			case thousands_count is
+				when others => SSEG_CA <= get_sseg_ca(thousands_count);
+			end case;
+			when "100" =>
+				SSEG_AN <= "11101111";
+				SSEG_CA <= "11000000";				
+			when "101" =>
+				SSEG_AN <= "11011111";
+				SSEG_CA <= "11000000";		
+			when "110" =>
+				SSEG_AN <= "10111111";
+				SSEG_CA <= "11000000";
+			when "111" =>
+				SSEG_AN <= "01111111";
+				SSEG_CA <= "11000000";								
+			when others =>
+				SSEG_AN <= (others => '1');
+				SSEG_CA <= (others => '1');
+		end case;
 	end if;
 end process;
 
@@ -333,7 +403,7 @@ begin
 			if (tmrVal = TMR_VAL_MAX) then
 				tmrVal <= (others => '0');
 			else
-				tmrVal <= tmrVal + 1;
+				tmrVal 	  <= tmrVal + 1;
 			end if;
 		end if;
 	end if;
@@ -341,19 +411,18 @@ end process;
 
 --This select statement encodes the value of tmrVal to the necessary
 --cathode signals to display it on the 7-segment
---with tmrVal select
---	SSEG_CA <= "11000000" when "0000",
---				  "11111001" when "0001",
---				  "10100100" when "0010",
---				  "10110000" when "0011",
---				  "10011001" when "0100",
---				  "10010010" when "0101",
---				  "10000010" when "0110",
---				  "11111000" when "0111",
---				  "10000000" when "1000",
---				  "10010000" when "1001",
---				  "11111111" when others;
-
+-- with tmrVal select
+-- 	SSEG_CA <= "11000000" when "0000",
+-- 				  "11111001" when "0001",
+-- 				  "10100100" when "0010",
+-- 				  "10110000" when "0011",
+-- 				  "10011001" when "0100",
+-- 				  "10010010" when "0101",
+-- 				  "10000010" when "0110",
+-- 				  "11111000" when "0111",
+-- 				  "10000000" when "1000",
+-- 				  "10010000" when "1001",
+-- 				  "11111111" when others;
 
 ----------------------------------------------------------
 ------              Button Control                 -------
@@ -384,10 +453,9 @@ end process;
 --btnDetect goes high for a single clock cycle when a btn press is
 --detected. This triggers a UART message to begin being sent.
 btnDetect <= '1' when ((btnReg(0)='0' and btnDeBnc(0)='1') or
-								(btnReg(1)='0' and btnDeBnc(1)='1') or
-								(btnReg(2)='0' and btnDeBnc(2)='1') or
-								(btnReg(3)='0' and btnDeBnc(3)='1')  ) else
-				  '0';
+					   (btnReg(1)='0' and btnDeBnc(1)='1') or
+					   (btnReg(2)='0' and btnDeBnc(2)='1') or
+					   (btnReg(3)='0' and btnDeBnc(3)='1')  ) else '0';
 				  
 
 
@@ -420,32 +488,32 @@ begin
 			uartState <= RST_REG;
 		else	
 			case uartState is 
-			when RST_REG =>
-        if (reset_cntr = RESET_CNTR_MAX) then
-          uartState <= LD_INIT_STR;
-        end if;
-			when LD_INIT_STR =>
-				uartState <= SEND_CHAR;
-			when SEND_CHAR =>
-				uartState <= RDY_LOW;
-			when RDY_LOW =>
-				uartState <= WAIT_RDY;
-			when WAIT_RDY =>
-				if (uartRdy = '1') then
-					if (strEnd = strIndex) then
-						uartState <= WAIT_BTN;
-					else
-						uartState <= SEND_CHAR;
+				when RST_REG =>
+					if (reset_cntr = RESET_CNTR_MAX) then
+						uartState <= LD_INIT_STR;
 					end if;
-				end if;
-			when WAIT_BTN =>
-				if (btnDetect = '1') then
-					uartState <= LD_BTN_STR;
-				end if;
-			when LD_BTN_STR =>
-				uartState <= SEND_CHAR;
-			when others=> --should never be reached
-				uartState <= RST_REG;
+				when LD_INIT_STR =>
+					uartState <= SEND_CHAR;
+				when SEND_CHAR =>
+					uartState <= RDY_LOW;
+				when RDY_LOW =>
+					uartState <= WAIT_RDY;
+				when WAIT_RDY =>
+					if (uartRdy = '1') then
+						if (strEnd = strIndex) then
+							uartState <= WAIT_BTN;
+						else
+							uartState <= SEND_CHAR;
+						end if;
+					end if;
+				when WAIT_BTN =>
+						if (btnDetect = '1') then
+							uartState <= LD_BTN_STR;
+						end if;
+				when LD_BTN_STR =>
+						uartState <= SEND_CHAR;
+					when others=> --should never be reached
+						uartState <= RST_REG;
 			end case;
 		end if ;
 	end if;
