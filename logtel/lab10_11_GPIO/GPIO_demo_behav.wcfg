@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="GPIO_Demo_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="GPIO_Demo_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="703.000001 us"></ZoomEndTime>
+      <Cursor1Time time="401.000000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="167"></NameColumnWidth>
+      <ValueColumnWidth column_width="128"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/GPIO_Demo_tb/uut/counter" type="array">
+      <obj_property name="ElementShortName">counter[42:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[42:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus232" type="vbus">
+      <obj_property name="label">counter17_19</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/GPIO_Demo_tb/uut/counter[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/GPIO_Demo_tb/uut/counter[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/GPIO_Demo_tb/uut/counter[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/GPIO_Demo_tb/uut/TMR_VAL_MAX" type="array">
+         <obj_property name="ElementShortName">TMR_VAL_MAX[3:0]</obj_property>
+         <obj_property name="ObjectShortName">TMR_VAL_MAX[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus260" type="vbus">
+      <obj_property name="label">10_12</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/GPIO_Demo_tb/uut/counter[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/GPIO_Demo_tb/uut/counter[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/GPIO_Demo_tb/uut/counter[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/GPIO_Demo_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GPIO_Demo_tb/uut/TMR_CNTR_MAX" type="array">
+      <obj_property name="ElementShortName">TMR_CNTR_MAX[26:0]</obj_property>
+      <obj_property name="ObjectShortName">TMR_CNTR_MAX[26:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GPIO_Demo_tb/uut/thousands_count" type="array">
+      <obj_property name="ElementShortName">thousands_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">thousands_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GPIO_Demo_tb/uut/hundreds_count" type="array">
+      <obj_property name="ElementShortName">hundreds_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hundreds_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GPIO_Demo_tb/uut/tens_count" type="array">
+      <obj_property name="ElementShortName">tens_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tens_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GPIO_Demo_tb/uut/units_count" type="array">
+      <obj_property name="ElementShortName">units_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">units_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider244">
+   </wvobject>
+   <wvobject fp_name="/GPIO_Demo_tb/SSEG_CA" type="array">
+      <obj_property name="ElementShortName">SSEG_CA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SSEG_CA[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/GPIO_Demo_tb/SSEG_AN" type="array">
+      <obj_property name="ElementShortName">SSEG_AN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SSEG_AN[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>
