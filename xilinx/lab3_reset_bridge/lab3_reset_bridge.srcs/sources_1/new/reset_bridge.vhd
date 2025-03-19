@@ -39,18 +39,16 @@ end reset_bridge;
 
 architecture Behavioral of reset_bridge is
 
+    signal rst_meta : STD_LOGIC := '1';
+
 begin
-    process (clk_dst, rst_in) 
-        variable rst_meta : STD_LOGIC := 'U';
-    begin
-        if rst_in = '1' then
-            rst_meta := '1';
-            rst_out  <= '1';
-        elsif rising_edge (clk_dst) then
-            rst_out  <= rst_meta;
-            rst_meta := '0';
+
+    process (clk_dst) begin
+        if rising_edge (clk_dst) then
+            rst_meta <= rst_in;   -- First stage of synchronization
+            rst_out  <= rst_meta; -- Second stage
         end if;
     end process;
-
-
+    
 end Behavioral;
+

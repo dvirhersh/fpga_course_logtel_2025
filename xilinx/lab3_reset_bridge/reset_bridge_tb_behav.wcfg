@@ -10,24 +10,28 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="51.666 ns"></ZoomStartTime>
-      <ZoomEndTime time="91.667 ns"></ZoomEndTime>
-      <Cursor1Time time="85.000 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="140.001 ns"></ZoomEndTime>
+      <Cursor1Time time="15.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="164"></NameColumnWidth>
-      <ValueColumnWidth column_width="128"></ValueColumnWidth>
+      <ValueColumnWidth column_width="91"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="3" />
-   <wvobject fp_name="/reset_bridge_tb/clk_dst" type="logic">
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/reset_bridge_tb/uut/clk_dst" type="logic">
       <obj_property name="ElementShortName">clk_dst</obj_property>
       <obj_property name="ObjectShortName">clk_dst</obj_property>
    </wvobject>
-   <wvobject fp_name="/reset_bridge_tb/rst_in" type="logic">
+   <wvobject fp_name="/reset_bridge_tb/uut/rst_in" type="logic">
       <obj_property name="ElementShortName">rst_in</obj_property>
       <obj_property name="ObjectShortName">rst_in</obj_property>
    </wvobject>
-   <wvobject fp_name="/reset_bridge_tb/rst_out" type="logic">
+   <wvobject fp_name="/reset_bridge_tb/uut/rst_meta" type="logic">
+      <obj_property name="ElementShortName">rst_meta</obj_property>
+      <obj_property name="ObjectShortName">rst_meta</obj_property>
+   </wvobject>
+   <wvobject fp_name="/reset_bridge_tb/uut/rst_out" type="logic">
       <obj_property name="ElementShortName">rst_out</obj_property>
       <obj_property name="ObjectShortName">rst_out</obj_property>
    </wvobject>
