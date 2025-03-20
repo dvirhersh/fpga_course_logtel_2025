@@ -1,0 +1,35 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-325,-77",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port ddr2_sdram -pg 1 -lvl 5 -x 1200 -y 460 -defaultsOSRD
+preplace port port-id_sys_clk_i -pg 1 -lvl 0 -x -10 -y 530 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -10 -y 510 -defaultsOSRD
+preplace inst jtag_axi_0 -pg 1 -lvl 2 -x 480 -y 410 -defaultsOSRD
+preplace inst axi_perf_mon_0 -pg 1 -lvl 4 -x 1030 -y 150 -defaultsOSRD
+preplace inst mig_7series_0 -pg 1 -lvl 4 -x 1030 -y 510 -defaultsOSRD
+preplace inst rst_mig_7series_0_81M -pg 1 -lvl 1 -x 200 -y 400 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 3 -x 730 -y 430 -defaultsOSRD
+preplace netloc sys_clk_i_1 1 0 4 NJ 530 NJ 530 NJ 530 NJ
+preplace netloc mig_7series_0_ui_clk 1 0 5 20 500 370 330 590 330 880 330 1160
+preplace netloc mig_7series_0_mmcm_locked 1 0 5 30 620 NJ 620 NJ 620 NJ 620 1160
+preplace netloc mig_7series_0_ui_clk_sync_rst 1 0 5 10 630 NJ 630 NJ 630 NJ 630 1180
+preplace netloc rst_mig_7series_0_81M_peripheral_aresetn 1 1 3 380 340 580 340 890
+preplace netloc reset_1 1 0 4 NJ 510 NJ 510 NJ 510 870J
+preplace netloc mig_7series_0_ui_addn_clk_0 1 3 2 900 400 1170
+preplace netloc mig_7series_0_DDR2 1 4 1 N 460
+preplace netloc jtag_axi_0_M_AXI 1 2 1 N 410
+preplace netloc axi_smc_M00_AXI 1 3 1 870 60n
+preplace netloc axi_smc_M01_AXI 1 3 1 870 440n
+levelinfo -pg 1 -10 200 480 730 1030 1200
+pagesize -pg 1 -db -bbox -sgen -120 0 1330 640
+"
+}
+{
+   "da_axi4_cnt":"4",
+   "da_board_cnt":"9",
+   "da_clkrst_cnt":"3"
+}
