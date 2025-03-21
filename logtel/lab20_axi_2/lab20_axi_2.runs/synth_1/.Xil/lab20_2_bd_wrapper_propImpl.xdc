@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/FPGA/logtel/for_axi_labs/bh_llb.xdc rfile:../../../../for_axi_labs/bh_llb.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/FPGA/logtel/lab20_axi_2/bh_llb.xdc rfile:../../../bh_llb.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN H17 [get_ports interrupt]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]

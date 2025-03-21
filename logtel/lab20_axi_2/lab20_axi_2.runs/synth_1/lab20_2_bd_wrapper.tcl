@@ -56,6 +56,9 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
+set_param bd.open.in_stealth_mode 1
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -74,7 +77,7 @@ set_property ip_output_repo c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.cache/ip [cur
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/hdl/lab20_2_bd_wrapper.vhd
+read_vhdl -library xil_defaultlib C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/hdl/lab20_2_bd_wrapper.vhd
 add_files C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/sources_1/bd/lab20_2_bd/lab20_2_bd.bd
 set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/ip/lab20_2_bd_axi_uartlite_0_1/lab20_2_bd_axi_uartlite_0_1_board.xdc]
 set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab20_axi_2/lab20_axi_2.gen/sources_1/bd/lab20_2_bd/ip/lab20_2_bd_axi_uartlite_0_1/lab20_2_bd_axi_uartlite_0_1_ooc.xdc]
@@ -111,12 +114,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/FPGA/logtel/for_axi_labs/bh_llb.xdc
-set_property used_in_implementation false [get_files C:/FPGA/logtel/for_axi_labs/bh_llb.xdc]
+read_xdc C:/FPGA/logtel/lab20_axi_2/bh_llb.xdc
+set_property used_in_implementation false [get_files C:/FPGA/logtel/lab20_axi_2/bh_llb.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.srcs/utils_1/imports/synth_1/lab20_2_bd_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

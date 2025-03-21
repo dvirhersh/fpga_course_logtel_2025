@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue Mar 18 13:40:45 2025
+| Date         : Thu Mar 20 22:40:24 2025
 | Host         : dvirhersh_comp running 64-bit major release  (build 9200)
 | Command      : report_utilization -file lab20_2_bd_wrapper_utilization_synth.rpt -pb lab20_2_bd_wrapper_utilization_synth.pb
 | Design       : lab20_2_bd_wrapper
