@@ -70,8 +70,8 @@ ARCHITECTURE behavior OF DPmemory_tb IS
    signal PortB_dataOut : std_logic_vector(7 downto 0);
 
    -- Clock period definitions
-   constant PortA_clk_period : time := 10 ns;
-   constant PortB_clk_period : time := 11 ns;
+   constant PortA_clk_period : time := 10ns;
+   constant PortB_clk_period : time := 11ns;
  
 BEGIN
  
@@ -172,7 +172,7 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100ms.
-      wait for 100 ms;	
+      wait for 100ms;	
 
       wait for PortA_clk_period*10;
 
