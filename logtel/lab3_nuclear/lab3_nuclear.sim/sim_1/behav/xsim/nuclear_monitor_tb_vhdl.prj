@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../lab3_nuclear.srcs/sources_1/new/nuclear_monitor.vhd" \
-"../../../../lab3_nuclear.srcs/sim_1/new/nuclear_monitor_tb.vhd" \
-
-# Do not sort compile order
-nosort

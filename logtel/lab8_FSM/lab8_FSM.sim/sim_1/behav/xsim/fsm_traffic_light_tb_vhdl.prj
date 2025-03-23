@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../lab8_FSM.srcs/sources_1/imports/new/fsm_traffic_light.vhd" \
-"../../../../lab8_FSM.srcs/sim_1/imports/new/fsm_traffic_light_tb.vhd" \
-
-# Do not sort compile order
-nosort

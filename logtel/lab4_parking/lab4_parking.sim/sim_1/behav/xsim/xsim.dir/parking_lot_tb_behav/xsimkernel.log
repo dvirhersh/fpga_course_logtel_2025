@@ -1,7 +1,0 @@
-Running: xsim.dir/parking_lot_tb_behav/xsimk.exe -simmode gui -wdb parking_lot_tb_behav.wdb -simrunnum 0 -socket 54851
-Design successfully loaded
-Design Loading Memory Usage: 29516 KB (Peak: 29516 KB)
-Design Loading CPU Usage: 703 ms
-Simulation completed
-Simulation Memory Usage: 35112 KB (Peak: 35112 KB)
-Simulation CPU Usage: 796 ms
