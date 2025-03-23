@@ -32,6 +32,9 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity LED_manager is
+    generic (
+        CHAN_SEL : integer range 1 to 2 := 1
+    );
     Port ( Channel_1_data : in STD_LOGIC_VECTOR (7 downto 0);
            Channel_2_data : in STD_LOGIC_VECTOR (7 downto 0);
            Channel_1_enable : in STD_LOGIC;
@@ -77,10 +80,18 @@ begin
             data_out => Channel_2_register_data
         );
 
-    with selector select 
-        mux_data_selected <= Channel_1_register_data when '0',
-                             Channel_2_register_data when '1',
-                             (others => '0')  when others;
+    c1Sel: if CHAN_SEL = 1 generate
+        mux_data_selected <= Channel_1_register_data;
+    end generate c1Sel;
+
+    c2Sel: if CHAN_SEL = 2 generate
+        mux_data_selected <= Channel_2_register_data;
+    end generate c2Sel;
+
+    -- with selector select 
+    --     mux_data_selected <= Channel_1_register_data when '0',
+    --                          Channel_2_register_data when '1',
+    --                          (others => '0')  when others;
 
     data_out <= mux_data_selected when rising_edge(clock);
 

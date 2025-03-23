@@ -93,6 +93,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/FPGA_2025/xilinx/lab5/lab5.srcs/utils_1/imports/synth_1/LED_manager.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
