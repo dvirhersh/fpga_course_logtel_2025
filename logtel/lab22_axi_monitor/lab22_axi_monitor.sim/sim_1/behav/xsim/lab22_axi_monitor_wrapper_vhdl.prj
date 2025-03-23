@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab22_axi_monitor.gen/sources_1/bd/lab22_axi_monitor/ip/lab22_axi_monitor_rst_mig_7series_0_81M_0_1/sim/lab22_axi_monitor_rst_mig_7series_0_81M_0.vhd" \
+"../../../../lab22_axi_monitor.gen/sources_1/bd/lab22_axi_monitor/ip/lab22_axi_monitor_axi_smc_0/bd_0/ip/ip_1/sim/bd_80ce_psr_aclk_0.vhd" \
+"../../../../lab22_axi_monitor.gen/sources_1/bd/lab22_axi_monitor/sim/lab22_axi_monitor.vhd" \
+"../../../../lab22_axi_monitor.gen/sources_1/bd/lab22_axi_monitor/hdl/lab22_axi_monitor_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

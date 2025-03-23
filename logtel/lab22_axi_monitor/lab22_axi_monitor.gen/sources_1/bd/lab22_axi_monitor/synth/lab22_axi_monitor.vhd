@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
---Date        : Thu Mar 20 21:14:47 2025
+--Date        : Sun Mar 23 17:27:22 2025
 --Host        : dvirhersh_comp running 64-bit major release  (build 9200)
 --Command     : generate_target lab22_axi_monitor.bd
 --Design      : lab22_axi_monitor
@@ -38,7 +38,7 @@ entity lab22_axi_monitor is
 end lab22_axi_monitor;
 
 architecture STRUCTURE of lab22_axi_monitor is
-  component lab22_axi_monitor_jtag_axi_0_1 is
+  component lab22_axi_monitor_jtag_axi_0_0 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -80,8 +80,8 @@ architecture STRUCTURE of lab22_axi_monitor is
     m_axi_rvalid : in STD_LOGIC;
     m_axi_rready : out STD_LOGIC
   );
-  end component lab22_axi_monitor_jtag_axi_0_1;
-  component lab22_axi_monitor_axi_perf_mon_0_1 is
+  end component lab22_axi_monitor_jtag_axi_0_0;
+  component lab22_axi_monitor_axi_perf_mon_0_0 is
   port (
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
@@ -145,8 +145,8 @@ architecture STRUCTURE of lab22_axi_monitor is
     core_aresetn : in STD_LOGIC;
     interrupt : out STD_LOGIC
   );
-  end component lab22_axi_monitor_axi_perf_mon_0_1;
-  component lab22_axi_monitor_mig_7series_0_3 is
+  end component lab22_axi_monitor_axi_perf_mon_0_0;
+  component lab22_axi_monitor_mig_7series_0_0 is
   port (
     sys_rst : in STD_LOGIC;
     clk_ref_i : in STD_LOGIC;
@@ -209,7 +209,7 @@ architecture STRUCTURE of lab22_axi_monitor is
     init_calib_complete : out STD_LOGIC;
     aresetn : in STD_LOGIC
   );
-  end component lab22_axi_monitor_mig_7series_0_3;
+  end component lab22_axi_monitor_mig_7series_0_0;
   component lab22_axi_monitor_rst_mig_7series_0_81M_0 is
   port (
     slowest_sync_clk : in STD_LOGIC;
@@ -224,7 +224,7 @@ architecture STRUCTURE of lab22_axi_monitor is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component lab22_axi_monitor_rst_mig_7series_0_81M_0;
-  component lab22_axi_monitor_axi_smc_2 is
+  component lab22_axi_monitor_axi_smc_0 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -318,7 +318,7 @@ architecture STRUCTURE of lab22_axi_monitor is
     M01_AXI_rvalid : in STD_LOGIC;
     M01_AXI_rready : out STD_LOGIC
   );
-  end component lab22_axi_monitor_axi_smc_2;
+  end component lab22_axi_monitor_axi_smc_0;
   signal axi_smc_M00_AXI_ARADDR : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal axi_smc_M00_AXI_ARREADY : STD_LOGIC;
   signal axi_smc_M00_AXI_ARVALID : STD_LOGIC;
@@ -445,7 +445,7 @@ architecture STRUCTURE of lab22_axi_monitor is
   attribute X_INTERFACE_INFO of ddr2_sdram_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 ddr2_sdram DQS_P";
   attribute X_INTERFACE_INFO of ddr2_sdram_odt : signal is "xilinx.com:interface:ddrx:1.0 ddr2_sdram ODT";
 begin
-axi_perf_mon_0: component lab22_axi_monitor_axi_perf_mon_0_1
+axi_perf_mon_0: component lab22_axi_monitor_axi_perf_mon_0_0
      port map (
       capture_event => '0',
       core_aclk => mig_7series_0_ui_clk,
@@ -509,7 +509,7 @@ axi_perf_mon_0: component lab22_axi_monitor_axi_perf_mon_0_1
       slot_0_axi_wstrb(3 downto 0) => B"1111",
       slot_0_axi_wvalid => '0'
     );
-axi_smc: component lab22_axi_monitor_axi_smc_2
+axi_smc: component lab22_axi_monitor_axi_smc_0
      port map (
       M00_AXI_araddr(15 downto 0) => axi_smc_M00_AXI_ARADDR(15 downto 0),
       M00_AXI_arprot(2 downto 0) => NLW_axi_smc_M00_AXI_arprot_UNCONNECTED(2 downto 0),
@@ -603,7 +603,7 @@ axi_smc: component lab22_axi_monitor_axi_smc_2
       aclk => mig_7series_0_ui_clk,
       aresetn => rst_mig_7series_0_81M_peripheral_aresetn(0)
     );
-jtag_axi_0: component lab22_axi_monitor_jtag_axi_0_1
+jtag_axi_0: component lab22_axi_monitor_jtag_axi_0_0
      port map (
       aclk => mig_7series_0_ui_clk,
       aresetn => rst_mig_7series_0_81M_peripheral_aresetn(0),
@@ -645,7 +645,7 @@ jtag_axi_0: component lab22_axi_monitor_jtag_axi_0_1
       m_axi_wstrb(3 downto 0) => jtag_axi_0_M_AXI_WSTRB(3 downto 0),
       m_axi_wvalid => jtag_axi_0_M_AXI_WVALID
     );
-mig_7series_0: component lab22_axi_monitor_mig_7series_0_3
+mig_7series_0: component lab22_axi_monitor_mig_7series_0_0
      port map (
       aresetn => rst_mig_7series_0_81M_peripheral_aresetn(0),
       clk_ref_i => mig_7series_0_ui_addn_clk_0,
