@@ -1,7 +1,0 @@
-Running: xsim.dir/lab20_2_bd_wrapper_behav/xsimk.exe -simmode gui -wdb lab20_2_bd_wrapper_behav.wdb -simrunnum 0 -socket 53900
-Design successfully loaded
-Design Loading Memory Usage: 31864 KB (Peak: 31864 KB)
-Design Loading CPU Usage: 1186 ms
-Simulation completed
-Simulation Memory Usage: 34572 KB (Peak: 34572 KB)
-Simulation CPU Usage: 1342 ms

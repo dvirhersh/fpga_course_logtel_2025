@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA/logtel/lab14_PLL_ILA/lab14_PLL_ILA.srcs/sources_1/imports/new/PLL_CLK.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'PLL_CLK'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA/logtel/lab14_PLL_ILA/lab14_PLL_ILA.srcs/sim_1/imports/new/PLL_CLK_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'PLL_CLK_tb'

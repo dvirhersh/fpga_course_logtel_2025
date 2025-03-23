@@ -1,7 +1,0 @@
-verilog xil_defaultlib  \
-"../../../../Nexys-A7-HW/Nexys-A7-HW.gen/BRAM_1/ip/BRAM_1/sim/BRAM_1.v" \
-
-verilog xil_defaultlib "glbl.v"
-
-# Do not sort compile order
-nosort
