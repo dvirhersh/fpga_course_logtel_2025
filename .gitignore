@@ -5,6 +5,7 @@
 *.runs/
 *.sim/
 *.str/
+*.str
 *.sdk/
 
 # Vivado project files
