@@ -1,8 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../lab15_calc.gen/sources_1/ip/dsp_macro_0/sim/dsp_macro_0.vhd" \
-"../../../../lab15_calc.srcs/sources_1/imports/new/Calculator.vhd" \
-"../../../../lab15_calc.srcs/sim_1/imports/new/CalculatorTb.vhd" \
-
-# Do not sort compile order
-nosort
