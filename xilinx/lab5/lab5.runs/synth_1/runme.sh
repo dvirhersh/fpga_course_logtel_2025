@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log LED_manager.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source LED_manager.tcl
+EAStep vivado -log uart_led.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_led.tcl
