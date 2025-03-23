@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../lab14_PLL_ILA.srcs/sources_1/imports/new/PLL_CLK.vhd" \
-"../../../../lab14_PLL_ILA.srcs/sim_1/imports/new/PLL_CLK_tb.vhd" \
-
-# Do not sort compile order
-nosort

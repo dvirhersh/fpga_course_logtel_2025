@@ -1,2 +1,0 @@
-Breakpoint File Version 1.0
-10,true,"C:/Users/dvirh/FPGA39course/From the internet/From the internet.srcs/sim_1/new/hello_world.vhd"

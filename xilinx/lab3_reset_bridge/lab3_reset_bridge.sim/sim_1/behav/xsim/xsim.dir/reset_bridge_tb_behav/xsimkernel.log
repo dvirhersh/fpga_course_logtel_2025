@@ -1,7 +1,0 @@
-Running: xsim.dir/reset_bridge_tb_behav/xsimk.exe -simmode gui -wdb reset_bridge_tb_behav.wdb -simrunnum 0 -socket 59018
-Design successfully loaded
-Design Loading Memory Usage: 28444 KB (Peak: 28444 KB)
-Design Loading CPU Usage: 827 ms
-Simulation completed
-Simulation Memory Usage: 29336 KB (Peak: 29336 KB)
-Simulation CPU Usage: 936 ms

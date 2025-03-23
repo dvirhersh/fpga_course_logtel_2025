@@ -1,7 +1,0 @@
-Running: xsim.dir/lab20_axi_3_bd_wrapper_behav/xsimk.exe -simmode gui -wdb lab20_axi_3_bd_wrapper_behav.wdb -simrunnum 0 -socket 57547
-Design successfully loaded
-Design Loading Memory Usage: 83924 KB (Peak: 83924 KB)
-Design Loading CPU Usage: 1014 ms
-Simulation completed
-Simulation Memory Usage: 95552 KB (Peak: 95552 KB)
-Simulation CPU Usage: 43343 ms
