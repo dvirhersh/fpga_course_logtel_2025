@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Mar 18 13:35:18 2025
+# Process ID         : 8300
+# Current directory  : C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/lab20_2_bd_axi_uartlite_0_1_synth_1
+# Command line       : vivado.exe -log lab20_2_bd_axi_uartlite_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab20_2_bd_axi_uartlite_0_1.tcl
+# Log file           : C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/lab20_2_bd_axi_uartlite_0_1_synth_1/lab20_2_bd_axi_uartlite_0_1.vds
+# Journal file       : C:/FPGA/logtel/lab20_axi_2/lab20_axi_2.runs/lab20_2_bd_axi_uartlite_0_1_synth_1\vivado.jou
+# Running On         : dvirhersh_comp
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450H
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16857 MB
+# Swap memory        : 11811 MB
+# Total Virtual      : 28668 MB
+# Available Virtual  : 9147 MB
+#-----------------------------------------------------------
+source lab20_2_bd_axi_uartlite_0_1.tcl -notrace

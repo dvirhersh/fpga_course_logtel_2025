@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+Note: Hello World
+Time: 0 ps  Iteration: 0  Process: /HelloWorldTb/line__7  File: C:/Users/dvirh/FPGA39course/From the internet/From the internet.srcs/sim_1/new/hello_world.vhd
+Stopped at time : 0 fs : File "C:/Users/dvirh/FPGA39course/From the internet/From the internet.srcs/sim_1/new/hello_world.vhd" Line 10
+Note: Hello World
+Time: 0 ps  Iteration: 0  Process: /HelloWorldTb/line__7  File: C:/Users/dvirh/FPGA39course/From the internet/From the internet.srcs/sim_1/new/hello_world.vhd
+Stopped at time : 0 fs : File "C:/Users/dvirh/FPGA39course/From the internet/From the internet.srcs/sim_1/new/hello_world.vhd" Line 11

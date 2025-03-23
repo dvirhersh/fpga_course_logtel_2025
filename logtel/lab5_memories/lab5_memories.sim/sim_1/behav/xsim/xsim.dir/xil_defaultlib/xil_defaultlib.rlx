@@ -1,0 +1,13 @@
+0.7
+2020.2
+Dec 15 2024
+09:05:09
+C:/FPGA/logtel/lab5_memories/lab5_memories.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1741794941,verilog,,,,blk_mem_gen_0,,,,,,,,
+C:/FPGA/logtel/lab5_memories/lab5_memories.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,1741805091,verilog,,,,blk_mem_gen_1,,,,,,,,
+C:/FPGA/logtel/lab5_memories/lab5_memories.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+C:/FPGA/logtel/lab5_memories/lab5_memories.srcs/sim_1/new/design_for_ram_w_r_tb.vhd,1741638250,vhdl,,,,design_for_ram_w_r_tb,,,,,,,,
+C:/FPGA/logtel/lab5_memories/lab5_memories.srcs/sim_1/new/design_for_rom_reading_tb.vhd,1741804872,vhdl,,,,design_for_rom_reading_tb,,,,,,,,
+C:/FPGA/logtel/lab5_memories/lab5_memories.srcs/sim_1/new/ram_tb.vhd,1741804578,vhdl,,,,ram_tb,,,,,,,,
+C:/FPGA/logtel/lab5_memories/lab5_memories.srcs/sim_1/new/rom_tb.vhd,1741638250,vhdl,,,,rom_tb,,,,,,,,
+C:/FPGA/logtel/lab5_memories/lab5_memories.srcs/sources_1/new/design_for_ram_w_r.vhd,1741638250,vhdl,,,,design_for_ram_w_r,,,,,,,,
+C:/FPGA/logtel/lab5_memories/lab5_memories.srcs/sources_1/new/design_for_rom_reading.vhd,1741804991,vhdl,,,,design_for_rom_reading,,,,,,,,
