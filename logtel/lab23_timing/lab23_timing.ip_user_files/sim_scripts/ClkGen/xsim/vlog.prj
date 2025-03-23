@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "../../../../Nexys-A7-HW/Nexys-A7-HW.gen/ClkGen/ip/ClkGen" \
+"../../../../Nexys-A7-HW/Nexys-A7-HW.gen/ClkGen/ip/ClkGen/ClkGen_clk_wiz.v" \
+"../../../../Nexys-A7-HW/Nexys-A7-HW.gen/ClkGen/ip/ClkGen/ClkGen.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

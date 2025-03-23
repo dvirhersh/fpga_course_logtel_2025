@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab4_parking.srcs/sources_1/imports/new/parking_lot.vhd" \
+"../../../../lab4_parking.srcs/sim_1/imports/new/parking_lot_tb.vhd" \
+
+# Do not sort compile order
+nosort

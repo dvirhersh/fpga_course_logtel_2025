@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../training/Constr_Wizard/lab/KCU105/vhdl/wave_gen.gen/sources_1/ip/clk_core" \
+"../../../../../training/Constr_Wizard/lab/KCU105/vhdl/wave_gen.gen/sources_1/ip/char_fifo/sim/char_fifo.v" \
+"../../../../../training/Constr_Wizard/lab/KCU105/vhdl/wave_gen.gen/sources_1/ip/clk_core/clk_core_clk_wiz.v" \
+"../../../../../training/Constr_Wizard/lab/KCU105/vhdl/wave_gen.gen/sources_1/ip/clk_core/clk_core.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

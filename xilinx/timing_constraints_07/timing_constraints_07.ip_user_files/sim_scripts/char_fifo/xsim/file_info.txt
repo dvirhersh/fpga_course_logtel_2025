@@ -1,0 +1,2 @@
+char_fifo.v,verilog,xil_defaultlib,../../../../../training/Constr_Wizard/lab/KCU105/vhdl/wave_gen.gen/sources_1/ip/char_fifo/sim/char_fifo.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

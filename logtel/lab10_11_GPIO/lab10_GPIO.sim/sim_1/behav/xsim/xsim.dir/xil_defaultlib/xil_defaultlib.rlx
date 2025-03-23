@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/FPGA/logtel/lab10_11_GPIO/lab10_GPIO.srcs/sim_1/new/GPIO_Demo_tb.vhd,1742421691,vhdl,,,,gpio_demo_tb,,,,,,,,
+C:/FPGA/logtel/lab10_11_GPIO/lab10_GPIO.srcs/sources_1/imports/hdl/GPIO_Demo.vhd,1742561288,vhdl,,,,gpio_demo,,,,,,,,
+C:/FPGA/logtel/lab10_11_GPIO/lab10_GPIO.srcs/sources_1/imports/hdl/RGB_controller.vhd,1741897056,vhdl,,,,rgb_controller,,,,,,,,
+C:/FPGA/logtel/lab10_11_GPIO/lab10_GPIO.srcs/sources_1/imports/hdl/UART_TX_CTRL.vhd,1741897056,vhdl,,,,uart_tx_ctrl,,,,,,,,
+C:/FPGA/logtel/lab10_11_GPIO/lab10_GPIO.srcs/sources_1/imports/hdl/debouncer.vhd,1741897056,vhdl,,,,debouncer,,,,,,,,
