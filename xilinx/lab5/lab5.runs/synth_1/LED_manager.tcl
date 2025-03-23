@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/FPGA_2025/xilinx/lab5/lab5.runs/synth_1/DP_memory.tcl"
+  variable script "C:/FPGA_2025/xilinx/lab5/lab5.runs/synth_1/LED_manager.tcl"
   variable category "vivado_synth"
 }
 
@@ -57,7 +57,6 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
-set_param synth.incrementalSynthesisCache C:/Users/dvirh/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15400-dvirhersh_comp/incrSyn
 set_param checkpoint.writeSynthRtdsInDcp 1
 set_param runs.launchOptions { -jobs 6  }
 set_param bd.open.in_stealth_mode 2
@@ -80,7 +79,10 @@ set_property ip_output_repo c:/FPGA_2025/xilinx/lab5/lab5.cache/ip [current_proj
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib C:/FPGA_2025/xilinx/lab5/lab5.srcs/sources_1/new/DP_memory.vhd
+read_vhdl -library xil_defaultlib {
+  C:/FPGA_2025/xilinx/lab5/lab5.srcs/sources_1/imports/xilinx/lab1_resiter8/lab1_resiter8.srcs/sources_1/new/register8.vhd
+  C:/FPGA_2025/xilinx/lab5/lab5.srcs/sources_1/imports/xilinx/lab2_concurrent/lab2_concurrent.srcs/sources_1/new/LED_manager.vhd
+}
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -94,7 +96,7 @@ set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top DP_memory -part xc7a100tcsg324-1
+synth_design -top LED_manager -part xc7a100tcsg324-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
@@ -104,10 +106,10 @@ if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef DP_memory.dcp
+write_checkpoint -force -noxdef LED_manager.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-generate_parallel_reports -reports { "report_utilization -file DP_memory_utilization_synth.rpt -pb DP_memory_utilization_synth.pb"  } 
+generate_parallel_reports -reports { "report_utilization -file LED_manager_utilization_synth.rpt -pb LED_manager_utilization_synth.pb"  } 
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

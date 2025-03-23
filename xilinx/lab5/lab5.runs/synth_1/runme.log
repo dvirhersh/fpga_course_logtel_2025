@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log DP_memory.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DP_memory.tcl
+    with args -log LED_manager.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source LED_manager.tcl
 
 
 
@@ -8,40 +8,44 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Sun Mar 23 20:09:54 2025
+  **** Start of session at: Sun Mar 23 20:33:43 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
-source DP_memory.tcl -notrace
-Command: synth_design -top DP_memory -part xc7a100tcsg324-1
+source LED_manager.tcl -notrace
+Command: synth_design -top LED_manager -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12912
+INFO: [Synth 8-7075] Helper process launched with PID 13300
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 822.434 ; gain = 473.637
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 821.965 ; gain = 474.652
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'DP_memory' [C:/FPGA_2025/xilinx/lab5/lab5.srcs/sources_1/new/DP_memory.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'DP_memory' (0#1) [C:/FPGA_2025/xilinx/lab5/lab5.srcs/sources_1/new/DP_memory.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'LED_manager' [C:/FPGA_2025/xilinx/lab5/lab5.srcs/sources_1/imports/xilinx/lab2_concurrent/lab2_concurrent.srcs/sources_1/new/LED_manager.vhd:45]
+INFO: [Synth 8-3491] module 'register8' declared at 'C:/FPGA_2025/xilinx/lab5/lab5.srcs/sources_1/imports/xilinx/lab1_resiter8/lab1_resiter8.srcs/sources_1/new/register8.vhd:34' bound to instance 'regCh1' of component 'register8' [C:/FPGA_2025/xilinx/lab5/lab5.srcs/sources_1/imports/xilinx/lab2_concurrent/lab2_concurrent.srcs/sources_1/new/LED_manager.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'register8' [C:/FPGA_2025/xilinx/lab5/lab5.srcs/sources_1/imports/xilinx/lab1_resiter8/lab1_resiter8.srcs/sources_1/new/register8.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'register8' (0#1) [C:/FPGA_2025/xilinx/lab5/lab5.srcs/sources_1/imports/xilinx/lab1_resiter8/lab1_resiter8.srcs/sources_1/new/register8.vhd:42]
+INFO: [Synth 8-3491] module 'register8' declared at 'C:/FPGA_2025/xilinx/lab5/lab5.srcs/sources_1/imports/xilinx/lab1_resiter8/lab1_resiter8.srcs/sources_1/new/register8.vhd:34' bound to instance 'regCh2' of component 'register8' [C:/FPGA_2025/xilinx/lab5/lab5.srcs/sources_1/imports/xilinx/lab2_concurrent/lab2_concurrent.srcs/sources_1/new/LED_manager.vhd:71]
+INFO: [Synth 8-226] default block is never used [C:/FPGA_2025/xilinx/lab5/lab5.srcs/sources_1/imports/xilinx/lab2_concurrent/lab2_concurrent.srcs/sources_1/new/LED_manager.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'LED_manager' (0#1) [C:/FPGA_2025/xilinx/lab5/lab5.srcs/sources_1/imports/xilinx/lab2_concurrent/lab2_concurrent.srcs/sources_1/new/LED_manager.vhd:45]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 929.195 ; gain = 580.398
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 927.082 ; gain = 579.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 929.195 ; gain = 580.398
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 927.082 ; gain = 579.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 927.082 ; gain = 579.770
+---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 929.195 ; gain = 580.398
----------------------------------------------------------------------------------
-INFO: [Synth 8-3971] The signal "DP_memory/memoryBlock_reg" was recognized as a true dual port RAM template.
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 929.195 ; gain = 580.398
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 927.082 ; gain = 579.770
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -49,9 +53,9 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Registers : 
-	                8 Bit    Registers := 2     
-+---RAMs : 
-	               8K Bit	(1024 X 8 bit)          RAMs := 1     
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -69,53 +73,21 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-INFO: [Synth 8-3971] The signal "DP_memory/memoryBlock_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1101.449 ; gain = 752.652
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
-
-Block RAM: Preliminary Mapping Report (see note below)
-+------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|DP_memory   | memoryBlock_reg | 1 K x 8(WRITE_FIRST)   | W | R | 1 K x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
-+------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-
-Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1103.293 ; gain = 755.980
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1125.352 ; gain = 776.555
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
-
-Block RAM: Final Mapping Report
-+------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
-+------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|DP_memory   | memoryBlock_reg | 1 K x 8(WRITE_FIRST)   | W | R | 1 K x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
-+------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1118.117 ; gain = 770.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance memoryBlock_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance memoryBlock_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1125.352 ; gain = 776.555
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1118.324 ; gain = 771.012
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -133,37 +105,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1325.863 ; gain = 977.066
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.793 ; gain = 972.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1325.863 ; gain = 977.066
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.793 ; gain = 972.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1325.863 ; gain = 977.066
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.793 ; gain = 972.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1325.863 ; gain = 977.066
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.793 ; gain = 972.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1326.879 ; gain = 978.082
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.793 ; gain = 972.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1326.879 ; gain = 978.082
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.793 ; gain = 972.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -176,43 +148,44 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+---------+------+
-|      |Cell     |Count |
-+------+---------+------+
-|1     |BUFG     |     2|
-|2     |RAMB18E1 |     1|
-|3     |IBUF     |    40|
-|4     |OBUF     |    16|
-+------+---------+------+
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT3 |     8|
+|3     |FDRE |    24|
+|4     |IBUF |    21|
+|5     |OBUF |     8|
++------+-----+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |    59|
-+------+---------+-------+------+
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |    62|
+|2     |  regCh1 |register8   |     8|
+|3     |  regCh2 |register8_0 |    16|
++------+---------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1326.879 ; gain = 978.082
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.793 ; gain = 972.480
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1326.879 ; gain = 978.082
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1326.879 ; gain = 978.082
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.793 ; gain = 972.480
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.793 ; gain = 972.480
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1340.879 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1334.867 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1452.918 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1448.551 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 98a7ee01
+Synth Design complete | Checksum: 2f8a96f
 INFO: [Common 17-83] Releasing license: Synthesis
-18 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+17 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1452.918 ; gain = 1110.066
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1452.918 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/FPGA_2025/xilinx/lab5/lab5.runs/synth_1/DP_memory.dcp' has been generated.
-INFO: [Vivado 12-24828] Executing command : report_utilization -file DP_memory_utilization_synth.rpt -pb DP_memory_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Mar 23 20:10:24 2025...
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1448.551 ; gain = 1108.227
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1448.551 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/FPGA_2025/xilinx/lab5/lab5.runs/synth_1/LED_manager.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file LED_manager_utilization_synth.rpt -pb LED_manager_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 23 20:34:08 2025...

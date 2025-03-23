@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="68" Path="C:/FPGA_2025/xilinx/lab5/lab5.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="c2301d134d00428c8efa9f59c9c0549a"/>
+    <Option Name="Id" Val="a298c4eed53445128c2b0ff3a741d87e"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -61,7 +61,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="nexys-a7-100t"/>
-    <Option Name="WTXSimLaunchSim" Val="2"/>
+    <Option Name="WTXSimLaunchSim" Val="0"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -92,15 +92,25 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/new/DP_memory.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/xilinx/lab1_resiter8/lab1_resiter8.srcs/sources_1/new/register8.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab1_resiter8/lab1_resiter8.srcs/sources_1/new/register8.vhd"/>
+          <Attr Name="ImportTime" Val="1742740159"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/xilinx/lab2_concurrent/lab2_concurrent.srcs/sources_1/new/LED_manager.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab2_concurrent/lab2_concurrent.srcs/sources_1/new/LED_manager.vhd"/>
+          <Attr Name="ImportTime" Val="1742740159"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="DP_memory"/>
+        <Option Name="TopModule" Val="LED_manager"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
@@ -111,22 +121,9 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
-      <File Path="$PSRCDIR/sim_1/imports/support/DPmemory_tb.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../training/buildingMemory/support/DPmemory_tb.vhd"/>
-          <Attr Name="ImportTime" Val="1742740160"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/DPmemory_tb_behav.wcfg">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="DPmemory_tb"/>
+        <Option Name="TopModule" Val="LED_manager"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
@@ -137,7 +134,6 @@
         <Option Name="PamSignalDriverFile" Val="xil_bypass_driver"/>
         <Option Name="PamPseudoTop" Val="pseudo_tb"/>
         <Option Name="SrcSet" Val="sources_1"/>
-        <Option Name="XSimWcfgFile" Val="$PPRDIR/DPmemory_tb_behav.wcfg"/>
         <Option Name="CosimPdi" Val=""/>
         <Option Name="CosimPlatform" Val=""/>
         <Option Name="CosimElf" Val=""/>
