@@ -9,7 +9,7 @@
 *.sdk/
 
 # Vivado project files
-*.xpr
+# *.xpr
 *.log
 *.jou
 
