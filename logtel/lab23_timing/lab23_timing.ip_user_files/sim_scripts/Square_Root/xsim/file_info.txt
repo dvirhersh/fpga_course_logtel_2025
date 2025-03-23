@@ -1,2 +1,0 @@
-Square_Root.vhd,vhdl,xil_defaultlib,../../../../Nexys-A7-HW/Nexys-A7-HW.gen/Square_Root/ip/Square_Root/sim/Square_Root.vhd,
-glbl.v,Verilog,xil_defaultlib,glbl.v
