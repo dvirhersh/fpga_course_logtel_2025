@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab13.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_sim_netlist.vhdl" \
+"../../../../lab13.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.vhdl" \
+"../../../../lab13.srcs/sources_1/imports/new/HIST.vhd" \
+"../../../../lab13.srcs/sim_1/imports/new/HIST_UNIT_tb.vhd" \
+
+# Do not sort compile order
+nosort
