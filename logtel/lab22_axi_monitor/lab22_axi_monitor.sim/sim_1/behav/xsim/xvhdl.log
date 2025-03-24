@@ -1,6 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA/logtel/lab22_axi_monitor/lab22_axi_monitor.gen/sources_1/bd/lab22_axi_monitor/ip/lab22_axi_monitor_axi_smc_0/bd_0/ip/ip_1/sim/bd_80ce_psr_aclk_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'bd_80ce_psr_aclk_0'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA/logtel/lab22_axi_monitor/lab22_axi_monitor.gen/sources_1/bd/lab22_axi_monitor/sim/lab22_axi_monitor.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'lab22_axi_monitor'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA/logtel/lab22_axi_monitor/lab22_axi_monitor.gen/sources_1/bd/lab22_axi_monitor/hdl/lab22_axi_monitor_wrapper.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'lab22_axi_monitor_wrapper'

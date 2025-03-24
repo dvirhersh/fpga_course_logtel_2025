@@ -1,7 +1,0 @@
-Running: xsim.dir/lab22_axi_monitor_wrapper_behav/xsimk.exe -simmode gui -wdb lab22_axi_monitor_wrapper_behav.wdb -simrunnum 0 -socket 61089
-Design successfully loaded
-Design Loading Memory Usage: 87904 KB (Peak: 87904 KB)
-Design Loading CPU Usage: 906 ms
-Simulation completed
-Simulation Memory Usage: 101332 KB (Peak: 101332 KB)
-Simulation CPU Usage: 1108 ms
