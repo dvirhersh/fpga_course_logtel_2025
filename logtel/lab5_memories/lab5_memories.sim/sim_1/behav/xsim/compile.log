@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA_2025/logtel/lab5_memories/lab5_memories.srcs/sources_1/new/design_for_rom_reading.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_for_rom_reading'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA_2025/logtel/lab5_memories/lab5_memories.srcs/sim_1/new/design_for_rom_reading_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_for_rom_reading_tb'
