@@ -1,0 +1,4 @@
+Running: xsim.dir/Nexys4DdrUserDemo_behav/xsimk.exe -simmode gui -wdb Nexys4DdrUserDemo_behav.wdb -simrunnum 0 -socket 57495
+Design successfully loaded
+Design Loading Memory Usage: 45372 KB (Peak: 45372 KB)
+Design Loading CPU Usage: 718 ms
