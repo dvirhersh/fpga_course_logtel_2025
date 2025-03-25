@@ -19,26 +19,25 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module nuclear(
-    input  RESET,
-    input  RAD,
-    input  CLOCK,
-    output reg ALARM
-    );
+    input  logic RESET,
+    input  logic RAD,
+    input  logic CLOCK,
+    output logic ALARM
+);
 
-    localparam integer THRESHOLD = 9'd500;
+    localparam int unsigned THRESHOLD = 500;
 
-    reg [8:0] count = 9'd0;
+    logic [8:0] count = 9'd0;
 
-    always @(posedge CLOCK) begin
+    always_ff @(posedge CLOCK) begin
         if (RESET || ~RAD)
             count <= 9'd0;
         else if (count < THRESHOLD)
             count <= count + 1;
     end
 
-    always @(posedge CLOCK) begin
+    always_ff @(posedge CLOCK) begin
         if (RESET)
             ALARM <= 1'b0;
         else if (count == THRESHOLD)
