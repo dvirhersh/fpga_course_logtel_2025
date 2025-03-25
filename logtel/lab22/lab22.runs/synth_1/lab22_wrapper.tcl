@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/FPGA/logtel/lab22/lab22.runs/synth_1/lab22_wrapper.tcl"
+  variable script "C:/FPGA_2025/logtel/lab22/lab22.runs/synth_1/lab22_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,10 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
-set_param runs.launchOptions { -jobs 6  }
 set_param bd.open.in_stealth_mode 1
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -67,60 +64,60 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/FPGA/logtel/lab22/lab22.cache/wt [current_project]
-set_property parent.project_path C:/FPGA/logtel/lab22/lab22.xpr [current_project]
+set_property webtalk.parent_dir C:/FPGA_2025/logtel/lab22/lab22.cache/wt [current_project]
+set_property parent.project_path C:/FPGA_2025/logtel/lab22/lab22.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part_repo_paths {C:/Users/dvirh/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.2 [current_project]
-set_property ip_output_repo c:/FPGA/logtel/lab22/lab22.cache/ip [current_project]
+set_property ip_output_repo c:/FPGA_2025/logtel/lab22/lab22.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/hdl/lab22_wrapper.vhd
-add_files C:/FPGA/logtel/lab22/lab22.srcs/sources_1/bd/lab22/lab22.bd
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_perf_mon_0_0/lab22_axi_perf_mon_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_perf_mon_0_0/lab22_axi_perf_mon_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_perf_mon_0_0/lab22_axi_perf_mon_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_mig_7series_0_0/lab22_mig_7series_0_0/user_design/constraints/lab22_mig_7series_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_mig_7series_0_0/lab22_mig_7series_0_0/user_design/constraints/lab22_mig_7series_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_mig_7series_0_0/lab22_mig_7series_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_jtag_axi_0_0/constraints/jtag_axi.xdc]
-set_property used_in_synthesis false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_jtag_axi_0_0/constraints/lab22_jtag_axi_0_0_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_jtag_axi_0_0/constraints/lab22_jtag_axi_0_0_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_jtag_axi_0_0/lab22_jtag_axi_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_rst_mig_7series_0_81M_0/lab22_rst_mig_7series_0_81M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_rst_mig_7series_0_81M_0/lab22_rst_mig_7series_0_81M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_rst_mig_7series_0_81M_0/lab22_rst_mig_7series_0_81M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_1/bd_0472_psr_aclk_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_1/bd_0472_psr_aclk_0.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_2/bd_0472_arsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_3/bd_0472_rsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_4/bd_0472_awsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_5/bd_0472_wsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_6/bd_0472_bsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_10/bd_0472_s00a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_11/bd_0472_sarn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_12/bd_0472_srn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_13/bd_0472_sawn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_14/bd_0472_swn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_15/bd_0472_sbn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_16/bd_0472_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_17/bd_0472_m00arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_18/bd_0472_m00rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_19/bd_0472_m00awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_20/bd_0472_m00wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_21/bd_0472_m00bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_23/bd_0472_m01s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_24/bd_0472_m01arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_25/bd_0472_m01rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_26/bd_0472_m01awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_27/bd_0472_m01wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_28/bd_0472_m01bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/smartconnect.xdc]
-set_property used_in_implementation false [get_files -all c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/lab22_ooc.xdc]
+read_vhdl -library xil_defaultlib C:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/hdl/lab22_wrapper.vhd
+add_files C:/FPGA_2025/logtel/lab22/lab22.srcs/sources_1/bd/lab22/lab22.bd
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_perf_mon_0_0/lab22_axi_perf_mon_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_perf_mon_0_0/lab22_axi_perf_mon_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_perf_mon_0_0/lab22_axi_perf_mon_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_mig_7series_0_0/lab22_mig_7series_0_0/user_design/constraints/lab22_mig_7series_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_mig_7series_0_0/lab22_mig_7series_0_0/user_design/constraints/lab22_mig_7series_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_mig_7series_0_0/lab22_mig_7series_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_jtag_axi_0_0/constraints/jtag_axi.xdc]
+set_property used_in_synthesis false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_jtag_axi_0_0/constraints/lab22_jtag_axi_0_0_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_jtag_axi_0_0/constraints/lab22_jtag_axi_0_0_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_jtag_axi_0_0/lab22_jtag_axi_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_rst_mig_7series_0_81M_0/lab22_rst_mig_7series_0_81M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_rst_mig_7series_0_81M_0/lab22_rst_mig_7series_0_81M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_rst_mig_7series_0_81M_0/lab22_rst_mig_7series_0_81M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_1/bd_0472_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_1/bd_0472_psr_aclk_0.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_2/bd_0472_arsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_3/bd_0472_rsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_4/bd_0472_awsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_5/bd_0472_wsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_6/bd_0472_bsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_10/bd_0472_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_11/bd_0472_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_12/bd_0472_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_13/bd_0472_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_14/bd_0472_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_15/bd_0472_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_16/bd_0472_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_17/bd_0472_m00arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_18/bd_0472_m00rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_19/bd_0472_m00awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_20/bd_0472_m00wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_21/bd_0472_m00bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_23/bd_0472_m01s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_24/bd_0472_m01arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_25/bd_0472_m01rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_26/bd_0472_m01awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_27/bd_0472_m01wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/bd_0/ip/ip_28/bd_0472_m01bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_axi_smc_0/smartconnect.xdc]
+set_property used_in_implementation false [get_files -all c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/lab22_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -134,6 +131,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/FPGA_2025/logtel/lab22/lab22.srcs/utils_1/imports/synth_1/lab22_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

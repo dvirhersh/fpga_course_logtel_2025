@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Sun Mar 23 17:57:10 2025
+| Date         : Mon Mar 24 19:06:57 2025
 | Host         : dvirhersh_comp running 64-bit major release  (build 9200)
 | Command      : report_utilization -file lab22_mig_7series_0_0_utilization_synth.rpt -pb lab22_mig_7series_0_0_utilization_synth.pb
 | Design       : lab22_mig_7series_0_0

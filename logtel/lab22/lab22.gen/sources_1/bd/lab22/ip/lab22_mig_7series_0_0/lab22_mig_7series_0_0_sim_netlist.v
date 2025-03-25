@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Sun Mar 23 17:57:10 2025
+// Date        : Mon Mar 24 19:06:57 2025
 // Host        : dvirhersh_comp running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_mig_7series_0_0/lab22_mig_7series_0_0_sim_netlist.v
+//               c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_mig_7series_0_0/lab22_mig_7series_0_0_sim_netlist.v
 // Design      : lab22_mig_7series_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

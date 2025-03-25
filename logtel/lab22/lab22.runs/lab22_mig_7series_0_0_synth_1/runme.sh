@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/FPGA/logtel/lab22/lab22.runs/lab22_mig_7series_0_0_synth_1'
+HD_PWD='C:/FPGA_2025/logtel/lab22/lab22.runs/lab22_mig_7series_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

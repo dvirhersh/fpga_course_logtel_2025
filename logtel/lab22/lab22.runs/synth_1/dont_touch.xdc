@@ -19,4 +19,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==lab22_rst_m
 # IP: bd/lab22/ip/lab22_axi_smc_0/lab22_axi_smc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==lab22_axi_smc_0 || ORIG_REF_NAME==lab22_axi_smc_0} -quiet] -quiet
 
-# XDC: c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/lab22_ooc.xdc
+# XDC: c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/lab22_ooc.xdc

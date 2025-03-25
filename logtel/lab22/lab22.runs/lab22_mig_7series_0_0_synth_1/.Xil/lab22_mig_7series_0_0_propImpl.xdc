@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:c:/FPGA/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_mig_7series_0_0/lab22_mig_7series_0_0/user_design/constraints/lab22_mig_7series_0_0.xdc rfile:../../../lab22.gen/sources_1/bd/lab22/ip/lab22_mig_7series_0_0/lab22_mig_7series_0_0/user_design/constraints/lab22_mig_7series_0_0.xdc id:1 order:EARLY} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/FPGA_2025/logtel/lab22/lab22.gen/sources_1/bd/lab22/ip/lab22_mig_7series_0_0/lab22_mig_7series_0_0/user_design/constraints/lab22_mig_7series_0_0.xdc rfile:../../../lab22.gen/sources_1/bd/lab22/ip/lab22_mig_7series_0_0/lab22_mig_7series_0_0/user_design/constraints/lab22_mig_7series_0_0.xdc id:1 order:EARLY} [current_design]
 set_property src_info {type:XDC file:1 line:52 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN R7 [get_ports {ddr2_dq[0]}]
 set_property src_info {type:XDC file:1 line:58 export:INPUT save:INPUT read:READ} [current_design]
