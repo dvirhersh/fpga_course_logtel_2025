@@ -1,0 +1,4 @@
+Running: xsim.dir/nuclear_tb_behav/xsimk.exe -simmode gui -wdb nuclear_tb_behav.wdb -simrunnum 0 -socket 54835
+Design successfully loaded
+Design Loading Memory Usage: 28424 KB (Peak: 28424 KB)
+Design Loading CPU Usage: 717 ms
