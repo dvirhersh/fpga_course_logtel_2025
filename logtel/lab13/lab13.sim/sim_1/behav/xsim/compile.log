@@ -1,3 +1,19 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA_2025/logtel/lab13/lab13.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_gen_1_blk_mem_gen_prim_wrapper'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_gen_1_blk_mem_gen_prim_width'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_gen_1_blk_mem_gen_generic_cstr'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_gen_1_blk_mem_gen_top'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_gen_1_blk_mem_gen_v8_4_9_synth'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_gen_1_blk_mem_gen_v8_4_9'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_gen_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA_2025/logtel/lab13/lab13.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_gen_0_blk_mem_gen_prim_wrapper_init'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_gen_0_blk_mem_gen_prim_width'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_gen_0_blk_mem_gen_generic_cstr'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_gen_0_blk_mem_gen_top'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_gen_0_blk_mem_gen_v8_4_9_synth'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_gen_0_blk_mem_gen_v8_4_9'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_gen_0'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA_2025/logtel/lab13/lab13.srcs/sources_1/imports/new/HIST.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'HIST_UNIT'
 ERROR: [VRFC 10-1281] process cannot have both a wait statement and a sensitivity list [C:/FPGA_2025/logtel/lab13/lab13.srcs/sources_1/imports/new/HIST.vhd:137]

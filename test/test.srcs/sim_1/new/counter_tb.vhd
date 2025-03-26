@@ -4,20 +4,20 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity counter_tb is
 end counter_tb;
 
-architecture Behavioral of counter_tb is
+ architecture Behavioral of counter_tb is
     component counter_rtl
         Port (
             RESET   : in  STD_LOGIC;
             SW      : in  STD_LOGIC;
             CLOCK   : in  STD_LOGIC;
-            COUNTER : out STD_LOGIC_VECTOR(6 downto 0)
+            COUNTER : out STD_LOGIC
         );
     end component;
 
     signal RESET   : STD_LOGIC := '0';
     signal SW      : STD_LOGIC := '0';
     signal CLOCK   : STD_LOGIC := '0';
-    signal COUNTER : STD_LOGIC_VECTOR(6 downto 0);
+    signal COUNTER : STD_LOGIC;
 
     constant clock_period : time := 10 ns;
 

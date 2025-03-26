@@ -1,47 +1,62 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
+use IEEE.std_logic_unsigned.ALL;  -- vhdl-linter-disable-line not-declared
 
 entity counter_rtl is
     Port (
         RESET   : in  STD_LOGIC;
         SW      : in  STD_LOGIC;
         CLOCK   : in  STD_LOGIC;
-        COUNTER : out STD_LOGIC_VECTOR(6 downto 0)
+        COUNTER : out STD_LOGIC
     );
 end counter_rtl;
 
 architecture Behavioral of counter_rtl is
-    signal SW_SYNC : STD_LOGIC := '0';
-    signal SW_PREV : STD_LOGIC := '0';
-    signal count   : UNSIGNED(6 downto 0) := (others => '0');
+
+    signal sw_sync      : STD_LOGIC := '0';
+    signal sw_prev      : STD_LOGIC := '0';
+
+    signal reset_meta   : STD_LOGIC := '0';
+    signal reset_sync   : STD_LOGIC := '0';
+
+    signal count        : STD_LOGIC := '0';
+
 begin
 
-    -- Synchronize the switch input to the clock domain
-    sync_proc : process(CLOCK)
+    sync_reset : process(CLOCK)
     begin
         if rising_edge(CLOCK) then
-            if RESET = '1' then
-                SW_SYNC <= '0';
-                SW_PREV <= '0';
+            reset_meta <= RESET;
+            reset_sync <= reset_meta;
+        end if;
+    end process;
+
+    sync_sw : process(CLOCK)
+    begin
+        if rising_edge(CLOCK) then
+            if reset_sync = '1' then
+                sw_sync <= '0';
+                sw_prev <= '0';
             else
-                SW_SYNC <= SW;
-                SW_PREV <= SW_SYNC;
+                sw_sync <= SW;
+                sw_prev <= sw_sync;
             end if;
         end if;
     end process;
 
-    -- Counter logic
+    -- Count on rising edge of SW
     count_proc : process(CLOCK)
     begin
         if rising_edge(CLOCK) then
-            if RESET = '1' then
-                count <= (others => '0');
-            elsif SW_SYNC = '1' and SW_PREV = '0' then
-                count <= count + 1;
+            if reset_sync = '1' then
+                count <= '0';
+            elsif sw_sync = '1' and sw_prev = '0' then
+                count <= not count;
             end if;
         end if;
     end process;
 
-    COUNTER <= STD_LOGIC_VECTOR(count);
+    COUNTER <= count;
+
 end Behavioral;

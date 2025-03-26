@@ -1,2 +1,4 @@
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA_2025/test/test.srcs/sources_1/new/counter.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'counter_rtl'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/FPGA_2025/test/test.srcs/sim_1/new/counter_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_tb'
