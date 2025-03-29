@@ -8,7 +8,7 @@ begin
     begin
     
         report "Peekaboo";
-        -- wait;
+        wait for 10 ns;
     
     end process;
 
