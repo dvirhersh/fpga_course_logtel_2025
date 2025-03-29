@@ -7,7 +7,7 @@ begin
     process
     begin
     
-        report "Hello World";
+        report "Hello World! ";
         wait;
     
     end process;
