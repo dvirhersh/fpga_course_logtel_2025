@@ -1,7 +1,0 @@
-Time resolution is 1 ps
-Failure: Test completed: counter should be > 100
-Time: 4580 ns  Iteration: 0  Process: /counter_tb/stim_proc  File: C:/FPGA_2025/test/test.srcs/sim_1/new/counter_tb.vhd
-$finish called at time : 4580 ns : File "C:/FPGA_2025/test/test.srcs/sim_1/new/counter_tb.vhd" Line 56
-Failure: Test completed: counter should be > 100
-Time: 4580 ns  Iteration: 0  Process: /counter_tb/stim_proc  File: C:/FPGA_2025/test/test.srcs/sim_1/new/counter_tb.vhd
-$finish called at time : 4580 ns : File "C:/FPGA_2025/test/test.srcs/sim_1/new/counter_tb.vhd" Line 56

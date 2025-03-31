@@ -46,9 +46,9 @@ begin
         wait for 2 * clock_period;
         for i in 0 to 110 loop
             SW <= '1';
-            wait for 3*clock_period;
+            wait for 20*clock_period;
             SW <= '0';
-            wait for clock_period;
+            wait for 20*clock_period;
         end loop;
 
         wait for 10 * clock_period;

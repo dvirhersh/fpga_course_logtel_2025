@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log debouncer.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source debouncer.tcl
+EAStep vivado -log counter_rtl.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter_rtl.tcl

@@ -10,35 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="4,113.118 ns"></ZoomStartTime>
-      <ZoomEndTime time="4,673.377 ns"></ZoomEndTime>
-      <Cursor1Time time="4,580.000 ns"></Cursor1Time>
+      <ZoomStartTime time="0.056 ns"></ZoomStartTime>
+      <ZoomEndTime time="610.057 ns"></ZoomEndTime>
+      <Cursor1Time time="147.556 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="322"></NameColumnWidth>
-      <ValueColumnWidth column_width="63"></ValueColumnWidth>
+      <ValueColumnWidth column_width="59"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="13" />
-   <wvobject fp_name="/counter_tb/RESET" type="logic">
-      <obj_property name="ElementShortName">RESET</obj_property>
-      <obj_property name="ObjectShortName">RESET</obj_property>
-   </wvobject>
-   <wvobject fp_name="/counter_tb/SW" type="logic">
-      <obj_property name="ElementShortName">SW</obj_property>
-      <obj_property name="ObjectShortName">SW</obj_property>
-   </wvobject>
-   <wvobject fp_name="/counter_tb/CLOCK" type="logic">
-      <obj_property name="ElementShortName">CLOCK</obj_property>
-      <obj_property name="ObjectShortName">CLOCK</obj_property>
-   </wvobject>
-   <wvobject fp_name="/counter_tb/COUNTER" type="array">
-      <obj_property name="ElementShortName">COUNTER[6:0]</obj_property>
-      <obj_property name="ObjectShortName">COUNTER[6:0]</obj_property>
-   </wvobject>
-   <wvobject type="divider" fp_name="divider11">
-      <obj_property name="label">uut</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-   </wvobject>
+   <WVObjectSize size="11" />
    <wvobject fp_name="/counter_tb/uut/RESET" type="logic">
       <obj_property name="ElementShortName">RESET</obj_property>
       <obj_property name="ObjectShortName">RESET</obj_property>
@@ -54,6 +34,9 @@
    <wvobject fp_name="/counter_tb/uut/COUNTER" type="array">
       <obj_property name="ElementShortName">COUNTER[6:0]</obj_property>
       <obj_property name="ObjectShortName">COUNTER[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/counter_tb/uut/sw_sync_1" type="logic">
       <obj_property name="ElementShortName">sw_sync_1</obj_property>
@@ -70,5 +53,22 @@
    <wvobject fp_name="/counter_tb/uut/count" type="array">
       <obj_property name="ElementShortName">count[6:0]</obj_property>
       <obj_property name="ObjectShortName">count[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/counter_tb/uut/sw_debounced" type="logic">
+      <obj_property name="ElementShortName">sw_debounced</obj_property>
+      <obj_property name="ObjectShortName">sw_debounced</obj_property>
+   </wvobject>
+   <wvobject fp_name="/counter_tb/uut/debounce_counter" type="other">
+      <obj_property name="ElementShortName">debounce_counter</obj_property>
+      <obj_property name="ObjectShortName">debounce_counter</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/counter_tb/uut/DEBOUNCE_LIMIT" type="other">
+      <obj_property name="ElementShortName">DEBOUNCE_LIMIT</obj_property>
+      <obj_property name="ObjectShortName">DEBOUNCE_LIMIT</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>
