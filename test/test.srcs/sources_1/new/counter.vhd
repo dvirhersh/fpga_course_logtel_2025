@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
+use IEEE.std_logic_unsigned.all; -- vhdl-linter-disable-line not-declared
 
 entity counter_rtl is
     Port (
@@ -12,9 +13,10 @@ entity counter_rtl is
 end counter_rtl;
 
 architecture Behavioral of counter_rtl is
-    signal SW_SYNC : STD_LOGIC := '0';
-    signal SW_PREV : STD_LOGIC := '0';
-    signal count   : UNSIGNED(6 downto 0) := (others => '0');
+    signal sw_sync_1 : STD_LOGIC := '0';
+    signal sw_sync_2 : STD_LOGIC := '0';
+    signal sw_prev   : STD_LOGIC := '0';
+    signal count     : STD_LOGIC_VECTOR(6 downto 0) := (others => '0');
 begin
 
     -- Synchronize the switch input to the clock domain
@@ -22,11 +24,13 @@ begin
     begin
         if rising_edge(CLOCK) then
             if RESET = '1' then
-                SW_SYNC <= '0';
-                SW_PREV <= '0';
+                sw_sync_1 <= '0';
+                sw_sync_2 <= '0';
+                sw_prev   <= '0';
             else
-                SW_SYNC <= SW;
-                SW_PREV <= SW_SYNC;
+                sw_sync_1 <= SW;
+                sw_sync_2 <= sw_sync_1;
+                sw_prev   <= sw_sync_2;
             end if;
         end if;
     end process;
@@ -37,11 +41,11 @@ begin
         if rising_edge(CLOCK) then
             if RESET = '1' then
                 count <= (others => '0');
-            elsif SW_SYNC = '1' and SW_PREV = '0' then
+            elsif sw_sync_2 = '1' and sw_prev = '0' and count < 100  then
                 count <= count + 1;
             end if;
         end if;
     end process;
 
-    COUNTER <= STD_LOGIC_VECTOR(count);
+    COUNTER <= count;
 end Behavioral;
