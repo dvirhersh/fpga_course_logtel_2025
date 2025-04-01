@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
+use IEEE.std_logic_unsigned.ALL;  -- vhdl-linter-disable-line not-declared
 use IEEE.std_logic_unsigned.all; -- vhdl-linter-disable-line not-declared
 
 entity counter_rtl is
@@ -8,7 +9,7 @@ entity counter_rtl is
         RESET   : in  STD_LOGIC;
         SW      : in  STD_LOGIC;
         CLOCK   : in  STD_LOGIC;
-        COUNTER : out STD_LOGIC_VECTOR(6 downto 0)
+        COUNTER : out STD_LOGIC
     );
 end counter_rtl;
 

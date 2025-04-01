@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1743429768" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/counter.dcp">
   <File Type="PA-TCL" Name="counter_rtl.tcl"/>
   <File Type="REPORTS-TCL" Name="counter_rtl_reports.tcl"/>
@@ -9,18 +10,36 @@
   <File Type="RDS-DCP" Name="counter_rtl.dcp"/>
   <File Type="VDS-TIMINGSUMMARY" Name="counter_rtl_timing_summary_synth.rpt"/>
   <File Type="VDS-TIMING-PB" Name="counter_rtl_timing_summary_synth.pb"/>
+=======
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1742920962" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/counter.dcp">
+  <File Type="PA-TCL" Name="EDGE_DETECTOR.tcl"/>
+  <File Type="REPORTS-TCL" Name="EDGE_DETECTOR_reports.tcl"/>
+  <File Type="RDS-RDS" Name="EDGE_DETECTOR.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="EDGE_DETECTOR_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="EDGE_DETECTOR_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="EDGE_DETECTOR_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="EDGE_DETECTOR.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="EDGE_DETECTOR_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="EDGE_DETECTOR_timing_summary_synth.pb"/>
+>>>>>>> bc_exam
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/EDGE_DETECTOR.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/counter.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="counter_rtl"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="EDGE_DETECTOR"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">

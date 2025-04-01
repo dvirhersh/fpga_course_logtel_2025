@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log counter_rtl.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter_rtl.tcl
+EAStep vivado -log EDGE_DETECTOR.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source EDGE_DETECTOR.tcl

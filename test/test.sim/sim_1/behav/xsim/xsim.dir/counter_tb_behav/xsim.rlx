@@ -1,6 +1,10 @@
 
 { 
+<<<<<<< HEAD
     crc :  6503147398797806065  , 
+=======
+    crc :  8059641321235050989  , 
+>>>>>>> bc_exam
     ccp_crc :  0  , 
     cmdline : " --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot counter_tb_behav xil_defaultlib.counter_tb" , 
     buildDate : "Nov  8 2024" , 
