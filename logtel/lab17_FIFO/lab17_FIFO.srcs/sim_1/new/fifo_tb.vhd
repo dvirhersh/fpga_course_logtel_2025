@@ -42,43 +42,57 @@ COMPONENT fifo_generator_0
   PORT (
     wr_clk : IN  STD_LOGIC;
     rd_clk : IN  STD_LOGIC;
-    din    : IN  STD_LOGIC_VECTOR(15 DOWNTO 0);
+    din    : IN  STD_LOGIC_VECTOR(7 DOWNTO 0);
     wr_en  : IN  STD_LOGIC;
     rd_en  : IN  STD_LOGIC;
-    dout   : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+    dout   : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     full   : OUT STD_LOGIC;
     empty  : OUT STD_LOGIC 
   );
 END COMPONENT;
 
-    signal wr_clk : STD_LOGIC := '1';
-    signal rd_clk : STD_LOGIC := '1';
-    signal din    : STD_LOGIC_VECTOR(15 DOWNTO 0)  := (others => '0');
+component clk_wiz_0
+port
+ (-- Clock in ports
+  -- Clock out ports
+  clk_out1 : out std_logic;
+  clk_out2 : out std_logic;
+  -- Status and control signals
+  reset    : in  std_logic;
+  locked   : out std_logic;
+  clk_in1  : in  std_logic
+ );
+end component;
+
+    signal din    : STD_LOGIC_VECTOR(7 DOWNTO 0) := (others => '0');
     signal wr_en  : STD_LOGIC := '0';
     signal rd_en  : STD_LOGIC := '0';
-    signal dout   : STD_LOGIC_VECTOR(15 DOWNTO 0);
+    signal dout   : STD_LOGIC_VECTOR(7 DOWNTO 0);
     signal full   : STD_LOGIC;
     signal empty  : STD_LOGIC; 
 
-    signal rst   : STD_LOGIC := '1';
+    signal clk_out1 : STD_LOGIC; 
+    signal clk_out2 : STD_LOGIC; 
+    signal locked   : STD_LOGIC; 
+    signal clk_in1  : STD_LOGIC := '0'; 
+
+
+    signal reset   : STD_LOGIC := '1';
     
-    constant ClockFrequencyHzWr : integer := 200e6; -- 100 MHz
-    constant ClockFrequencyHzRd : integer := 100e6; -- 200 MHz
-    constant clock_period_rd    : time    := 1000 ms / ClockFrequencyHzRd;
-    constant clock_period_wr    : time    := 1000 ms / ClockFrequencyHzWr;
+    constant ClockFrequency : integer := 100e6; -- 100 MHz
+    constant clock_period   : time    := 1000 ms / ClockFrequency;
     
 begin
 
-    wr_clk <= not wr_clk after clock_period_wr / 2;           
-    rd_clk <= not rd_clk after clock_period_rd / 2;
-    rst    <= '0' after 5 * clock_period_rd;
+    clk_in1 <= not clk_in1 after clock_period / 2;
+    reset   <= '0' after 5 * clock_period   ;
     
-    write : process (wr_clk) begin
-        if rising_edge (wr_clk) then
-            if rst = '1' then
+    write : process (clk_out2) begin
+        if rising_edge (clk_out2) then
+            if reset = '1' or locked = '0' then
                 din   <= (others => '0');
                 wr_en <= '0';
-            elsif rst = '0' then
+            elsif reset = '0' then
                 if full = '1' then
                     wr_en <= '0';
                 elsif full = '0' then
@@ -89,11 +103,11 @@ begin
         end if;
     end process; 
 
-    read : process (rd_clk) begin
-        if rising_edge (rd_clk) then
-            if rst = '1' then
+    read : process (clk_in1) begin
+        if rising_edge (clk_in1) then
+            if reset = '1' or locked = '0' then
                 rd_en <= '0';
-            elsif rst = '0' then
+            elsif reset = '0' then
                 if empty = '0' then
                     rd_en <= '1';
                 elsif empty = '1' then
@@ -105,8 +119,8 @@ begin
 
 fifo_dvir : fifo_generator_0
   PORT MAP (
-    wr_clk => wr_clk,
-    rd_clk => rd_clk,
+    wr_clk => clk_out2,
+    rd_clk => clk_in1,
     din    => din,
     wr_en  => wr_en,
     rd_en  => rd_en,
@@ -114,5 +128,17 @@ fifo_dvir : fifo_generator_0
     full   => full,
     empty  => empty
   );
+  
+  mmcm_dvir : clk_wiz_0
+   port map ( 
+  -- Clock out ports  
+   clk_out1 => clk_out1,
+   clk_out2 => clk_out2,
+  -- Status and control signals                
+   reset => reset,
+   locked => locked,
+   -- Clock in ports
+   clk_in1 => clk_in1
+ );
 
 end Behavioral;
