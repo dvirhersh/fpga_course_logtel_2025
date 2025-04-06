@@ -7,7 +7,7 @@ END test_bench;
  
 ARCHITECTURE behavior OF test_bench IS 
  
-   COMPONENT fpga_exp7
+   COMPONENT read_file
    PORT(
       clk           : IN  std_logic;
       clkx3         : IN  std_logic;
@@ -19,7 +19,7 @@ ARCHITECTURE behavior OF test_bench IS
    );
    END COMPONENT;
 	 
-COMPONENT bh_write_file IS
+COMPONENT write_file IS
   PORT( 
      VIDEO_CLK              : IN std_logic;
      VIDEO_OUT_FIELD_ENABLE : IN std_logic;
@@ -31,7 +31,6 @@ COMPONENT bh_write_file IS
 
 
  END COMPONENT;
-
    signal clk ,clkx3   : std_logic := '0';
    signal filed_enable : std_logic := '0';
    signal line_enable  : std_logic := '0';
@@ -46,17 +45,18 @@ COMPONENT bh_write_file IS
  
 BEGIN
    reset <= '1','0' after 200 ns ;
-      uut: fpga_exp7 PORT MAP (
-            clk           => clk,
-            clkx3         => clkx3,
-            filed_enable  => filed_enable,
-            line_enable   => line_enable,
-            line_sync     => line_sync,
-            reset         => reset,
-            PRE_cmos_data => PRE_cmos_data
-         );
 
-   uut1:bh_write_file 
+   uut : read_file PORT MAP (
+         clk           => clk,
+         clkx3         => clkx3,
+         filed_enable  => filed_enable,
+         line_enable   => line_enable,
+         line_sync     => line_sync,
+         reset         => reset,
+         PRE_cmos_data => PRE_cmos_data
+      );
+
+   uut1 : write_file 
    PORT map( 
       VIDEO_CLK              => clk,
       VIDEO_OUT_FIELD_ENABLE => filed_enable,
