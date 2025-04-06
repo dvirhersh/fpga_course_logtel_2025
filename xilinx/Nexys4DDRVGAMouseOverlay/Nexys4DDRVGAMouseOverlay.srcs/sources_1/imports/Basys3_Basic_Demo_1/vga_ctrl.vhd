@@ -101,7 +101,7 @@ end component;
 
   --***1280x1024@60Hz***--
   constant FRAME_WIDTH : natural := 1280;
-  constant FRAME_HEIGHT : natural := 1024;
+  constant FRAME_HEIGHT : natural := 100;
   
   constant H_FP : natural := 48; --H front porch width (pixels)
   constant H_PW : natural := 112; --H sync pulse width (pixels)
