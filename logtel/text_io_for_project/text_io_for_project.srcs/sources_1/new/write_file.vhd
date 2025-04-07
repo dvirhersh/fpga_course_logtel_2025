@@ -45,7 +45,7 @@ BEGIN
                 write(l, string'(""));
                 writeline(output_file1,l);
                 num <= (others=>'0');
-            elsif VIDEO_OUT_FIELD_ENABLE='1' and  VIDEO_OUT_LINE_ENABLE ='1' and   ( num <"1010000000" )then
+            elsif VIDEO_OUT_FIELD_ENABLE='1' and  VIDEO_OUT_LINE_ENABLE ='1' and ( num < "1010000000" )then
                 temp_output := conv_integer(unsigned( EZOOM_DATA_OUTPUT ));
                 write(l,temp_output); 
                 write(l,' '); 
