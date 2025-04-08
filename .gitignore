@@ -46,3 +46,7 @@
 # Temporary/Backup files
 *~
 *.bak
+
+#
+*.mem
+*.coe
