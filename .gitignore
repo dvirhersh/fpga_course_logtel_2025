@@ -48,5 +48,5 @@
 *.bak
 
 #
-*.mem
-*.coe
+# *.mem
+# *.coe
