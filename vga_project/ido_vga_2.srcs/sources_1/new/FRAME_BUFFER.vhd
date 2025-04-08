@@ -41,7 +41,7 @@ architecture Behavioral of FRAME_BUFFER is
 
     signal addr : STD_LOGIC_VECTOR(18 downto 0) := (others => '0');
     signal data : STD_LOGIC_VECTOR(11 downto 0);
-    signal we : STD_LOGIC := '0';
+    signal we   : STD_LOGIC := '0';
 
 begin
 
