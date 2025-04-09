@@ -47,6 +47,6 @@
 *~
 *.bak
 
-#
-# *.mem
+*.mem
+*.cpp
 # *.coe
