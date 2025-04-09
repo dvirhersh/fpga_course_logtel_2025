@@ -50,20 +50,20 @@ architecture Behavioral of VGA_CONTROLLER is
         );
     end component;
 
-    SIGNAL CLK148_5   : STD_LOGIC;
+    SIGNAL CLK25_175   : STD_LOGIC;
     SIGNAL reset      : STD_LOGIC := '0';
     SIGNAL locked     : STD_LOGIC;
 
-    CONSTANT H_VISIBLE : INTEGER := 1920;
-    CONSTANT H_FRONT   : INTEGER := 88;
-    CONSTANT H_SYNC    : INTEGER := 44;
-    CONSTANT H_BACK    : INTEGER := 148;
+    CONSTANT H_VISIBLE : INTEGER := 640;
+    CONSTANT H_FRONT   : INTEGER := 16;
+    CONSTANT H_SYNC    : INTEGER := 96;
+    CONSTANT H_BACK    : INTEGER := 48;
     CONSTANT H_TOTAL   : INTEGER := H_VISIBLE + H_FRONT + H_SYNC + H_BACK;
 
-    CONSTANT V_VISIBLE : INTEGER := 1080;
-    CONSTANT V_FRONT   : INTEGER := 4;
-    CONSTANT V_SYNC    : INTEGER := 5;
-    CONSTANT V_BACK    : INTEGER := 36;
+    CONSTANT V_VISIBLE : INTEGER := 480;
+    CONSTANT V_FRONT   : INTEGER := 10;
+    CONSTANT V_SYNC    : INTEGER := 2;
+    CONSTANT V_BACK    : INTEGER := 33;
     CONSTANT V_TOTAL   : INTEGER := V_VISIBLE + V_FRONT + V_SYNC + V_BACK;
 
     SIGNAL H_CNT : INTEGER RANGE 0 TO H_TOTAL - 1 := 0;
@@ -77,12 +77,12 @@ begin
     LED <= SW;
 
     -------------------------------------------------------------------
-    -- MMCM CONFIGURATION TO GENERATE 148.5 MHZ CLOCK
+    -- MMCM CONFIGURATION TO GENERATE 25.175 MHZ CLOCK
     -------------------------------------------------------------------
     MMCM_inst : clk_wiz_0
         port map (
             clk_in1  => CLK,      -- Input clock
-            clk_out1 => CLK148_5, -- Output clock
+            clk_out1 => CLK25_175, -- Output clock
             reset    => reset,    -- Reset signal
             locked   => locked    -- Locked signal
         );
@@ -90,9 +90,9 @@ begin
     -------------------------------------------------------------------
     -- HORIZONTAL AND VERTICAL COUNTERS
     -------------------------------------------------------------------
-    PROCESS(CLK148_5)
+    PROCESS(CLK25_175)
     BEGIN
-        IF RISING_EDGE(CLK148_5) THEN
+        IF RISING_EDGE(CLK25_175) THEN
             IF H_CNT = H_TOTAL - 1 THEN
                 H_CNT <= 0;
                 IF V_CNT = V_TOTAL - 1 THEN
