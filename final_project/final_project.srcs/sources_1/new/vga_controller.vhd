@@ -25,6 +25,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity VGA_CONTROLLER is
   Port ( 
        CLK    : in  STD_LOGIC;
+       RESET  : in  STD_LOGIC;
        SW     : in  STD_LOGIC_VECTOR (15 downto 0);
        BTN    : in  STD_LOGIC_VECTOR (4 downto 0);
        LED    : out STD_LOGIC_VECTOR (15 downto 0);
@@ -51,7 +52,6 @@ architecture Behavioral of VGA_CONTROLLER is
     end component;
 
     SIGNAL CLK25_175   : STD_LOGIC;
-    SIGNAL reset      : STD_LOGIC := '0';
     SIGNAL locked     : STD_LOGIC;
 
     CONSTANT H_VISIBLE : INTEGER := 640;
@@ -81,10 +81,10 @@ begin
     -------------------------------------------------------------------
     MMCM_inst : clk_wiz_0
         port map (
-            clk_in1  => CLK,      -- Input clock
+            clk_in1  => CLK,       -- Input clock
             clk_out1 => CLK25_175, -- Output clock
-            reset    => reset,    -- Reset signal
-            locked   => locked    -- Locked signal
+            reset    => not RESET, -- Reset signal
+            locked   => locked     -- Locked signal
         );
 
     -------------------------------------------------------------------
