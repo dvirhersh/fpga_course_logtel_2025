@@ -25,7 +25,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity VGA_CONTROLLER is
   Port ( 
        CLK    : in  STD_LOGIC;
-       RESET  : in  STD_LOGIC;
+--       RESET  : in  STD_LOGIC;
        SW     : in  STD_LOGIC_VECTOR (15 downto 0);
        BTN    : in  STD_LOGIC_VECTOR (4 downto 0);
        LED    : out STD_LOGIC_VECTOR (15 downto 0);
@@ -83,7 +83,7 @@ begin
         port map (
             clk_in1  => CLK,       -- Input clock
             clk_out1 => CLK25_175, -- Output clock
-            reset    => not RESET, -- Reset signal
+            reset    => '0', -- Reset signal
             locked   => locked     -- Locked signal
         );
 

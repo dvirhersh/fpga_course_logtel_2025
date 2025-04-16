@@ -4,105 +4,129 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity ov5640_i2c_init is
     Port (
-        clk     : in  std_logic;           -- system clock (e.g. 100 MHz)
+        clk     : in  std_logic;
         reset   : in  std_logic;
-        sioc    : out std_logic;          -- I2C clock
-        siod    : inout std_logic;        -- I2C data
-        done    : out std_logic           -- goes high when configuration is done
+        sioc    : out std_logic;
+        siod    : inout std_logic;
+        done    : out std_logic
     );
 end ov5640_i2c_init;
 
 architecture Behavioral of ov5640_i2c_init is
-    type reg_array is array (0 to 5) of std_logic_vector(23 downto 0);
+
+    type reg_array is array (0 to 5) of std_logic_vector(31 downto 0);
     constant INIT_CMDS : reg_array := (
-        -- Format: {Device address, Register address[15:0], Data[7:0]}
-        x"78_3103_11", -- System clock from PLL
-        x"78_3008_82", -- Reset
-        x"78_3008_42", -- Wake up from reset
-        x"78_3103_03", -- System clock enable
-        x"78_3035_11", -- PLL
-        x"78_3036_46"  -- PLL
+        x"78310311",
+        x"78300882",
+        x"78300842",
+        x"78310303",
+        x"78303511",
+        x"78303646"
     );
 
-    signal state     : integer := 0;
-    signal bit_cnt   : integer range 0 to 31 := 0;
-    signal byte_cnt  : integer range 0 to INIT_CMDS'LENGTH := 0;
-    signal shift_reg : std_logic_vector(31 downto 0);
-    signal sclk_cnt  : integer := 0;
+    signal state       : integer := 0;
+    signal bit_cnt     : integer range 0 to 7 := 0;
+    signal byte_index  : integer range 0 to 2 := 0;
+    signal cmd_index   : integer range 0 to INIT_CMDS'LENGTH := 0;
 
-    signal s_siod    : std_logic := '1';
-    signal s_sioc    : std_logic := '1';
+    signal shift_reg   : std_logic_vector(31 downto 0) := (others => '0');
+    signal sioc_int    : std_logic := '1';
+    signal siod_drive  : std_logic := 'Z';
+    signal i2c_done    : std_logic := '0';
 
-    signal busy      : std_logic := '0';
-    signal start     : std_logic := '0';
-    signal stop      : std_logic := '0';
-    signal sending   : std_logic := '0';
+    function get_bit_index(byte_i : integer; bit_i : integer) return integer is
+    begin
+        return 31 - (byte_i * 8) - (7 - bit_i);
+    end function;
+
 begin
-    -- Outputs
-    siod <= 'Z' when s_siod = '1' else '0';
-    sioc <= s_sioc;
-    done <= '1' when (byte_cnt = INIT_CMDS'LENGTH and state = 0) else '0';
 
-    -- Main controller
+    siod <= siod_drive;
+    sioc <= sioc_int;
+    done <= i2c_done;
+
     process(clk)
+        variable next_bit : integer;
     begin
         if rising_edge(clk) then
             if reset = '1' then
-                byte_cnt  <= 0;
-                bit_cnt   <= 0;
-                s_sioc    <= '1';
-                s_siod    <= '1';
-                state     <= 0;
+                state       <= 0;
+                bit_cnt     <= 0;
+                byte_index  <= 0;
+                cmd_index   <= 0;
+                sioc_int    <= '1';
+                siod_drive  <= 'Z';
+                i2c_done    <= '0';
+
             else
                 case state is
-                    when 0 => -- IDLE
-                        if byte_cnt < INIT_CMDS'LENGTH then
-                            shift_reg <= INIT_CMDS(byte_cnt) & "00000000"; -- Extra byte for stop
-                            bit_cnt   <= 31;
-                            state     <= 1;
+
+                    when 0 => -- Load command
+                        if cmd_index < INIT_CMDS'LENGTH then
+                            shift_reg  <= INIT_CMDS(cmd_index);
+                            byte_index <= 0;
+                            bit_cnt    <= 7;
+                            state      <= 1;
+                        else
+                            i2c_done <= '1';
                         end if;
 
                     when 1 => -- START
-                        s_siod <= '0';
-                        state  <= 2;
+                        siod_drive <= '0';
+                        sioc_int   <= '1';
+                        state <= 2;
 
-                    when 2 => -- CLOCK LOW
-                        s_sioc <= '0';
-                        state  <= 3;
+                    when 2 => -- Clock low, prep MSB
+                        sioc_int <= '0';
+                        siod_drive <= shift_reg(get_bit_index(byte_index, bit_cnt));
+                        state <= 3;
 
-                    when 3 => -- SEND BIT
-                        s_siod <= shift_reg(bit_cnt);
-                        state  <= 4;
+                    when 3 => -- Clock high (send bit)
+                        sioc_int <= '1';
+                        state <= 4;
 
-                    when 4 =>
-                        s_sioc <= '1';
-                        state  <= 5;
-
-                    when 5 =>
-                        s_sioc <= '0';
-                        bit_cnt <= bit_cnt - 1;
-                        if bit_cnt < 8 then  -- ACK bit
-                            s_siod <= '1';  -- Release line
-                        end if;
-
-                        if bit_cnt = 0 then
-                            state <= 6;
-                        else
+                    when 4 => -- Clock low, next bit
+                        sioc_int <= '0';
+                        if bit_cnt > 0 then
+                            bit_cnt <= bit_cnt - 1;
+                            siod_drive <= shift_reg(get_bit_index(byte_index, bit_cnt - 1));
                             state <= 3;
+                        else
+                            state <= 5;
                         end if;
 
-                    when 6 => -- STOP
-                        s_siod <= '0';
-                        s_sioc <= '1';
-                        state  <= 7;
+                    when 5 => -- ACK
+                        siod_drive <= 'Z';
+                        sioc_int <= '1';
+                        state <= 6;
 
-                    when 7 =>
-                        s_siod <= '1';
-                        byte_cnt <= byte_cnt + 1;
+                    when 6 =>
+                        sioc_int <= '0';
+                        state <= 7;
+
+                    when 7 => -- Next byte or STOP
+                        if byte_index < 2 then
+                            byte_index <= byte_index + 1;
+                            bit_cnt <= 7;
+                            siod_drive <= shift_reg(get_bit_index(byte_index + 1, 7));
+                            state <= 3;
+                        else
+                            state <= 8;
+                        end if;
+
+                    when 8 => -- STOP
+                        siod_drive <= '0';
+                        sioc_int <= '1';
+                        state <= 9;
+
+                    when 9 =>
+                        siod_drive <= '1';
+                        cmd_index <= cmd_index + 1;
                         state <= 0;
 
                     when others =>
                         state <= 0;
+
                 end case;
             end if;
         end if;
