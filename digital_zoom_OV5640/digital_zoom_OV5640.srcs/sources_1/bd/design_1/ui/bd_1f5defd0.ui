@@ -1,0 +1,67 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-481,-79",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_resetn -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace port port-id_clk_in1 -pg 1 -lvl 0 -x 0 -y 350 -defaultsOSRD
+preplace port port-id_resend_in -pg 1 -lvl 0 -x 0 -y 510 -defaultsOSRD
+preplace port port-id_cntl_in -pg 1 -lvl 0 -x 0 -y 530 -defaultsOSRD
+preplace port port-id_pclk -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace port port-id_camera_v_sync -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_camera_h_ref -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_vga_h_sync -pg 1 -lvl 4 -x 900 -y 480 -defaultsOSRD
+preplace port port-id_vga_v_sync -pg 1 -lvl 4 -x 900 -y 500 -defaultsOSRD
+preplace port port-id_config_finished -pg 1 -lvl 4 -x 900 -y 320 -defaultsOSRD
+preplace port port-id_scl -pg 1 -lvl 4 -x 900 -y 340 -defaultsOSRD
+preplace port port-id_sda -pg 1 -lvl 4 -x 900 -y 360 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 4 -x 900 -y 380 -defaultsOSRD
+preplace port port-id_pwdn -pg 1 -lvl 4 -x 900 -y 400 -defaultsOSRD
+preplace port port-id_xclk -pg 1 -lvl 4 -x 900 -y 420 -defaultsOSRD
+preplace port port-id_zoom -pg 1 -lvl 0 -x 0 -y 420 -defaultsOSRD
+preplace portBus din -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace portBus vga_red -pg 1 -lvl 4 -x 900 -y 520 -defaultsOSRD
+preplace portBus vga_blue -pg 1 -lvl 4 -x 900 -y 540 -defaultsOSRD
+preplace portBus vga_green -pg 1 -lvl 4 -x 900 -y 560 -defaultsOSRD
+preplace inst ov5640_controller_0 -pg 1 -lvl 3 -x 750 -y 370 -defaultsOSRD
+preplace inst cntl_0 -pg 1 -lvl 1 -x 140 -y 510 -defaultsOSRD
+preplace inst vga_0 -pg 1 -lvl 2 -x 450 -y 530 -defaultsOSRD
+preplace inst ov_5640_caputre_0 -pg 1 -lvl 2 -x 450 -y 120 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 140 -y 340 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -x 750 -y 140 -defaultsOSRD
+preplace netloc cntl_0_cntl_out 1 1 1 N 520
+preplace netloc clk_wiz_0_clk_reg 1 1 2 NJ 360 N
+preplace netloc resetn_0_1 1 0 1 NJ 330
+preplace netloc Net1 1 0 1 20 350n
+preplace netloc resend_in_0_1 1 0 1 NJ 510
+preplace netloc cntl_in_0_1 1 0 1 NJ 530
+preplace netloc cntl_0_resend_out 1 1 2 270 380 NJ
+preplace netloc pclk_0_1 1 0 3 NJ 20 260 20 620J
+preplace netloc camera_v_sync_0_1 1 0 2 NJ 100 NJ
+preplace netloc camera_h_ref_0_1 1 0 2 NJ 120 NJ
+preplace netloc clk_wiz_0_clk_vga 1 1 2 280 230 620J
+preplace netloc din_0_1 1 0 2 NJ 160 NJ
+preplace netloc vga_0_vga_h_sync 1 2 2 NJ 480 NJ
+preplace netloc vga_0_vga_v_sync 1 2 2 NJ 500 NJ
+preplace netloc vga_0_vga_red 1 2 2 NJ 520 NJ
+preplace netloc vga_0_vga_blue 1 2 2 NJ 540 NJ
+preplace netloc vga_0_vga_green 1 2 2 NJ 560 NJ
+preplace netloc ov5640_controller_0_config_finished 1 3 1 NJ 320
+preplace netloc ov5640_controller_0_scl 1 3 1 NJ 340
+preplace netloc Net2 1 3 1 NJ 360
+preplace netloc ov5640_controller_0_reset 1 3 1 NJ 380
+preplace netloc ov5640_controller_0_pwdn 1 3 1 NJ 400
+preplace netloc ov5640_controller_0_xclk 1 3 1 NJ 420
+preplace netloc ov_5640_caputre_0_addr 1 2 1 610 80n
+preplace netloc ov_5640_caputre_0_dout 1 2 1 N 120
+preplace netloc ov_5640_caputre_0_wr_en 1 2 1 N 140
+preplace netloc blk_mem_gen_0_doutb 1 1 2 290 220 NJ
+preplace netloc vga_0_frame_adress 1 2 1 610 180n
+preplace netloc zoom_0_1 1 0 2 NJ 420 260
+levelinfo -pg 1 0 140 450 750 900
+pagesize -pg 1 -db -bbox -sgen -150 0 1050 640
+"
+}
+
