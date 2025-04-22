@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
---Date        : Tue Apr 22 14:09:23 2025
+--Date        : Tue Apr 22 15:11:45 2025
 --Host        : dvirhersh_comp running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -23,8 +23,6 @@ entity design_1 is
     pclk : in STD_LOGIC;
     pwdn : out STD_LOGIC;
     resend_in : in STD_LOGIC;
-    reset : out STD_LOGIC;
-    resetn : in STD_LOGIC;
     scl : out STD_LOGIC;
     sda : inout STD_LOGIC;
     vga_blue : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -91,9 +89,7 @@ architecture STRUCTURE of design_1 is
   end component design_1_ov_5640_caputre_0_0;
   component design_1_clk_wiz_0_0 is
   port (
-    resetn : in STD_LOGIC;
     clk_in1 : in STD_LOGIC;
-    locked : out STD_LOGIC;
     clk_vga : out STD_LOGIC;
     clk_reg : out STD_LOGIC
   );
@@ -118,15 +114,11 @@ architecture STRUCTURE of design_1 is
   signal ov_5640_caputre_0_dout : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal ov_5640_caputre_0_wr_en : STD_LOGIC;
   signal vga_0_frame_adress : STD_LOGIC_VECTOR ( 18 downto 0 );
-  signal NLW_clk_wiz_0_locked_UNCONNECTED : STD_LOGIC;
+  signal NLW_ov5640_controller_0_reset_UNCONNECTED : STD_LOGIC;
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of clk_in1 : signal is "xilinx.com:signal:clock:1.0 CLK.CLK_IN1 CLK";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of clk_in1 : signal is "XIL_INTERFACENAME CLK.CLK_IN1, CLK_DOMAIN design_1_clk_in1_0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
-  attribute X_INTERFACE_INFO of reset : signal is "xilinx.com:signal:reset:1.0 RST.RESET RST";
-  attribute X_INTERFACE_PARAMETER of reset : signal is "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_LOW";
-  attribute X_INTERFACE_INFO of resetn : signal is "xilinx.com:signal:reset:1.0 RST.RESETN RST";
-  attribute X_INTERFACE_PARAMETER of resetn : signal is "XIL_INTERFACENAME RST.RESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW";
+  attribute X_INTERFACE_PARAMETER of clk_in1 : signal is "XIL_INTERFACENAME CLK.CLK_IN1, ASSOCIATED_RESET reset, CLK_DOMAIN design_1_clk_in1_0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
 begin
 blk_mem_gen_0: component design_1_blk_mem_gen_0_0
      port map (
@@ -142,9 +134,7 @@ clk_wiz_0: component design_1_clk_wiz_0_0
      port map (
       clk_in1 => clk_in1,
       clk_reg => clk_wiz_0_clk_reg,
-      clk_vga => clk_wiz_0_clk_vga,
-      locked => NLW_clk_wiz_0_locked_UNCONNECTED,
-      resetn => resetn
+      clk_vga => clk_wiz_0_clk_vga
     );
 cntl_0: component design_1_cntl_0_0
      port map (
@@ -160,7 +150,7 @@ ov5640_controller_0: component design_1_ov5640_controller_0_0
       config_finished => config_finished,
       pwdn => pwdn,
       resend => cntl_0_resend_out,
-      reset => reset,
+      reset => NLW_ov5640_controller_0_reset_UNCONNECTED,
       scl => scl,
       sda => sda,
       xclk => xclk

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xF37BAFF11669D7CC",
+      "boundary_crc": "0x91F248738FCA9F38",
       "device": "xc7a100tcsg324-1",
       "gen_directory": "../../../../digital_zoom_OV5640.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -19,24 +19,13 @@
       "blk_mem_gen_0": ""
     },
     "ports": {
-      "resetn": {
-        "type": "rst",
-        "direction": "I",
-        "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "POLARITY": {
-            "value": "ACTIVE_LOW",
-            "value_src": "default"
-          }
-        }
-      },
       "clk_in1": {
         "type": "clk",
         "direction": "I",
         "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset"
+          },
           "CLK_DOMAIN": {
             "value": "design_1_clk_in1_0",
             "value_src": "default"
@@ -108,20 +97,6 @@
       },
       "sda": {
         "direction": "IO"
-      },
-      "reset": {
-        "type": "rst",
-        "direction": "O",
-        "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "POLARITY": {
-            "value": "ACTIVE_LOW",
-            "value_src": "default"
-          }
-        }
       },
       "pwdn": {
         "direction": "O"
@@ -388,10 +363,16 @@
             "value": "2"
           },
           "RESET_PORT": {
-            "value": "resetn"
+            "value": "reset"
           },
           "RESET_TYPE": {
-            "value": "ACTIVE_LOW"
+            "value": "ACTIVE_HIGH"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
           }
         }
       },
@@ -507,12 +488,6 @@
           "pwdn"
         ]
       },
-      "ov5640_controller_0_reset": {
-        "ports": [
-          "ov5640_controller_0/reset",
-          "reset"
-        ]
-      },
       "ov5640_controller_0_scl": {
         "ports": [
           "ov5640_controller_0/scl",
@@ -554,12 +529,6 @@
         "ports": [
           "resend_in",
           "cntl_0/resend_in"
-        ]
-      },
-      "resetn_0_1": {
-        "ports": [
-          "resetn",
-          "clk_wiz_0/resetn"
         ]
       },
       "vga_0_frame_adress": {

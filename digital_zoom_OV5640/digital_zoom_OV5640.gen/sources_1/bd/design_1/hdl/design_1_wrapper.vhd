@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
---Date        : Tue Apr 22 14:09:23 2025
+--Date        : Tue Apr 22 15:11:45 2025
 --Host        : dvirhersh_comp running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -23,8 +23,6 @@ entity design_1_wrapper is
     pclk : in STD_LOGIC;
     pwdn : out STD_LOGIC;
     resend_in : in STD_LOGIC;
-    reset : out STD_LOGIC;
-    resetn : in STD_LOGIC;
     scl : out STD_LOGIC;
     sda : inout STD_LOGIC;
     vga_blue : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -40,7 +38,6 @@ end design_1_wrapper;
 architecture STRUCTURE of design_1_wrapper is
   component design_1 is
   port (
-    resetn : in STD_LOGIC;
     clk_in1 : in STD_LOGIC;
     resend_in : in STD_LOGIC;
     cntl_in : in STD_LOGIC;
@@ -56,7 +53,6 @@ architecture STRUCTURE of design_1_wrapper is
     config_finished : out STD_LOGIC;
     scl : out STD_LOGIC;
     sda : inout STD_LOGIC;
-    reset : out STD_LOGIC;
     pwdn : out STD_LOGIC;
     xclk : out STD_LOGIC;
     zoom : in STD_LOGIC
@@ -74,8 +70,6 @@ design_1_i: component design_1
       pclk => pclk,
       pwdn => pwdn,
       resend_in => resend_in,
-      reset => reset,
-      resetn => resetn,
       scl => scl,
       sda => sda,
       vga_blue(3 downto 0) => vga_blue(3 downto 0),

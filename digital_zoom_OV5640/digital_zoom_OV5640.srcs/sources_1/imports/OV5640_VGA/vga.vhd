@@ -47,20 +47,36 @@ end vga;
 architecture Behavioral of vga is
 
     -- Updated constants for 1920x1080 resolution
-    constant FRAME_WIDTH : integer := 1920;
-    constant FRAME_HEIGHT : integer := 1080;
-    constant H_FP : integer := 88;   -- Horizontal Front Porch
-    constant H_PW : integer := 44;   -- Horizontal Pulse Width
-    constant H_MAX : integer := 2200; -- Total Horizontal Pixels (1920 + Front Porch + Back Porch + Sync)
-    constant V_FP : integer := 4;    -- Vertical Front Porch
-    constant V_PW : integer := 5;    -- Vertical Pulse Width
-    constant V_MAX : integer := 1125; -- Total Vertical Pixels (1080 + Front Porch + Back Porch + Sync)
-    constant BITS_WIDTH : integer := 12;
-    constant ADDR_WIDTH : integer := 19;
-    constant PIX_WIDTH : integer := 12;
-    constant VGABIT_WIDTH : integer := 4;
-    constant CAMERA_WIDTH : integer := 1920; -- Updated camera width
-    constant CAMERA_HEIGHT : integer := 1080; -- Updated camera height
+    -- constant FRAME_WIDTH : integer := 1920;
+    -- constant FRAME_HEIGHT : integer := 1080;
+    -- constant H_FP : integer := 88;   -- Horizontal Front Porch
+    -- constant H_PW : integer := 44;   -- Horizontal Pulse Width
+    -- constant H_MAX : integer := 2200; -- Total Horizontal Pixels (1920 + Front Porch + Back Porch + Sync)
+    -- constant V_FP : integer := 4;    -- Vertical Front Porch
+    -- constant V_PW : integer := 5;    -- Vertical Pulse Width
+    -- constant V_MAX : integer := 1125; -- Total Vertical Pixels (1080 + Front Porch + Back Porch + Sync)
+    -- constant BITS_WIDTH : integer := 12;
+    -- constant ADDR_WIDTH : integer := 19;
+    -- constant PIX_WIDTH : integer := 12;
+    -- constant VGABIT_WIDTH : integer := 4;
+    -- constant CAMERA_WIDTH : integer := 1920; -- Updated camera width
+    -- constant CAMERA_HEIGHT : integer := 1080; -- Updated camera height
+
+    -- Updated constants for 640x480 resolution
+    constant FRAME_WIDTH : integer := 640;       -- Width of the frame
+    constant FRAME_HEIGHT : integer := 480;      -- Height of the frame
+    constant H_FP : integer := 16;               -- Horizontal Front Porch
+    constant H_PW : integer := 96;               -- Horizontal Pulse Width
+    constant H_MAX : integer := 800;             -- Total Horizontal Pixels (640 + Front Porch + Back Porch + Sync)
+    constant V_FP : integer := 10;               -- Vertical Front Porch
+    constant V_PW : integer := 2;                -- Vertical Pulse Width
+    constant V_MAX : integer := 525;             -- Total Vertical Pixels (480 + Front Porch + Back Porch + Sync)
+    constant BITS_WIDTH : integer := 12;         -- Data width for bits
+    constant ADDR_WIDTH : integer := 19;         -- Address width
+    constant PIX_WIDTH : integer := 12;          -- Pixel data width
+    constant VGABIT_WIDTH : integer := 4;        -- VGA color depth
+    constant CAMERA_WIDTH : integer := 640;      -- Camera width
+    constant CAMERA_HEIGHT : integer := 480;     -- Camera height
 
     -- constant
     signal H_POSITIVE:std_logic := '1';
