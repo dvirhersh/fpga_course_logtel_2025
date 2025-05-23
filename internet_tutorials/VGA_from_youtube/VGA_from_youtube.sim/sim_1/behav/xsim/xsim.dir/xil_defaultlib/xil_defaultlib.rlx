@@ -1,0 +1,10 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.srcs/sim_1/new/testbench.v,1748008265,verilog,,,,testbench,,,,,,,,
+C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/clock_devider.v,1748004876,verilog,,C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/horizantal_counter.v,,clock_devider,,,,,,,,
+C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/horizantal_counter.v,1748009026,verilog,,C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/top.v,,horizontal_counter,,,,,,,,
+C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/top.v,1748009209,verilog,,C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/vertical_counter.v,,top,,,,,,,,
+C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/vertical_counter.v,1748008900,verilog,,C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.srcs/sim_1/new/testbench.v,,vertical_counter,,,,,,,,
