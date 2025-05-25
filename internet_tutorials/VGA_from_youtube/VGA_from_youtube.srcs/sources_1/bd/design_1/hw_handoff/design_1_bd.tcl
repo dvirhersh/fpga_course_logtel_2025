@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# clock_devider, vga_top
+# clock_devider, ov7670_controller, ovo_7670_caputre, vga_top
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -170,8 +170,19 @@ proc create_root_design { parentCell } {
   set Hsynq_0 [ create_bd_port -dir O Hsynq_0 ]
   set Red_0 [ create_bd_port -dir O -from 3 -to 0 Red_0 ]
   set Vsynq_0 [ create_bd_port -dir O Vsynq_0 ]
+  set camera_h_ref_0 [ create_bd_port -dir I camera_h_ref_0 ]
+  set camera_v_sync_0 [ create_bd_port -dir I camera_v_sync_0 ]
   set clk_0 [ create_bd_port -dir I -type clk clk_0 ]
   set cntl_0 [ create_bd_port -dir I cntl_0 ]
+  set config_finished_0 [ create_bd_port -dir O config_finished_0 ]
+  set din_0 [ create_bd_port -dir I -from 7 -to 0 din_0 ]
+  set pclk_0 [ create_bd_port -dir I pclk_0 ]
+  set pwdn_0 [ create_bd_port -dir O pwdn_0 ]
+  set resend_0 [ create_bd_port -dir I resend_0 ]
+  set reset_0 [ create_bd_port -dir O -type rst reset_0 ]
+  set sioc_0 [ create_bd_port -dir O sioc_0 ]
+  set siod_0 [ create_bd_port -dir IO siod_0 ]
+  set xclk_0 [ create_bd_port -dir O xclk_0 ]
 
   # Create instance: blk_mem_gen_0, and set properties
   set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0 ]
@@ -208,6 +219,28 @@ proc create_root_design { parentCell } {
      return 1
    }
   
+  # Create instance: ov7670_controller_0, and set properties
+  set block_name ov7670_controller
+  set block_cell_name ov7670_controller_0
+  if { [catch {set ov7670_controller_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $ov7670_controller_0 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: ovo_7670_caputre_0, and set properties
+  set block_name ovo_7670_caputre
+  set block_cell_name ovo_7670_caputre_0
+  if { [catch {set ovo_7670_caputre_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $ovo_7670_caputre_0 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
   # Create instance: vga_top_0, and set properties
   set block_name vga_top
   set block_cell_name vga_top_0
@@ -220,10 +253,24 @@ proc create_root_design { parentCell } {
    }
   
   # Create port connections
+  connect_bd_net -net Net [get_bd_ports siod_0] [get_bd_pins ov7670_controller_0/siod]
   connect_bd_net -net blk_mem_gen_0_doutb [get_bd_pins blk_mem_gen_0/doutb] [get_bd_pins vga_top_0/frame_pixel]
-  connect_bd_net -net clk_0_1 [get_bd_ports clk_0] [get_bd_pins clock_devider_0/clk]
+  connect_bd_net -net camera_h_ref_0_1 [get_bd_ports camera_h_ref_0] [get_bd_pins ovo_7670_caputre_0/camera_h_ref]
+  connect_bd_net -net camera_v_sync_0_1 [get_bd_ports camera_v_sync_0] [get_bd_pins ovo_7670_caputre_0/camera_v_sync]
+  connect_bd_net -net clk_0_1 [get_bd_ports clk_0] [get_bd_pins clock_devider_0/clk] [get_bd_pins ov7670_controller_0/clk]
   connect_bd_net -net clock_devider_0_divided_clk [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins clock_devider_0/divided_clk] [get_bd_pins vga_top_0/pixel_clk]
   connect_bd_net -net cntl_0_1 [get_bd_ports cntl_0] [get_bd_pins vga_top_0/cntl]
+  connect_bd_net -net din_0_1 [get_bd_ports din_0] [get_bd_pins ovo_7670_caputre_0/din]
+  connect_bd_net -net ov7670_controller_0_config_finished [get_bd_ports config_finished_0] [get_bd_pins ov7670_controller_0/config_finished]
+  connect_bd_net -net ov7670_controller_0_pwdn [get_bd_ports pwdn_0] [get_bd_pins ov7670_controller_0/pwdn]
+  connect_bd_net -net ov7670_controller_0_reset [get_bd_ports reset_0] [get_bd_pins ov7670_controller_0/reset]
+  connect_bd_net -net ov7670_controller_0_sioc [get_bd_ports sioc_0] [get_bd_pins ov7670_controller_0/sioc]
+  connect_bd_net -net ov7670_controller_0_xclk [get_bd_ports xclk_0] [get_bd_pins ov7670_controller_0/xclk]
+  connect_bd_net -net ovo_7670_caputre_0_addr [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins ovo_7670_caputre_0/addr]
+  connect_bd_net -net ovo_7670_caputre_0_dout [get_bd_pins blk_mem_gen_0/dina] [get_bd_pins ovo_7670_caputre_0/dout]
+  connect_bd_net -net ovo_7670_caputre_0_wr_en [get_bd_pins blk_mem_gen_0/wea] [get_bd_pins ovo_7670_caputre_0/wr_en]
+  connect_bd_net -net pclk_0_1 [get_bd_ports pclk_0] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins ovo_7670_caputre_0/pclk]
+  connect_bd_net -net resend_0_1 [get_bd_ports resend_0] [get_bd_pins ov7670_controller_0/resend]
   connect_bd_net -net vga_top_0_Blue [get_bd_ports Blue_0] [get_bd_pins vga_top_0/Blue]
   connect_bd_net -net vga_top_0_Green [get_bd_ports Green_0] [get_bd_pins vga_top_0/Green]
   connect_bd_net -net vga_top_0_Hsynq [get_bd_ports Hsynq_0] [get_bd_pins vga_top_0/Hsynq]

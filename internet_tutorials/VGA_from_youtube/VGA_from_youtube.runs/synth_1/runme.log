@@ -18,23 +18,27 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12108 
+INFO: Helper process launched with PID 12704 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 979.945 ; gain = 234.395
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 980.105 ; gain = 235.020
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:26]
-INFO: [Synth 8-3491] module 'design_1' declared at 'C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/synth/design_1.vhd:14' bound to instance 'design_1_i' of component 'design_1' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:39]
-INFO: [Synth 8-638] synthesizing module 'design_1' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/synth/design_1.vhd:30]
-INFO: [Synth 8-3491] module 'design_1_blk_mem_gen_0_0' declared at 'C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-3480-dvirhersh_comp/realtime/design_1_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'design_1_blk_mem_gen_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/synth/design_1.vhd:83]
-INFO: [Synth 8-638] synthesizing module 'design_1_blk_mem_gen_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-3480-dvirhersh_comp/realtime/design_1_blk_mem_gen_0_0_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'design_1_clock_devider_0_0' declared at 'C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-3480-dvirhersh_comp/realtime/design_1_clock_devider_0_0_stub.vhdl:5' bound to instance 'clock_devider_0' of component 'design_1_clock_devider_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/synth/design_1.vhd:93]
-INFO: [Synth 8-638] synthesizing module 'design_1_clock_devider_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-3480-dvirhersh_comp/realtime/design_1_clock_devider_0_0_stub.vhdl:13]
-INFO: [Synth 8-3491] module 'design_1_vga_top_0_0' declared at 'C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-3480-dvirhersh_comp/realtime/design_1_vga_top_0_0_stub.vhdl:5' bound to instance 'vga_top_0' of component 'design_1_vga_top_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/synth/design_1.vhd:98]
-INFO: [Synth 8-638] synthesizing module 'design_1_vga_top_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-3480-dvirhersh_comp/realtime/design_1_vga_top_0_0_stub.vhdl:20]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (1#1) [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/synth/design_1.vhd:30]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (2#1) [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:37]
+INFO: [Synth 8-3491] module 'design_1' declared at 'C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/synth/design_1.vhd:14' bound to instance 'design_1_i' of component 'design_1' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/synth/design_1.vhd:41]
+INFO: [Synth 8-3491] module 'design_1_blk_mem_gen_0_0' declared at 'C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-5856-dvirhersh_comp/realtime/design_1_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'design_1_blk_mem_gen_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/synth/design_1.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'design_1_blk_mem_gen_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-5856-dvirhersh_comp/realtime/design_1_blk_mem_gen_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_clock_devider_0_0' declared at 'C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-5856-dvirhersh_comp/realtime/design_1_clock_devider_0_0_stub.vhdl:5' bound to instance 'clock_devider_0' of component 'design_1_clock_devider_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/synth/design_1.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'design_1_clock_devider_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-5856-dvirhersh_comp/realtime/design_1_clock_devider_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'design_1_ov7670_controller_0_0' declared at 'C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-5856-dvirhersh_comp/realtime/design_1_ov7670_controller_0_0_stub.vhdl:5' bound to instance 'ov7670_controller_0' of component 'design_1_ov7670_controller_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/synth/design_1.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'design_1_ov7670_controller_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-5856-dvirhersh_comp/realtime/design_1_ov7670_controller_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_ovo_7670_caputre_0_0' declared at 'C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-5856-dvirhersh_comp/realtime/design_1_ovo_7670_caputre_0_0_stub.vhdl:5' bound to instance 'ovo_7670_caputre_0' of component 'design_1_ovo_7670_caputre_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/synth/design_1.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'design_1_ovo_7670_caputre_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-5856-dvirhersh_comp/realtime/design_1_ovo_7670_caputre_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_vga_top_0_0' declared at 'C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-5856-dvirhersh_comp/realtime/design_1_vga_top_0_0_stub.vhdl:5' bound to instance 'vga_top_0' of component 'design_1_vga_top_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/synth/design_1.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'design_1_vga_top_0_0' [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/.Xil/Vivado-5856-dvirhersh_comp/realtime/design_1_vga_top_0_0_stub.vhdl:20]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (1#1) [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/synth/design_1.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (2#1) [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:37]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1055.043 ; gain = 309.492
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1055.262 ; gain = 310.176
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -47,12 +51,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1055.043 ; gain = 309.492
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1055.262 ; gain = 310.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1055.043 ; gain = 309.492
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1055.262 ; gain = 310.176
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1055.043 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1055.262 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -63,6 +67,10 @@ Parsing XDC File [c:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube
 Finished Parsing XDC File [c:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/ip/design_1_vga_top_0_0/design_1_vga_top_0_0/design_1_vga_top_0_0_in_context.xdc] for cell 'design_1_i/vga_top_0'
 Parsing XDC File [c:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
 Finished Parsing XDC File [c:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
+Parsing XDC File [c:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/ip/design_1_ov7670_controller_0_0/design_1_ov7670_controller_0_0/design_1_ov7670_controller_0_0_in_context.xdc] for cell 'design_1_i/ov7670_controller_0'
+Finished Parsing XDC File [c:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/ip/design_1_ov7670_controller_0_0/design_1_ov7670_controller_0_0/design_1_ov7670_controller_0_0_in_context.xdc] for cell 'design_1_i/ov7670_controller_0'
+Parsing XDC File [c:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/ip/design_1_ovo_7670_caputre_0_0/design_1_ovo_7670_caputre_0_0/design_1_ovo_7670_caputre_0_0_in_context.xdc] for cell 'design_1_i/ovo_7670_caputre_0'
+Finished Parsing XDC File [c:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/ip/design_1_ovo_7670_caputre_0_0/design_1_ovo_7670_caputre_0_0/design_1_ovo_7670_caputre_0_0_in_context.xdc] for cell 'design_1_i/ovo_7670_caputre_0'
 Parsing XDC File [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/constrs_1/imports/constraints/Nexys4DDR_Master.xdc]
 Finished Parsing XDC File [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/constrs_1/imports/constraints/Nexys4DDR_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/constrs_1/imports/constraints/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
@@ -71,21 +79,21 @@ Parsing XDC File [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube
 Finished Parsing XDC File [C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1069.906 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1076.352 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1069.906 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1076.352 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/blk_mem_gen_0' at clock pin 'clkb' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1077.738 ; gain = 332.188
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1083.988 ; gain = 338.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1077.738 ; gain = 332.188
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1083.988 ; gain = 338.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -94,11 +102,13 @@ Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto ge
 Applied set_property DONT_TOUCH = true for design_1_i/clock_devider_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/vga_top_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ov7670_controller_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ovo_7670_caputre_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1077.738 ; gain = 332.188
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1083.988 ; gain = 338.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1077.738 ; gain = 332.188
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1083.988 ; gain = 338.902
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -134,7 +144,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1077.738 ; gain = 332.188
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1083.988 ; gain = 338.902
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -146,13 +156,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1108.195 ; gain = 362.645
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1108.199 ; gain = 363.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1108.195 ; gain = 362.645
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1108.273 ; gain = 363.188
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -164,7 +174,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1117.914 ; gain = 372.363
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1117.984 ; gain = 372.898
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -188,13 +198,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1133.660 ; gain = 388.109
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1133.645 ; gain = 388.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1133.660 ; gain = 388.109
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1133.645 ; gain = 388.559
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -213,78 +223,82 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1133.660 ; gain = 388.109
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1133.645 ; gain = 388.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1133.660 ; gain = 388.109
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1133.645 ; gain = 388.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1133.660 ; gain = 388.109
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1133.645 ; gain = 388.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1133.660 ; gain = 388.109
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1133.645 ; gain = 388.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+---------------------------+----------+
-|      |BlackBox name              |Instances |
-+------+---------------------------+----------+
-|1     |design_1_blk_mem_gen_0_0   |         1|
-|2     |design_1_clock_devider_0_0 |         1|
-|3     |design_1_vga_top_0_0       |         1|
-+------+---------------------------+----------+
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |design_1_blk_mem_gen_0_0       |         1|
+|2     |design_1_clock_devider_0_0     |         1|
+|3     |design_1_ov7670_controller_0_0 |         1|
+|4     |design_1_ovo_7670_caputre_0_0  |         1|
+|5     |design_1_vga_top_0_0           |         1|
++------+-------------------------------+----------+
 
 Report Cell Usage: 
-+------+----------------------------------+------+
-|      |Cell                              |Count |
-+------+----------------------------------+------+
-|1     |design_1_blk_mem_gen_0_0_bbox_0   |     1|
-|2     |design_1_clock_devider_0_0_bbox_1 |     1|
-|3     |design_1_vga_top_0_0_bbox_2       |     1|
-|4     |IBUF                              |     2|
-|5     |OBUF                              |    14|
-+------+----------------------------------+------+
++------+--------------------------------------+------+
+|      |Cell                                  |Count |
++------+--------------------------------------+------+
+|1     |design_1_blk_mem_gen_0_0_bbox_0       |     1|
+|2     |design_1_clock_devider_0_0_bbox_1     |     1|
+|3     |design_1_ov7670_controller_0_0_bbox_2 |     1|
+|4     |design_1_ovo_7670_caputre_0_0_bbox_3  |     1|
+|5     |design_1_vga_top_0_0_bbox_4           |     1|
+|6     |IBUF                                  |    14|
+|7     |OBUF                                  |    19|
++------+--------------------------------------+------+
 
 Report Instance Areas: 
 +------+-------------+---------+------+
 |      |Instance     |Module   |Cells |
 +------+-------------+---------+------+
-|1     |top          |         |    62|
-|2     |  design_1_i |design_1 |    46|
+|1     |top          |         |   116|
+|2     |  design_1_i |design_1 |    83|
 +------+-------------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1133.660 ; gain = 388.109
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1133.645 ; gain = 388.559
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1133.660 ; gain = 365.414
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1133.660 ; gain = 388.109
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1133.645 ; gain = 359.832
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1133.645 ; gain = 388.559
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1145.770 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1145.754 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1151.012 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1146.656 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-24 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+28 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1151.012 ; gain = 692.691
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1151.012 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1146.656 ; gain = 687.625
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1146.656 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun May 25 12:22:42 2025...
+INFO: [Common 17-206] Exiting Vivado at Sun May 25 12:51:18 2025...

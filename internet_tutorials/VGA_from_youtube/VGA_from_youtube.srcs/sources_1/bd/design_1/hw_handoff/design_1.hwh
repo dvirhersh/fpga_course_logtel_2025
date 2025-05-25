@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun May 25 12:19:53 2025" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun May 25 12:49:06 2025" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:nexys-a7-100t:part0:1.3" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
 
@@ -7,6 +7,7 @@
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_0" SIGIS="clk" SIGNAME="External_Ports_clk_0">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clock_devider_0" PORT="clk"/>
+        <CONNECTION INSTANCE="ov7670_controller_0" PORT="clk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="cntl_0" SIGIS="undef" SIGNAME="External_Ports_cntl_0">
@@ -37,6 +38,62 @@
     <PORT DIR="O" NAME="Vsynq_0" SIGIS="undef" SIGNAME="vga_top_0_Vsynq">
       <CONNECTIONS>
         <CONNECTION INSTANCE="vga_top_0" PORT="Vsynq"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="camera_h_ref_0" SIGIS="undef" SIGNAME="External_Ports_camera_h_ref_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ovo_7670_caputre_0" PORT="camera_h_ref"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="camera_v_sync_0" SIGIS="undef" SIGNAME="External_Ports_camera_v_sync_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ovo_7670_caputre_0" PORT="camera_v_sync"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="pclk_0" SIGIS="undef" SIGNAME="External_Ports_pclk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ovo_7670_caputre_0" PORT="pclk"/>
+        <CONNECTION INSTANCE="blk_mem_gen_0" PORT="clka"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="din_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_din_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ovo_7670_caputre_0" PORT="din"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="config_finished_0" SIGIS="undef" SIGNAME="ov7670_controller_0_config_finished">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ov7670_controller_0" PORT="config_finished"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="sioc_0" SIGIS="undef" SIGNAME="ov7670_controller_0_sioc">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ov7670_controller_0" PORT="sioc"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="reset_0" SIGIS="rst" SIGNAME="ov7670_controller_0_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ov7670_controller_0" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="siod_0" SIGIS="undef" SIGNAME="External_Ports_siod_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ov7670_controller_0" PORT="siod"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="pwdn_0" SIGIS="undef" SIGNAME="ov7670_controller_0_pwdn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ov7670_controller_0" PORT="pwdn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="xclk_0" SIGIS="undef" SIGNAME="ov7670_controller_0_xclk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ov7670_controller_0" PORT="xclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="resend_0" SIGIS="undef" SIGNAME="External_Ports_resend_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ov7670_controller_0" PORT="resend"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -199,10 +256,26 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="clka" SIGIS="clk"/>
-        <PORT DIR="I" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="18" NAME="addra" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="11" NAME="dina" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="clka" SIGIS="clk" SIGNAME="External_Ports_pclk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="pclk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="ovo_7670_caputre_0_wr_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ovo_7670_caputre_0" PORT="wr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="18" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="ovo_7670_caputre_0_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ovo_7670_caputre_0" PORT="addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="ovo_7670_caputre_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ovo_7670_caputre_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clkb" SIGIS="clk" SIGNAME="clock_devider_0_divided_clk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clock_devider_0" PORT="divided_clk"/>
@@ -266,6 +339,102 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="blk_mem_gen_0" PORT="clkb"/>
             <CONNECTION INSTANCE="vga_top_0" PORT="pixel_clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/ov7670_controller_0" HWVERSION="1.0" INSTANCE="ov7670_controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ov7670_controller" VLNV="xilinx.com:module_ref:ov7670_controller:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ov7670_controller_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="resend" SIGIS="undef" SIGNAME="External_Ports_resend_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="resend_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="config_finished" SIGIS="undef" SIGNAME="ov7670_controller_0_config_finished">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="config_finished_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sioc" SIGIS="undef" SIGNAME="ov7670_controller_0_sioc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sioc_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="siod" SIGIS="undef" SIGNAME="External_Ports_siod_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="siod_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="reset" SIGIS="rst" SIGNAME="ov7670_controller_0_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="pwdn" SIGIS="undef" SIGNAME="ov7670_controller_0_pwdn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="pwdn_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="xclk" SIGIS="undef" SIGNAME="ov7670_controller_0_xclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="xclk_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/ovo_7670_caputre_0" HWVERSION="1.0" INSTANCE="ovo_7670_caputre_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ovo_7670_caputre" VLNV="xilinx.com:module_ref:ovo_7670_caputre:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ovo_7670_caputre_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="pclk" SIGIS="undef" SIGNAME="External_Ports_pclk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="pclk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="camera_v_sync" SIGIS="undef" SIGNAME="External_Ports_camera_v_sync_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="camera_v_sync_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="camera_h_ref" SIGIS="undef" SIGNAME="External_Ports_camera_h_ref_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="camera_h_ref_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="zoom_x2" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_din_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="din_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="18" NAME="addr" RIGHT="0" SIGIS="undef" SIGNAME="ovo_7670_caputre_0_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="addra"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="ovo_7670_caputre_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="dina"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="wr_en" SIGIS="undef" SIGNAME="ovo_7670_caputre_0_wr_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="wea"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

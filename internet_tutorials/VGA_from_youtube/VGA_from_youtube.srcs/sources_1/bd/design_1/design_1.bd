@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xF3CAE81866BD3D16",
+      "boundary_crc": "0xC01590368D32BAB7",
       "device": "xc7a100tcsg324-1",
       "name": "design_1",
       "synth_flow_mode": "Hierarchical",
@@ -11,7 +11,9 @@
     "design_tree": {
       "clock_devider_0": "",
       "blk_mem_gen_0": "",
-      "vga_top_0": ""
+      "vga_top_0": "",
+      "ov7670_controller_0": "",
+      "ovo_7670_caputre_0": ""
     },
     "ports": {
       "clk_0": {
@@ -59,6 +61,52 @@
       },
       "Vsynq_0": {
         "direction": "O"
+      },
+      "camera_h_ref_0": {
+        "direction": "I"
+      },
+      "camera_v_sync_0": {
+        "direction": "I"
+      },
+      "pclk_0": {
+        "direction": "I"
+      },
+      "din_0": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "config_finished_0": {
+        "direction": "O"
+      },
+      "sioc_0": {
+        "direction": "O"
+      },
+      "reset_0": {
+        "type": "rst",
+        "direction": "O",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "siod_0": {
+        "direction": "IO"
+      },
+      "pwdn_0": {
+        "direction": "O"
+      },
+      "xclk_0": {
+        "direction": "O"
+      },
+      "resend_0": {
+        "direction": "I"
       }
     },
     "components": {
@@ -189,13 +237,102 @@
             "right": "0"
           }
         }
+      },
+      "ov7670_controller_0": {
+        "vlnv": "xilinx.com:module_ref:ov7670_controller:1.0",
+        "xci_name": "design_1_ov7670_controller_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ov7670_controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "resend": {
+            "direction": "I"
+          },
+          "config_finished": {
+            "direction": "O"
+          },
+          "sioc": {
+            "direction": "O"
+          },
+          "siod": {
+            "direction": "IO"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "O"
+          },
+          "pwdn": {
+            "direction": "O"
+          },
+          "xclk": {
+            "direction": "O"
+          }
+        }
+      },
+      "ovo_7670_caputre_0": {
+        "vlnv": "xilinx.com:module_ref:ovo_7670_caputre:1.0",
+        "xci_name": "design_1_ovo_7670_caputre_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ovo_7670_caputre",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "pclk": {
+            "direction": "I"
+          },
+          "camera_v_sync": {
+            "direction": "I"
+          },
+          "camera_h_ref": {
+            "direction": "I"
+          },
+          "zoom_x2": {
+            "direction": "I"
+          },
+          "din": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "addr": {
+            "direction": "O",
+            "left": "18",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "wr_en": {
+            "direction": "O"
+          }
+        }
       }
     },
     "nets": {
       "clk_0_1": {
         "ports": [
           "clk_0",
-          "clock_devider_0/clk"
+          "clock_devider_0/clk",
+          "ov7670_controller_0/clk"
         ]
       },
       "clock_devider_0_divided_clk": {
@@ -251,6 +388,91 @@
         "ports": [
           "vga_top_0/frame_address",
           "blk_mem_gen_0/addrb"
+        ]
+      },
+      "camera_h_ref_0_1": {
+        "ports": [
+          "camera_h_ref_0",
+          "ovo_7670_caputre_0/camera_h_ref"
+        ]
+      },
+      "camera_v_sync_0_1": {
+        "ports": [
+          "camera_v_sync_0",
+          "ovo_7670_caputre_0/camera_v_sync"
+        ]
+      },
+      "pclk_0_1": {
+        "ports": [
+          "pclk_0",
+          "ovo_7670_caputre_0/pclk",
+          "blk_mem_gen_0/clka"
+        ]
+      },
+      "din_0_1": {
+        "ports": [
+          "din_0",
+          "ovo_7670_caputre_0/din"
+        ]
+      },
+      "ovo_7670_caputre_0_addr": {
+        "ports": [
+          "ovo_7670_caputre_0/addr",
+          "blk_mem_gen_0/addra"
+        ]
+      },
+      "ovo_7670_caputre_0_dout": {
+        "ports": [
+          "ovo_7670_caputre_0/dout",
+          "blk_mem_gen_0/dina"
+        ]
+      },
+      "ovo_7670_caputre_0_wr_en": {
+        "ports": [
+          "ovo_7670_caputre_0/wr_en",
+          "blk_mem_gen_0/wea"
+        ]
+      },
+      "ov7670_controller_0_config_finished": {
+        "ports": [
+          "ov7670_controller_0/config_finished",
+          "config_finished_0"
+        ]
+      },
+      "ov7670_controller_0_sioc": {
+        "ports": [
+          "ov7670_controller_0/sioc",
+          "sioc_0"
+        ]
+      },
+      "ov7670_controller_0_reset": {
+        "ports": [
+          "ov7670_controller_0/reset",
+          "reset_0"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "siod_0",
+          "ov7670_controller_0/siod"
+        ]
+      },
+      "ov7670_controller_0_pwdn": {
+        "ports": [
+          "ov7670_controller_0/pwdn",
+          "pwdn_0"
+        ]
+      },
+      "ov7670_controller_0_xclk": {
+        "ports": [
+          "ov7670_controller_0/xclk",
+          "xclk_0"
+        ]
+      },
+      "resend_0_1": {
+        "ports": [
+          "resend_0",
+          "ov7670_controller_0/resend"
         ]
       }
     }
