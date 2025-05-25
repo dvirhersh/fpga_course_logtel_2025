@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# clock_devider, top
+# clock_devider, vga_top
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -173,6 +173,30 @@ proc create_root_design { parentCell } {
   set clk_0 [ create_bd_port -dir I -type clk clk_0 ]
   set cntl_0 [ create_bd_port -dir I cntl_0 ]
 
+  # Create instance: blk_mem_gen_0, and set properties
+  set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0 ]
+  set_property -dict [ list \
+   CONFIG.Byte_Size {9} \
+   CONFIG.EN_SAFETY_CKT {false} \
+   CONFIG.Enable_32bit_Address {false} \
+   CONFIG.Enable_A {Always_Enabled} \
+   CONFIG.Enable_B {Always_Enabled} \
+   CONFIG.Memory_Type {Simple_Dual_Port_RAM} \
+   CONFIG.Operating_Mode_A {NO_CHANGE} \
+   CONFIG.Port_B_Clock {100} \
+   CONFIG.Port_B_Enable_Rate {100} \
+   CONFIG.Read_Width_A {12} \
+   CONFIG.Read_Width_B {12} \
+   CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+   CONFIG.Register_PortB_Output_of_Memory_Primitives {false} \
+   CONFIG.Use_Byte_Write_Enable {false} \
+   CONFIG.Use_RSTA_Pin {false} \
+   CONFIG.Write_Depth_A {307200} \
+   CONFIG.Write_Width_A {12} \
+   CONFIG.Write_Width_B {12} \
+   CONFIG.use_bram_block {Stand_Alone} \
+ ] $blk_mem_gen_0
+
   # Create instance: clock_devider_0, and set properties
   set block_name clock_devider
   set block_cell_name clock_devider_0
@@ -184,26 +208,28 @@ proc create_root_design { parentCell } {
      return 1
    }
   
-  # Create instance: top_0, and set properties
-  set block_name top
-  set block_cell_name top_0
-  if { [catch {set top_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+  # Create instance: vga_top_0, and set properties
+  set block_name vga_top
+  set block_cell_name vga_top_0
+  if { [catch {set vga_top_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
      catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
-   } elseif { $top_0 eq "" } {
+   } elseif { $vga_top_0 eq "" } {
      catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    }
   
   # Create port connections
+  connect_bd_net -net blk_mem_gen_0_doutb [get_bd_pins blk_mem_gen_0/doutb] [get_bd_pins vga_top_0/frame_pixel]
   connect_bd_net -net clk_0_1 [get_bd_ports clk_0] [get_bd_pins clock_devider_0/clk]
-  connect_bd_net -net clock_devider_0_divided_clk [get_bd_pins clock_devider_0/divided_clk] [get_bd_pins top_0/pixel_clk]
-  connect_bd_net -net cntl_0_1 [get_bd_ports cntl_0] [get_bd_pins top_0/cntl]
-  connect_bd_net -net top_0_Blue [get_bd_ports Blue_0] [get_bd_pins top_0/Blue]
-  connect_bd_net -net top_0_Green [get_bd_ports Green_0] [get_bd_pins top_0/Green]
-  connect_bd_net -net top_0_Hsynq [get_bd_ports Hsynq_0] [get_bd_pins top_0/Hsynq]
-  connect_bd_net -net top_0_Red [get_bd_ports Red_0] [get_bd_pins top_0/Red]
-  connect_bd_net -net top_0_Vsynq [get_bd_ports Vsynq_0] [get_bd_pins top_0/Vsynq]
+  connect_bd_net -net clock_devider_0_divided_clk [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins clock_devider_0/divided_clk] [get_bd_pins vga_top_0/pixel_clk]
+  connect_bd_net -net cntl_0_1 [get_bd_ports cntl_0] [get_bd_pins vga_top_0/cntl]
+  connect_bd_net -net vga_top_0_Blue [get_bd_ports Blue_0] [get_bd_pins vga_top_0/Blue]
+  connect_bd_net -net vga_top_0_Green [get_bd_ports Green_0] [get_bd_pins vga_top_0/Green]
+  connect_bd_net -net vga_top_0_Hsynq [get_bd_ports Hsynq_0] [get_bd_pins vga_top_0/Hsynq]
+  connect_bd_net -net vga_top_0_Red [get_bd_ports Red_0] [get_bd_pins vga_top_0/Red]
+  connect_bd_net -net vga_top_0_Vsynq [get_bd_ports Vsynq_0] [get_bd_pins vga_top_0/Vsynq]
+  connect_bd_net -net vga_top_0_frame_address [get_bd_pins blk_mem_gen_0/addrb] [get_bd_pins vga_top_0/frame_address]
 
   # Create address segments
 

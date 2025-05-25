@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sun May 25 11:45:27 2025
+| Date             : Sun May 25 12:24:12 2025
 | Host             : dvirhersh_comp running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.098        |
+| Total On-Chip Power (W)  | 0.107        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.001        |
-| Device Static (W)        | 0.097        |
+| Dynamic (W)              | 0.005        |
+| Device Static (W)        | 0.102        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 84.6         |
-| Junction Temperature (C) | 25.4         |
+| Max Ambient (C)          | 84.5         |
+| Junction Temperature (C) | 25.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,15 +53,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      137 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       52 |     63400 |            0.08 |
-|   CARRY4       |    <0.001 |        8 |     15850 |            0.05 |
-|   Register     |    <0.001 |       59 |    126800 |            0.05 |
-|   Others       |     0.000 |        7 |       --- |             --- |
-| Signals        |    <0.001 |      112 |       --- |             --- |
-| I/O            |    <0.001 |       16 |       210 |            7.62 |
-| Static Power   |     0.097 |          |           |                 |
-| Total          |     0.098 |          |           |                 |
+| Slice Logic    |    <0.001 |      886 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      356 |     63400 |            0.56 |
+|   F7/F8 Muxes  |    <0.001 |      129 |     63400 |            0.20 |
+|   CARRY4       |    <0.001 |       13 |     15850 |            0.08 |
+|   Register     |    <0.001 |       96 |    126800 |            0.08 |
+|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
+|   Others       |     0.000 |      277 |       --- |             --- |
+| Signals        |     0.002 |     1048 |       --- |             --- |
+| Block RAM      |    <0.001 |    103.5 |       135 |           76.67 |
+| I/O            |     0.001 |       16 |       210 |            7.62 |
+| Static Power   |     0.102 |          |           |                 |
+| Total          |     0.107 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.001 |      0.015 |
+| Vccint    |       1.000 |     0.022 |       0.004 |      0.017 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -80,7 +83,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.003 |       0.000 |      0.003 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -137,10 +140,17 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------------------+-----------+
-| Name             | Power (W) |
-+------------------+-----------+
-| design_1_wrapper |     0.001 |
-+------------------+-----------+
++---------------------+-----------+
+| Name                | Power (W) |
++---------------------+-----------+
+| design_1_wrapper    |     0.005 |
+|   design_1_i        |     0.004 |
+|     blk_mem_gen_0   |     0.002 |
+|       U0            |     0.002 |
+|     clock_devider_0 |     0.001 |
+|       U0            |     0.001 |
+|     vga_top_0       |     0.001 |
+|       U0            |     0.001 |
++---------------------+-----------+
 
 

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun May 25 11:45:26 2025
+| Date         : Sun May 25 12:24:10 2025
 | Host         : dvirhersh_comp running 64-bit major release  (build 9200)
 | Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -24,13 +24,14 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 4
-+----------+----------+-----------------------------------------------------+------------+
-| Rule     | Severity | Description                                         | Violations |
-+----------+----------+-----------------------------------------------------+------------+
-| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 3          |
-+----------+----------+-----------------------------------------------------+------------+
+             Violations found: 27
++----------+----------+--------------------------------------------------------------+------------+
+| Rule     | Severity | Description                                                  | Violations |
++----------+----------+--------------------------------------------------------------+------------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties          | 1          |
+| PDCN-137 | Warning  | enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff | 24         |
+| PDRC-153 | Warning  | Gated clock check                                            | 2          |
++----------+----------+--------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -47,19 +48,134 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
 Refer to the device configuration user guide for more information.
 Related violations: <none>
 
+PDCN-137#1 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X1Y10 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#2 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X1Y11 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#3 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X1Y3 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#4 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X1Y4 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#5 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X1Y5 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#6 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X1Y6 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#7 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X2Y10 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#8 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X2Y11 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#9 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X2Y12 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#10 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X2Y13 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#11 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X2Y2 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#12 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X2Y3 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#13 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X2Y4 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#14 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X2Y5 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#15 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X2Y6 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#16 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X2Y7 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#17 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X3Y11 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#18 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X3Y12 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#19 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X3Y13 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#20 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X3Y14 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#21 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X3Y19 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#22 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X3Y20 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#23 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X3Y21 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B) with RAM_EXTENSION_A attribute set to LOWER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
+PDCN-137#24 Warning
+enum_RAM_EXTENSION_A_not_NONE_connects_ADDRARDADDRL15_Tieoff  
+RAMB36E1 site RAMB36_X3Y22 has BlockRam (design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T) with RAM_EXTENSION_A attribute set to UPPER and ADDRARADDRL15 pin tied to LOGIC 0 (GND). In this case only the Lower BRAM will be used.
+Related violations: <none>
+
 PDRC-153#1 Warning
 Gated clock check  
-Net design_1_i/top_0/U0/VGA_Horiz/count_reg[6]_0[0] is a gated clock net sourced by a combinational pin design_1_i/top_0/U0/VGA_Horiz/Green_reg[3]_i_2/O, cell design_1_i/top_0/U0/VGA_Horiz/Green_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/vga_top_0/U0/VGA_Horiz/count_reg[7]_0[0] is a gated clock net sourced by a combinational pin design_1_i/vga_top_0/U0/VGA_Horiz/Red_reg[3]_i_2/O, cell design_1_i/vga_top_0/U0/VGA_Horiz/Red_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net design_1_i/top_0/U0/VGA_Horiz/count_reg[6]_1 is a gated clock net sourced by a combinational pin design_1_i/top_0/U0/VGA_Horiz/Blue_reg[3]_i_2/O, cell design_1_i/top_0/U0/VGA_Horiz/Blue_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#3 Warning
-Gated clock check  
-Net design_1_i/top_0/U0/VGA_Horiz/count_reg[8]_1[0] is a gated clock net sourced by a combinational pin design_1_i/top_0/U0/VGA_Horiz/Red_reg[3]_i_2/O, cell design_1_i/top_0/U0/VGA_Horiz/Red_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/vga_top_0/U0/VGA_Verti/E[0] is a gated clock net sourced by a combinational pin design_1_i/vga_top_0/U0/VGA_Verti/fr_address_reg[18]_i_2/O, cell design_1_i/vga_top_0/U0/VGA_Verti/fr_address_reg[18]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

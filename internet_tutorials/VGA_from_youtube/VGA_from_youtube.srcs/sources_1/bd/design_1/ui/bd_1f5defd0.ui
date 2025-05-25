@@ -1,29 +1,32 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-338,-142",
+   "Default View_TopLeft":"-195,-33",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS-threadsafe
 #  -string -flagsOSRD
 preplace port clk_0 -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
-preplace port Hsynq_0 -pg 1 -lvl 3 -x 480 -y 70 -defaultsOSRD
-preplace port Vsynq_0 -pg 1 -lvl 3 -x 480 -y 90 -defaultsOSRD
 preplace port cntl_0 -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
-preplace portBus Green_0 -pg 1 -lvl 3 -x 480 -y 130 -defaultsOSRD
-preplace portBus Red_0 -pg 1 -lvl 3 -x 480 -y 110 -defaultsOSRD
-preplace portBus Blue_0 -pg 1 -lvl 3 -x 480 -y 150 -defaultsOSRD
+preplace port Hsynq_0 -pg 1 -lvl 4 -x 790 -y 70 -defaultsOSRD
+preplace port Vsynq_0 -pg 1 -lvl 4 -x 790 -y 90 -defaultsOSRD
+preplace portBus Blue_0 -pg 1 -lvl 4 -x 790 -y 150 -defaultsOSRD
+preplace portBus Green_0 -pg 1 -lvl 4 -x 790 -y 130 -defaultsOSRD
+preplace portBus Red_0 -pg 1 -lvl 4 -x 790 -y 110 -defaultsOSRD
 preplace inst clock_devider_0 -pg 1 -lvl 1 -x 120 -y 60 -defaultsOSRD
-preplace inst top_0 -pg 1 -lvl 2 -x 340 -y 110 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -x 670 -y 290 -defaultsOSRD
+preplace inst vga_top_0 -pg 1 -lvl 2 -x 400 -y 120 -defaultsOSRD
 preplace netloc clk_0_1 1 0 1 NJ 60
-preplace netloc clock_devider_0_divided_clk 1 1 1 220J 60n
-preplace netloc top_0_Hsynq 1 2 1 NJ 70
-preplace netloc top_0_Green 1 2 1 NJ 130
-preplace netloc top_0_Red 1 2 1 NJ 110
-preplace netloc top_0_Vsynq 1 2 1 NJ 90
-preplace netloc top_0_Blue 1 2 1 NJ 150
+preplace netloc clock_devider_0_divided_clk 1 1 2 220 350 NJ
 preplace netloc cntl_0_1 1 0 2 NJ 120 NJ
-levelinfo -pg 1 0 120 340 480
-pagesize -pg 1 -db -bbox -sgen -90 0 620 210
+preplace netloc vga_top_0_Blue 1 2 2 NJ 150 NJ
+preplace netloc vga_top_0_Green 1 2 2 NJ 130 NJ
+preplace netloc vga_top_0_Hsynq 1 2 2 NJ 70 NJ
+preplace netloc vga_top_0_Red 1 2 2 NJ 110 NJ
+preplace netloc vga_top_0_Vsynq 1 2 2 NJ 90 NJ
+preplace netloc blk_mem_gen_0_doutb 1 1 2 230 370 NJ
+preplace netloc vga_top_0_frame_address 1 2 1 570 170n
+levelinfo -pg 1 0 120 400 670 790
+pagesize -pg 1 -db -bbox -sgen -90 0 930 430
 "
 }
-
+0

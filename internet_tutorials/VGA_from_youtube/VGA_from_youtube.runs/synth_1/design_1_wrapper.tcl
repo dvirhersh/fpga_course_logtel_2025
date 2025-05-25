@@ -28,6 +28,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.cache/wt [current_project]
 set_property parent.project_path C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.xpr [current_project]
+set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.3 [current_project]
@@ -35,6 +36,7 @@ set_property ip_output_repo c:/fpga_course_logtel_2025/internet_tutorials/VGA_fr
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
 add_files C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all c:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

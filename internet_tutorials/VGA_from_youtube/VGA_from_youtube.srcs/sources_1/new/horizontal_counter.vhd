@@ -3,9 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity horizontal_counter is
-    generic (
-        H_MAX : integer := 800
-    );
+    generic (H_MAX : integer := 800);
     port (
         clk_25MHz         : in  std_logic;
         enable_V_Counter  : out std_logic;

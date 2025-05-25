@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun May 25 11:44:06 2025
+| Date         : Sun May 25 12:22:42 2025
 | Host         : dvirhersh_comp running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -157,8 +157,9 @@ Table of Contents
 +----------------------------+------+
 |          Ref Name          | Used |
 +----------------------------+------+
-| design_1_top_0_0           |    1 |
+| design_1_vga_top_0_0       |    1 |
 | design_1_clock_devider_0_0 |    1 |
+| design_1_blk_mem_gen_0_0   |    1 |
 +----------------------------+------+
 
 

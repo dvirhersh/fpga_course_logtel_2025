@@ -10,7 +10,8 @@
     },
     "design_tree": {
       "clock_devider_0": "",
-      "top_0": ""
+      "blk_mem_gen_0": "",
+      "vga_top_0": ""
     },
     "ports": {
       "clk_0": {
@@ -35,13 +36,21 @@
           }
         }
       },
-      "Hsynq_0": {
-        "direction": "O"
+      "cntl_0": {
+        "direction": "I"
+      },
+      "Blue_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
       },
       "Green_0": {
         "direction": "O",
         "left": "3",
         "right": "0"
+      },
+      "Hsynq_0": {
+        "direction": "O"
       },
       "Red_0": {
         "direction": "O",
@@ -50,14 +59,6 @@
       },
       "Vsynq_0": {
         "direction": "O"
-      },
-      "Blue_0": {
-        "direction": "O",
-        "left": "3",
-        "right": "0"
-      },
-      "cntl_0": {
-        "direction": "I"
       }
     },
     "components": {
@@ -86,12 +87,60 @@
           }
         }
       },
-      "top_0": {
-        "vlnv": "xilinx.com:module_ref:top:1.0",
-        "xci_name": "design_1_top_0_0",
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "design_1_blk_mem_gen_0_0",
+        "parameters": {
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Enable_B": {
+            "value": "Always_Enabled"
+          },
+          "Memory_Type": {
+            "value": "Simple_Dual_Port_RAM"
+          },
+          "Operating_Mode_A": {
+            "value": "NO_CHANGE"
+          },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Read_Width_B": {
+            "value": "12"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "307200"
+          },
+          "Write_Width_A": {
+            "value": "12"
+          },
+          "Write_Width_B": {
+            "value": "12"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "vga_top_0": {
+        "vlnv": "xilinx.com:module_ref:vga_top:1.0",
+        "xci_name": "design_1_vga_top_0_0",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "top",
+          "ref_name": "vga_top",
           "boundary_crc": "0x0"
         },
         "ports": {
@@ -107,6 +156,11 @@
           },
           "cntl": {
             "direction": "I"
+          },
+          "frame_pixel": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
           },
           "Hsynq": {
             "direction": "O"
@@ -128,6 +182,11 @@
             "direction": "O",
             "left": "3",
             "right": "0"
+          },
+          "frame_address": {
+            "direction": "O",
+            "left": "18",
+            "right": "0"
           }
         }
       }
@@ -142,43 +201,56 @@
       "clock_devider_0_divided_clk": {
         "ports": [
           "clock_devider_0/divided_clk",
-          "top_0/pixel_clk"
-        ]
-      },
-      "top_0_Hsynq": {
-        "ports": [
-          "top_0/Hsynq",
-          "Hsynq_0"
-        ]
-      },
-      "top_0_Green": {
-        "ports": [
-          "top_0/Green",
-          "Green_0"
-        ]
-      },
-      "top_0_Red": {
-        "ports": [
-          "top_0/Red",
-          "Red_0"
-        ]
-      },
-      "top_0_Vsynq": {
-        "ports": [
-          "top_0/Vsynq",
-          "Vsynq_0"
-        ]
-      },
-      "top_0_Blue": {
-        "ports": [
-          "top_0/Blue",
-          "Blue_0"
+          "blk_mem_gen_0/clkb",
+          "vga_top_0/pixel_clk"
         ]
       },
       "cntl_0_1": {
         "ports": [
           "cntl_0",
-          "top_0/cntl"
+          "vga_top_0/cntl"
+        ]
+      },
+      "vga_top_0_Blue": {
+        "ports": [
+          "vga_top_0/Blue",
+          "Blue_0"
+        ]
+      },
+      "vga_top_0_Green": {
+        "ports": [
+          "vga_top_0/Green",
+          "Green_0"
+        ]
+      },
+      "vga_top_0_Hsynq": {
+        "ports": [
+          "vga_top_0/Hsynq",
+          "Hsynq_0"
+        ]
+      },
+      "vga_top_0_Red": {
+        "ports": [
+          "vga_top_0/Red",
+          "Red_0"
+        ]
+      },
+      "vga_top_0_Vsynq": {
+        "ports": [
+          "vga_top_0/Vsynq",
+          "Vsynq_0"
+        ]
+      },
+      "blk_mem_gen_0_doutb": {
+        "ports": [
+          "blk_mem_gen_0/doutb",
+          "vga_top_0/frame_pixel"
+        ]
+      },
+      "vga_top_0_frame_address": {
+        "ports": [
+          "vga_top_0/frame_address",
+          "blk_mem_gen_0/addrb"
         ]
       }
     }

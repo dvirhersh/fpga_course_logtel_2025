@@ -3,19 +3,21 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use IEEE.std_logic_unsigned.all;
 
-entity top is
+entity vga_top is
     port (
-        pixel_clk : in  std_logic;
-        cntl      : in  std_logic;
-        Hsynq     : out std_logic;
-        Vsynq     : out std_logic;
-        Red       : out std_logic_vector(3 downto 0);
-        Green     : out std_logic_vector(3 downto 0);
-        Blue      : out std_logic_vector(3 downto 0)
-    );
-end entity top;
+        pixel_clk     : in  std_logic;
+        cntl          : in  std_logic;
+        frame_pixel   : in  std_logic_vector(11 downto 0);
+        Hsynq         : out std_logic;
+        Vsynq         : out std_logic;
+        Red           : out std_logic_vector(3 downto 0);
+        Green         : out std_logic_vector(3 downto 0);
+        Blue          : out std_logic_vector(3 downto 0);
+        frame_address : out std_logic_vector (18 downto 0)
+        );
+end entity vga_top;
 
-architecture Behavioral of top is
+architecture Behavioral of vga_top is
 
     constant FRAME_WIDTH : integer := 640;   -- Width of the frame
     constant FRAME_HEIGHT : integer := 480;  -- Height of the frame
@@ -35,8 +37,11 @@ architecture Behavioral of top is
     signal enable_V_Counter  : std_logic;
     signal H_Count_Value     : std_logic_vector(15 downto 0);
     signal V_Count_Value     : std_logic_vector(15 downto 0);
+    signal fr_address        : std_logic_vector(18 downto 0); -- Frame buffer address for current pixel
 
 begin
+
+    frame_address <= fr_address;
 
     VGA_Horiz : entity work.horizontal_counter
         port map (
@@ -62,9 +67,10 @@ begin
         if cntl = '1' then
             if (H_Count_Value > 143 and H_Count_Value < 784 and
                 V_Count_Value > 34  and V_Count_Value < 515) then
-                Red   <= x"6";
-                Green <= x"1";
-                Blue  <= x"F";
+                Red   <= frame_pixel(11 downto 8);
+                Green <= frame_pixel(7 downto 4);
+                Blue  <= frame_pixel(3 downto 0);
+                fr_address <= fr_address + 1;
             else
                 Red   <= x"0";
                 Green <= x"0";
