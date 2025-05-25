@@ -2,9 +2,13 @@
 2019.2
 Nov  6 2019
 21:57:16
+C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.ip_user_files/bd/design_1/ip/design_1_clock_devider_0_0/sim/design_1_clock_devider_0_0.vhd,1748159434,vhdl,,,,design_1_clock_devider_0_0,,,,,,,,
+C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.ip_user_files/bd/design_1/ip/design_1_top_0_0/sim/design_1_top_0_0.vhd,1748159434,vhdl,,,,design_1_top_0_0,,,,,,,,
+C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.ip_user_files/bd/design_1/sim/design_1.vhd,1748159434,vhdl,,,,design_1,,,,,,,,
 C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
-C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sim_1/imports/new/testbench.vhd,1748157447,vhdl,,,,testbench,,,,,,,,
+C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sim_1/imports/new/testbench.vhd,1748159745,vhdl,,,,testbench,,,,,,,,
+C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd,1748159434,vhdl,,,,design_1_wrapper,,,,,,,,
 C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/clock_devider.vhd,1748157177,vhdl,C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/top.vhd,,,clock_devider,,,,,,,,
 C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/horizontal_counter.vhd,1748157146,vhdl,C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/top.vhd,,,horizontal_counter,,,,,,,,
-C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/top.vhd,1748157343,vhdl,,,,top,,,,,,,,
+C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/top.vhd,1748159169,vhdl,,,,top,,,,,,,,
 C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/vertical_counter.vhd,1748156999,vhdl,C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/top.vhd,,,vertical_counter,,,,,,,,

@@ -1,16 +1,88 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x0",
+      "boundary_crc": "0x6D79B1FDC1D40864",
       "device": "xc7a100tcsg324-1",
       "name": "design_1",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.2"
+      "tool_version": "2019.2",
+      "validated": "true"
     },
     "design_tree": {
+      "clock_devider_0": "",
       "top_0": ""
     },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "Hsynq_0": {
+        "direction": "O"
+      },
+      "Green_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "Red_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "Vsynq_0": {
+        "direction": "O"
+      },
+      "Blue_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
     "components": {
+      "clock_devider_0": {
+        "vlnv": "xilinx.com:module_ref:clock_devider:1.0",
+        "xci_name": "design_1_clock_devider_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_devider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "divided_clk": {
+            "type": "clk",
+            "direction": "O"
+          }
+        }
+      },
       "top_0": {
         "vlnv": "xilinx.com:module_ref:top:1.0",
         "xci_name": "design_1_top_0_0",
@@ -20,9 +92,15 @@
           "boundary_crc": "0x0"
         },
         "ports": {
-          "clk": {
+          "pixel_clk": {
             "type": "clk",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_1_clock_devider_0_0_divided_clk",
+                "value_src": "default_prop"
+              }
+            }
           },
           "Hsynq": {
             "direction": "O"
@@ -46,6 +124,50 @@
             "right": "0"
           }
         }
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "clock_devider_0/clk"
+        ]
+      },
+      "clock_devider_0_divided_clk": {
+        "ports": [
+          "clock_devider_0/divided_clk",
+          "top_0/pixel_clk"
+        ]
+      },
+      "top_0_Hsynq": {
+        "ports": [
+          "top_0/Hsynq",
+          "Hsynq_0"
+        ]
+      },
+      "top_0_Green": {
+        "ports": [
+          "top_0/Green",
+          "Green_0"
+        ]
+      },
+      "top_0_Red": {
+        "ports": [
+          "top_0/Red",
+          "Red_0"
+        ]
+      },
+      "top_0_Vsynq": {
+        "ports": [
+          "top_0/Vsynq",
+          "Vsynq_0"
+        ]
+      },
+      "top_0_Blue": {
+        "ports": [
+          "top_0/Blue",
+          "Blue_0"
+        ]
       }
     }
   }

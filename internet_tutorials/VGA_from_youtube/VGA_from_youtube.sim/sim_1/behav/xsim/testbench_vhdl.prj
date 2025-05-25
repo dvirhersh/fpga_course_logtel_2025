@@ -1,9 +1,13 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../VGA_from_youtube.srcs/sources_1/new/clock_devider.vhd" \
 "../../../../VGA_from_youtube.srcs/sources_1/new/horizontal_counter.vhd" \
 "../../../../VGA_from_youtube.srcs/sources_1/new/vertical_counter.vhd" \
 "../../../../VGA_from_youtube.srcs/sources_1/new/top.vhd" \
+"../../../../VGA_from_youtube.srcs/sources_1/new/clock_devider.vhd" \
+"../../../../VGA_from_youtube.ip_user_files/bd/design_1/ip/design_1_top_0_0/sim/design_1_top_0_0.vhd" \
+"../../../../VGA_from_youtube.ip_user_files/bd/design_1/ip/design_1_clock_devider_0_0/sim/design_1_clock_devider_0_0.vhd" \
+"../../../../VGA_from_youtube.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../VGA_from_youtube.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
 "../../../../VGA_from_youtube.srcs/sim_1/imports/new/testbench.vhd" \
 
 # Do not sort compile order

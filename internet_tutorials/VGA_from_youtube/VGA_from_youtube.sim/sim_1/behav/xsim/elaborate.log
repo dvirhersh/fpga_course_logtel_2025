@@ -11,11 +11,16 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
 Compiling architecture behavioral of entity xil_defaultlib.clock_devider [clock_devider_default]
+Compiling architecture design_1_clock_devider_0_0_arch of entity xil_defaultlib.design_1_clock_devider_0_0 [design_1_clock_devider_0_0_defau...]
 Compiling architecture behavioral of entity xil_defaultlib.horizontal_counter [horizontal_counter_default]
 Compiling architecture behavioral of entity xil_defaultlib.vertical_counter [vertical_counter_default]
 Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture design_1_top_0_0_arch of entity xil_defaultlib.design_1_top_0_0 [design_1_top_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper [design_1_wrapper_default]
 Compiling architecture sim of entity xil_defaultlib.testbench
 Built simulation snapshot testbench_behav

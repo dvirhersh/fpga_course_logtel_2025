@@ -14,28 +14,28 @@ architecture sim of testbench is
     signal Blue   : std_logic_vector(3 downto 0);
 
     -- Component declaration for the Unit Under Test (UUT)
-    component top
+    component design_1_wrapper
         port (
-            clk    : in  std_logic;
-            Hsynq  : out std_logic;
-            Vsynq  : out std_logic;
-            Red    : out std_logic_vector(3 downto 0);
-            Green  : out std_logic_vector(3 downto 0);
-            Blue   : out std_logic_vector(3 downto 0)
+            clk_0    : in  std_logic;
+            Hsynq_0  : out std_logic;
+            Vsynq_0  : out std_logic;
+            Red_0    : out std_logic_vector(3 downto 0);
+            Green_0  : out std_logic_vector(3 downto 0);
+            Blue_0   : out std_logic_vector(3 downto 0)
         );
     end component;
 
 begin
 
     -- Instantiate the Unit Under Test (UUT)
-    UUT: top
+    UUT: design_1_wrapper
         port map (
-            clk    => clk,
-            Hsynq  => Hsynq,
-            Vsynq  => Vsynq,
-            Red    => Red,
-            Green  => Green,
-            Blue   => Blue
+            clk_0    => clk,
+            Hsynq_0  => Hsynq,
+            Vsynq_0  => Vsynq,
+            Red_0    => Red,
+            Green_0  => Green,
+            Blue_0   => Blue
         );
 
     -- Clock generation: 100 MHz clock => 10 ns period
