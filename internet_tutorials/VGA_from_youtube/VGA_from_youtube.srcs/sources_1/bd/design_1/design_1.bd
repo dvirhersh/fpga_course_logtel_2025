@@ -1,0 +1,52 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a100tcsg324-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2"
+    },
+    "design_tree": {
+      "top_0": ""
+    },
+    "components": {
+      "top_0": {
+        "vlnv": "xilinx.com:module_ref:top:1.0",
+        "xci_name": "design_1_top_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "top",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "Hsynq": {
+            "direction": "O"
+          },
+          "Vsynq": {
+            "direction": "O"
+          },
+          "Red": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "Green": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "Blue": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    }
+  }
+}

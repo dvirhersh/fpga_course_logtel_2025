@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../VGA_from_youtube.srcs/sources_1/new/clock_devider.vhd" \
+"../../../../VGA_from_youtube.srcs/sources_1/new/horizontal_counter.vhd" \
+"../../../../VGA_from_youtube.srcs/sources_1/new/vertical_counter.vhd" \
+"../../../../VGA_from_youtube.srcs/sources_1/new/top.vhd" \
+"../../../../VGA_from_youtube.srcs/sim_1/imports/new/testbench.vhd" \
+
+# Do not sort compile order
+nosort

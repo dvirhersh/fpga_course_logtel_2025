@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sun May 25 09:40:43 2025
+| Date             : Sun May 25 10:26:17 2025
 | Host             : dvirhersh_comp running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -58,7 +58,7 @@ Table of Contents
 |   CARRY4       |    <0.001 |        8 |     15850 |            0.05 |
 |   Register     |    <0.001 |       54 |    126800 |            0.04 |
 |   Others       |     0.000 |        5 |       --- |             --- |
-| Signals        |    <0.001 |       84 |       --- |             --- |
+| Signals        |    <0.001 |       85 |       --- |             --- |
 | I/O            |    <0.001 |       15 |       210 |            7.14 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.099 |          |           |                 |

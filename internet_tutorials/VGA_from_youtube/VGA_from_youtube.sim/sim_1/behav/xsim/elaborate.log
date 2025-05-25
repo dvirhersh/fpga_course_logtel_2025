@@ -1,21 +1,21 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 87402c2e8e0b422a8fe6636a546ac4f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 87402c2e8e0b422a8fe6636a546ac4f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/top.sv" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/clock_devider.sv" Line 2. Module clock_devider doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/horizontal_counter.sv" Line 3. Module horizontal_counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/sources_1/new/vertical_counter.sv" Line 3. Module vertical_counter doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.clock_devider
-Compiling module xil_defaultlib.horizontal_counter
-Compiling module xil_defaultlib.vertical_counter
-Compiling module xil_defaultlib.top
-Compiling module xil_defaultlib.testbench
-Compiling module xil_defaultlib.glbl
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.clock_devider [clock_devider_default]
+Compiling architecture behavioral of entity xil_defaultlib.horizontal_counter [horizontal_counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.vertical_counter [vertical_counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture sim of entity xil_defaultlib.testbench
 Built simulation snapshot testbench_behav
