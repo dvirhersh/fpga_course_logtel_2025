@@ -12,14 +12,42 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="9201000001fs"></ZoomEndTime>
-      <Cursor1Time time="9201000000fs"></Cursor1Time>
+      <ZoomEndTime time="51472fs"></ZoomEndTime>
+      <Cursor1Time time="15000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="231"></NameColumnWidth>
-      <ValueColumnWidth column_width="126"></ValueColumnWidth>
+      <ValueColumnWidth column_width="122"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/testbench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/Hsynq" type="logic">
+      <obj_property name="ElementShortName">Hsynq</obj_property>
+      <obj_property name="ObjectShortName">Hsynq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/Vsynq" type="logic">
+      <obj_property name="ElementShortName">Vsynq</obj_property>
+      <obj_property name="ObjectShortName">Vsynq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/Red" type="array">
+      <obj_property name="ElementShortName">Red[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Red[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/Green" type="array">
+      <obj_property name="ElementShortName">Green[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Green[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/Blue" type="array">
+      <obj_property name="ElementShortName">Blue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Blue[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider73">
+      <obj_property name="label">tb</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
    <wvobject fp_name="/testbench/UUT/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -35,34 +63,25 @@
    <wvobject fp_name="/testbench/UUT/Red" type="array">
       <obj_property name="ElementShortName">Red[3:0]</obj_property>
       <obj_property name="ObjectShortName">Red[3:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/UUT/Green" type="array">
       <obj_property name="ElementShortName">Green[3:0]</obj_property>
       <obj_property name="ObjectShortName">Green[3:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/UUT/Blue" type="array">
       <obj_property name="ElementShortName">Blue[3:0]</obj_property>
       <obj_property name="ObjectShortName">Blue[3:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/UUT/clk_25M" type="logic">
-      <obj_property name="ElementShortName">clk_25M</obj_property>
-      <obj_property name="ObjectShortName">clk_25M</obj_property>
+   <wvobject fp_name="/testbench/UUT/slow_clk" type="logic">
+      <obj_property name="ElementShortName">slow_clk</obj_property>
+      <obj_property name="ObjectShortName">slow_clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/UUT/enable_V_Counter" type="logic">
-      <obj_property name="ElementShortName">enable_V_Counter</obj_property>
-      <obj_property name="ObjectShortName">enable_V_Counter</obj_property>
+   <wvobject fp_name="/testbench/UUT/h_cnt" type="array">
+      <obj_property name="ElementShortName">h_cnt[9:0]</obj_property>
+      <obj_property name="ObjectShortName">h_cnt[9:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/UUT/H_Count_Value" type="array">
-      <obj_property name="ElementShortName">H_Count_Value[15:0]</obj_property>
-      <obj_property name="ObjectShortName">H_Count_Value[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/UUT/V_Count_Value" type="array">
-      <obj_property name="ElementShortName">V_Count_Value[15:0]</obj_property>
-      <obj_property name="ObjectShortName">V_Count_Value[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/testbench/UUT/v_cnt" type="array">
+      <obj_property name="ElementShortName">v_cnt[9:0]</obj_property>
+      <obj_property name="ObjectShortName">v_cnt[9:0]</obj_property>
    </wvobject>
 </wave_config>

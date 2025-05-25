@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.runs/synth_1'
+HD_PWD='C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

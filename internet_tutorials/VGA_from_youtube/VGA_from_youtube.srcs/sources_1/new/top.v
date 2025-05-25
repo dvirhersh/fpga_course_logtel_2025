@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 05/23/2025 03:44:41 PM
-// Design Name: 
-// Module Name: top
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module top(
     input  clk,
@@ -38,11 +18,12 @@ module top(
     vertical_counter VGA_Verti (clk_25M, enable_V_Counter, V_Count_Value);
 
     // outputs
-    assign Hsynq = (H_Count_Value < 96) ? 1'b1:1'b0;
-    assign Vsynq = (V_Count_Value < 2) ? 1'b1:1'b0;
+    assign Hsynq = (H_Count_Value < 96) ? 1'b1 : 1'b0;
+    assign Vsynq = (V_Count_Value < 2)  ? 1'b1 : 1'b0;
+    
     // colors - all colors high = white screen
-    assign Red   = (H_Count_Value < 784 && H_Count_Value > 143 && V_Count_Value < 515 && V_Count_Value > 34) ? 4'hF:4'h0;
-    assign Green = (H_Count_Value < 784 && H_Count_Value > 143 && V_Count_Value < 515 && V_Count_Value > 34) ? 4'hF:4'h0;
-    assign Blue  = (H_Count_Value < 784 && H_Count_Value > 143 && V_Count_Value < 515 && V_Count_Value > 34) ? 4'hF:4'h0;
+    assign Red   = (H_Count_Value < 784 && H_Count_Value > 143 && V_Count_Value < 515 && V_Count_Value > 34) ? 4'hF : 4'h0;
+    assign Green = (H_Count_Value < 784 && H_Count_Value > 143 && V_Count_Value < 515 && V_Count_Value > 34) ? 4'hF : 4'h0;
+    assign Blue  = (H_Count_Value < 784 && H_Count_Value > 143 && V_Count_Value < 515 && V_Count_Value > 34) ? 4'hF : 4'h0;
 
 endmodule

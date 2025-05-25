@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.srcs/constrs_1/imports/constraints/Nexys4DDR_Master.xdc rfile:../../../VGA_from_youtube.srcs/constrs_1/imports/constraints/Nexys4DDR_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/constrs_1/imports/constraints/Nexys4DDR_Master.xdc rfile:../../../VGA_from_youtube.srcs/constrs_1/imports/constraints/Nexys4DDR_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports clk]
 set_property src_info {type:XDC file:1 line:156 export:INPUT save:INPUT read:READ} [current_design]

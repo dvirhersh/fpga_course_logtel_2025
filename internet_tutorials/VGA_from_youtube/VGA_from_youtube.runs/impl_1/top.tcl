@@ -70,12 +70,12 @@ set rc [catch {
   set_property board_part digilentinc.com:nexys-a7-100t:part0:1.3 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.cache/wt [current_project]
-  set_property parent.project_path C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.xpr [current_project]
-  set_property ip_output_repo C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.cache/wt [current_project]
+  set_property parent.project_path C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.xpr [current_project]
+  set_property ip_output_repo C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.runs/synth_1/top.dcp
-  read_xdc C:/Digital-Zoom-FPGA/VGA_from_youtube/VGA_from_youtube.srcs/constrs_1/imports/constraints/Nexys4DDR_Master.xdc
+  add_files -quiet C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.runs/synth_1/top.dcp
+  read_xdc C:/fpga_course_logtel_2025/internet_tutorials/VGA_from_youtube/VGA_from_youtube.srcs/constrs_1/imports/constraints/Nexys4DDR_Master.xdc
   link_design -top top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
