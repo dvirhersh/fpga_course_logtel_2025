@@ -171,6 +171,7 @@ proc create_root_design { parentCell } {
   set Red_0 [ create_bd_port -dir O -from 3 -to 0 Red_0 ]
   set Vsynq_0 [ create_bd_port -dir O Vsynq_0 ]
   set clk_0 [ create_bd_port -dir I -type clk clk_0 ]
+  set cntl_0 [ create_bd_port -dir I cntl_0 ]
 
   # Create instance: clock_devider_0, and set properties
   set block_name clock_devider
@@ -197,6 +198,7 @@ proc create_root_design { parentCell } {
   # Create port connections
   connect_bd_net -net clk_0_1 [get_bd_ports clk_0] [get_bd_pins clock_devider_0/clk]
   connect_bd_net -net clock_devider_0_divided_clk [get_bd_pins clock_devider_0/divided_clk] [get_bd_pins top_0/pixel_clk]
+  connect_bd_net -net cntl_0_1 [get_bd_ports cntl_0] [get_bd_pins top_0/cntl]
   connect_bd_net -net top_0_Blue [get_bd_ports Blue_0] [get_bd_pins top_0/Blue]
   connect_bd_net -net top_0_Green [get_bd_ports Green_0] [get_bd_pins top_0/Green]
   connect_bd_net -net top_0_Hsynq [get_bd_ports Hsynq_0] [get_bd_pins top_0/Hsynq]

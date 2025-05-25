@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun May 25 11:08:24 2025
+| Date         : Sun May 25 11:45:27 2025
 | Host         : dvirhersh_comp running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,12 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 21
-+-----------+------------------+-----------------------------+------------+
-| Rule      | Severity         | Description                 | Violations |
-+-----------+------------------+-----------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell | 21         |
-+-----------+------------------+-----------------------------+------------+
+             Violations found: 28
++-----------+------------------+------------------------------+------------+
+| Rule      | Severity         | Description                  | Violations |
++-----------+------------------+------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell  | 21         |
+| LUTAR-1   | Warning          | LUT drives async reset alert | 2          |
+| TIMING-20 | Warning          | Non-clocked latch            | 5          |
++-----------+------------------+------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -135,6 +137,41 @@ Related violations: <none>
 TIMING-17#21 Critical Warning
 Non-clocked sequential cell  
 The clock pin design_1_i/top_0/U0/VGA_Verti/count_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/top_0/U0/VGA_Horiz/Blue_reg[3]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/top_0/U0/Blue_reg[3]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/top_0/U0/VGA_Horiz/Green_reg[3]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/top_0/U0/Green_reg[0]/CLR, design_1_i/top_0/U0/Green_reg[3]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch design_1_i/top_0/U0/Blue_reg[3] cannot be properly analyzed as its control pin design_1_i/top_0/U0/Blue_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch design_1_i/top_0/U0/Green_reg[0] cannot be properly analyzed as its control pin design_1_i/top_0/U0/Green_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch design_1_i/top_0/U0/Green_reg[3] cannot be properly analyzed as its control pin design_1_i/top_0/U0/Green_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch design_1_i/top_0/U0/Red_reg[2] cannot be properly analyzed as its control pin design_1_i/top_0/U0/Red_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch design_1_i/top_0/U0/Red_reg[3] cannot be properly analyzed as its control pin design_1_i/top_0/U0/Red_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 

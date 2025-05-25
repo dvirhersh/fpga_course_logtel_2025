@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x6D79B1FDC1D40864",
+      "boundary_crc": "0xF3CAE81866BD3D16",
       "device": "xc7a100tcsg324-1",
       "name": "design_1",
       "synth_flow_mode": "Hierarchical",
@@ -55,6 +55,9 @@
         "direction": "O",
         "left": "3",
         "right": "0"
+      },
+      "cntl_0": {
+        "direction": "I"
       }
     },
     "components": {
@@ -101,6 +104,9 @@
                 "value_src": "default_prop"
               }
             }
+          },
+          "cntl": {
+            "direction": "I"
           },
           "Hsynq": {
             "direction": "O"
@@ -167,6 +173,12 @@
         "ports": [
           "top_0/Blue",
           "Blue_0"
+        ]
+      },
+      "cntl_0_1": {
+        "ports": [
+          "cntl_0",
+          "top_0/cntl"
         ]
       }
     }

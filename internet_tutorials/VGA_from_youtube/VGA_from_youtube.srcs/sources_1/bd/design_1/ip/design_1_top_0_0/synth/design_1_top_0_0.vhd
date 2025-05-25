@@ -56,6 +56,7 @@ USE ieee.numeric_std.ALL;
 ENTITY design_1_top_0_0 IS
   PORT (
     pixel_clk : IN STD_LOGIC;
+    cntl : IN STD_LOGIC;
     Hsynq : OUT STD_LOGIC;
     Vsynq : OUT STD_LOGIC;
     Red : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -70,6 +71,7 @@ ARCHITECTURE design_1_top_0_0_arch OF design_1_top_0_0 IS
   COMPONENT top IS
     PORT (
       pixel_clk : IN STD_LOGIC;
+      cntl : IN STD_LOGIC;
       Hsynq : OUT STD_LOGIC;
       Vsynq : OUT STD_LOGIC;
       Red : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -93,6 +95,7 @@ BEGIN
   U0 : top
     PORT MAP (
       pixel_clk => pixel_clk,
+      cntl => cntl,
       Hsynq => Hsynq,
       Vsynq => Vsynq,
       Red => Red,

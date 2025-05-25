@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Sun May 25 11:06:17 2025
+// Date        : Sun May 25 11:43:21 2025
 // Host        : dvirhersh_comp running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_top_0_0_stub.v
@@ -14,9 +14,10 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "top,Vivado 2019.2" *)
-module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix(pixel_clk, Hsynq, Vsynq, Red, Green, Blue)
-/* synthesis syn_black_box black_box_pad_pin="pixel_clk,Hsynq,Vsynq,Red[3:0],Green[3:0],Blue[3:0]" */;
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix(pixel_clk, cntl, Hsynq, Vsynq, Red, Green, Blue)
+/* synthesis syn_black_box black_box_pad_pin="pixel_clk,cntl,Hsynq,Vsynq,Red[3:0],Green[3:0],Blue[3:0]" */;
   input pixel_clk;
+  input cntl;
   output Hsynq;
   output Vsynq;
   output [3:0]Red;

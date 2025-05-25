@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Sun May 25 11:05:41 2025
+--Date        : Sun May 25 11:42:32 2025
 --Host        : dvirhersh_comp running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -18,7 +18,8 @@ entity design_1 is
     Hsynq_0 : out STD_LOGIC;
     Red_0 : out STD_LOGIC_VECTOR ( 3 downto 0 );
     Vsynq_0 : out STD_LOGIC;
-    clk_0 : in STD_LOGIC
+    clk_0 : in STD_LOGIC;
+    cntl_0 : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
   attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=2,numReposBlks=2,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=2,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
@@ -36,6 +37,7 @@ architecture STRUCTURE of design_1 is
   component design_1_top_0_0 is
   port (
     pixel_clk : in STD_LOGIC;
+    cntl : in STD_LOGIC;
     Hsynq : out STD_LOGIC;
     Vsynq : out STD_LOGIC;
     Red : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -45,6 +47,7 @@ architecture STRUCTURE of design_1 is
   end component design_1_top_0_0;
   signal clk_0_1 : STD_LOGIC;
   signal clock_devider_0_divided_clk : STD_LOGIC;
+  signal cntl_0_1 : STD_LOGIC;
   signal top_0_Blue : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal top_0_Green : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal top_0_Hsynq : STD_LOGIC;
@@ -61,6 +64,7 @@ begin
   Red_0(3 downto 0) <= top_0_Red(3 downto 0);
   Vsynq_0 <= top_0_Vsynq;
   clk_0_1 <= clk_0;
+  cntl_0_1 <= cntl_0;
 clock_devider_0: component design_1_clock_devider_0_0
      port map (
       clk => clk_0_1,
@@ -73,6 +77,7 @@ top_0: component design_1_top_0_0
       Hsynq => top_0_Hsynq,
       Red(3 downto 0) => top_0_Red(3 downto 0),
       Vsynq => top_0_Vsynq,
+      cntl => cntl_0_1,
       pixel_clk => clock_devider_0_divided_clk
     );
 end STRUCTURE;
