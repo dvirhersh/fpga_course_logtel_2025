@@ -9,7 +9,7 @@
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: 
+// Description: 8-bit register with reset and enable
 // 
 // Dependencies: 
 // 
@@ -19,7 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module register8(
     input clock,
     input reset,
@@ -27,13 +26,13 @@ module register8(
     input [7:0] data_in,
     output reg [7:0] data_out
     );
-    
-    
-   always @(posedge clock)
-      if (reset) begin
-         data_out <= 8'b0;
-      end else if (enable) begin
-         data_out <= data_in;
-      end
-						
+
+    always @(posedge clock) begin
+        if (reset) begin
+            data_out <= 8'b0;
+        end else if (enable) begin
+            data_out <= data_in;
+        end
+    end
+
 endmodule
