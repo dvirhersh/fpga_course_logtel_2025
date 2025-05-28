@@ -2,3 +2,6 @@ Running: xsim.dir/tb_rotate_left_behav/xsimk.exe -simmode gui -wdb tb_rotate_lef
 Design successfully loaded
 Design Loading Memory Usage: 8416 KB (Peak: 8416 KB)
 Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 9208 KB (Peak: 9208 KB)
+Simulation CPU Usage: 15 ms
