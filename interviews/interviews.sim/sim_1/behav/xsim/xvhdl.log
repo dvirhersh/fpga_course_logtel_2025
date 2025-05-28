@@ -1,2 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/fpga_course_logtel_2025/interviews/interviews.srcs/sources_1/new/Q1.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Q1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fpga_course_logtel_2025/interviews/interviews.srcs/sources_1/new/josephus_problem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rotate_left'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fpga_course_logtel_2025/interviews/interviews.srcs/sources_1/new/tb_josephus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_rotate_left'
