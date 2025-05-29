@@ -10,7 +10,7 @@ module register8_sv (
 
     always_ff @(posedge clock) begin
         if (reset)
-            data_out <= 8'd0;
+            data_out <= 8'b0;
         else if (enable)
             data_out <= data_in;
     end
